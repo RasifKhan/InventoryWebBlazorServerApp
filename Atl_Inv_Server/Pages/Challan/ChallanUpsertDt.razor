@@ -1,0 +1,312 @@
+﻿@page "/challanupsertdt/edit/{ChallanId:int}/{WorkOrderId:int}/{ProductId:int}/{AvailableQty:int}/{QuotationQty:int}/{AllChallanProdQty:int}"
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Model;
+@inject IStockDtRepository _stockDtRepository;
+@inject IVwExistingStockProdRepository _vwExistingStockProdRepository;
+@inject IVwWorkOrderProdDetailRepository _vwWorkOrderProdDetailRepository;
+
+@inject IUserServiceRepository _userServiceRepository
+
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+@inject IWorkOrderRepository _workOrderRepository
+@inject IChallanMtRepository _challanMtRepository
+@inject IChallanDtRepository _challanDtRepository
+
+@inject NavigationManager _navigationManager
+@inject IJSRuntime _jsRuntime
+
+<link rel="stylesheet" href="/css/CustomFieldSizeFontSize.css">
+<link rel="stylesheet" href="_content/Radzen.Blazor/css/standard-base.css">
+
+<div class="row my-1">
+    <h5 class="row  text-primary align-items-center">Individual Prod Details</h5>
+</div>
+
+@if (IsLoading)
+{
+    <div class="text-center">
+        <img src="/images/Glass spheres.gif">
+    </div>
+}
+
+else
+{
+<div class="row" style="width: 100%">
+        @* Left *@  
+        <div class="col-12 col-lg-8 p-0 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:45%">
+            <h1 style="font-size: 1em;">Order Qty: @QuotationQty</h1>
+            <h1 style="font-size: 1em;">Worder No: @WorkOrder.WorkOrderNo</h1>   
+            <h1 style="font-size: 1em;">Challan No: @Challan.ChallanNo</h1>
+            <h1 style="font-size: 1em;">Available Qty: @ResunltAvailableQty</h1>
+            
+        <h1 style="font-size: 1em;">Aded Qty: @ChallanAddedQty</h1>
+    </div>
+
+
+    <div class="col-12 col-lg-8 p-0 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:45%">
+
+            <h1 style="font-size: 1em;">Aded Qty(All Challan): @AllChallanProdQty</h1>
+        <div class="row my-1 align-items-center">
+            <div class="col-3 custom-input">Serial From</div>
+            <div class="col-9">
+                <InputSelect @bind-Value="FromStockIdSelected" class="form-select custom-input">
+                    <option value="0" disabled="disabled" selected> --Select From Serial--</option>
+                        @foreach (var items in StockProds)
+                    {
+                        <option value="@items.StockdtId">@items.SerialNo</option>
+                    }
+                </InputSelect>
+            </div>
+        </div>
+
+        <div class="row my-1 align-items-center">
+            <div class="col-3 custom-input">Serial To</div>
+            <div class="col-9">
+                <InputSelect @bind-Value="ToStockIdSelected" class="form-select custom-input">
+                    <option value="0" disabled="disabled" selected> --Select To Serial--</option>
+                        @foreach (var items in StockProds)
+                    {
+                        <option value="@items.StockdtId">@items.SerialNo</option>
+                    }
+                </InputSelect>
+            </div>
+        </div>
+
+        <div class="form-group my-1 ">
+           @* <button @onclick="AddProducts" class="btn btn-primary">Create</button>*@
+                <button @onclick="(e) => AddProducts(FromStockIdSelected, ToStockIdSelected,ChallanId,ProductId,WorkOrderId)" 
+                    class="btn btn-primary custom-input" 
+                    style="outline: none; margin-left: 143px;" 
+                        disabled="@((QuotationQty == AllChallanProdQty ))">
+                    Create
+                </button>
+        </div>
+    </div>
+</div>
+
+
+
+ <div class="col-12 p-3">
+        @if (StockProds.Any())
+        {
+            <RadzenDataGrid AllowFiltering="true" class="custom-radzen-datagrid" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Advanced"  AllowSorting="true" PageSize="8" AllowPaging="true" ShowPagingSummary="true"
+                        Data="StockProds" TItem="VwExistingStockProdDTO" ColumnWidth="300px" LogicalFilterOperator="LogicalFilterOperator.Or">
+                <Columns>
+                    <RadzenDataGridColumn TItem="VwExistingStockProdDTO" Property="ProductInfoSetup.ProductName" Filterable="false" Title="ProductName" Frozen="true" Width="100px" />
+                    <RadzenDataGridColumn TItem="VwExistingStockProdDTO" Property="SerialNo" Filterable="false" Title="SerialNo" Frozen="true" Width="100px" />
+                    <RadzenDataGridColumn TItem="VwExistingStockProdDTO" Property="StockdtId" Filterable="false" Title="StockdtId" Frozen="true" Width="100px" /> 
+                         <RadzenDataGridColumn TItem="VwExistingStockProdDTO" Title="Action" Width="100px">
+
+                    <Template Context="data">
+                        <RadzenButton Click="(args=>AddProd(data.StockdtId, data.ProductId, data.ChallanId,data.WorkOrderId))"
+                                  Text="Add"
+                                  ButtonStyle="ButtonStyle.Success"
+                                  Disabled="@IsButtonDisabled(data)">
+                        </RadzenButton>
+                    </Template>
+
+                        </RadzenDataGridColumn>
+                </Columns>
+            </RadzenDataGrid>
+        }
+
+        else
+        {
+            if (IsLoading)
+            {
+                //Loading gif
+               @* <div class="text-center">
+                    <img src="/images/Glass spheres.gif">
+                </div>*@
+            }
+            else
+            {
+                //no records
+                <p>No Records Found.</p>
+            }
+        }
+    </div>
+    }
+
+
+
+@code {
+
+    [Parameter]
+    public int ProductId{ get; set; }
+
+    [Parameter]
+    public int ChallanId { get; set; }
+
+    [Parameter]
+    public int WorkOrderId { get; set; }
+
+    [Parameter]
+    public int AvailableQty { get; set; }
+
+    [Parameter]
+    public int QuotationQty { get; set; }
+
+    [Parameter]
+    public int AllChallanProdQty { get; set; }
+
+
+
+    int FromStockIdSelected { get; set; } = 0;
+
+    int ToStockIdSelected { get; set; } = 0;
+
+    public int ChallanAddedQty { get; set; } = 0;
+
+    public int ResunltAvailableQty { get; set; }
+
+    public int tempChallanAdded { get; set; }
+
+    public int temp2ChallanAdded { get; set; } = 0;
+
+    private IEnumerable<VwExistingStockProdDTO> StockProds { get; set; } = new List<VwExistingStockProdDTO>();
+
+    private WorkOrderDTO WorkOrder { get; set; } = new();
+
+    //private IEnumerable<StockDtDTO> StocksDt { get; set; } = new List<StockDtDTO>();
+
+    private ChallanDtDTO ChallanDto { get; set; } = new();
+
+    private ChallanMtDTO Challan { get; set; } = new();
+
+
+    private bool IsLoading { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {   
+            StateHasChanged();
+            await LoadStockProds();
+            //var stocksDt = await _stockDtRepository.GetAll();
+            //StocksDt = stocksDt.Where(data => data.ProductId == ProductId && data.ChallanStatus == "N").ToList();
+            StateHasChanged();
+        }
+    }
+
+
+    private async Task LoadStockProds()
+    {
+        IsLoading = true;
+        StateHasChanged();
+        var stockProds = await _vwExistingStockProdRepository.GetAll();
+        StockProds = stockProds.Where(data => data.ProductId == ProductId && data.WorkOrderId == WorkOrderId && data.ChallanId == ChallanId).ToList();
+        WorkOrder = await _workOrderRepository.Get(WorkOrderId);
+        Challan = await _challanMtRepository.Get(ChallanId);
+        ResunltAvailableQty = AvailableQty - ChallanAddedQty;
+        ChallanAddedQty = await _challanDtRepository.GetCountChallanDtAddedProd(ChallanId, ProductId);
+        FromStockIdSelected = 0;
+        ToStockIdSelected = 0;
+        //var stocksDt = await _stockDtRepository.GetAll();
+        //StocksDt = stocksDt.Where(data => data.ProductId == ProductId && data.ChallanStatus=="N").ToList();
+        IsLoading = false;
+        StateHasChanged();
+    }
+
+
+
+
+    private async Task AddProd(int StockDtId, int ProductId, int ChallanId, int WorkOrderId)
+    {
+        var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+        var userId = currentUser?.Id;
+
+
+        await _challanDtRepository.InsertChallanDtSP(StockDtId, ProductId, ChallanId, WorkOrderId, userId,DateTime.Now);
+        var stockProds = await _vwExistingStockProdRepository.GetAll();
+        StockProds = stockProds.Where(data => data.ProductId == ProductId && data.WorkOrderId == WorkOrderId && data.ChallanId == ChallanId).ToList();
+
+        //var stocksDt = await _stockDtRepository.GetAll();
+        //StocksDt = stocksDt.Where(data => data.ProductId == ProductId && data.ChallanStatus == "N").ToList();
+        ChallanAddedQty = ChallanAddedQty + 1;
+        ResunltAvailableQty = ResunltAvailableQty - 1;
+        AllChallanProdQty++;
+
+        var sum = await _vwWorkOrderProdDetailRepository.GetSumTotalQuotProd(WorkOrderId);
+        var prodCount = await _challanDtRepository.GetChallanDtProdCount(ChallanId);
+
+        var stockProdsss = await _vwExistingStockProdRepository.GetAll();
+        StockProds = stockProdsss.Where(data => data.ProductId == ProductId && data.WorkOrderId == WorkOrderId && data.ChallanId == ChallanId).ToList();
+
+        this.FromStockIdSelected = 0;
+        this.ToStockIdSelected = 0;
+
+
+
+        if (sum == prodCount)
+        {
+            await _challanMtRepository.UpdateChallansMtStatus(ChallanId);
+        }
+    }
+
+
+    bool IsButtonDisabled(VwExistingStockProdDTO data)
+    {
+        if (QuotationQty == AllChallanProdQty)
+        {
+            return true;
+        }
+
+        else
+        {
+            return false;
+        }
+    }
+
+  
+
+    private async Task AddProducts(int FromStockIdSelected, int ToStockIdSelected, int ChallanId, int ProductId ,int WorkOrderId)
+    {
+        tempChallanAdded = await _stockDtRepository.GetCountStockIdFromTo(ProductId, "N", FromStockIdSelected, ToStockIdSelected);
+        temp2ChallanAdded = AllChallanProdQty + tempChallanAdded;
+        if (tempChallanAdded == 0)
+        {
+            await _jsRuntime.ToastrError("Selected sequence is not correct ! Please check");
+        }
+
+        else
+        {
+            if (temp2ChallanAdded <= QuotationQty)
+            {
+                var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+                var userId = currentUser?.Id;
+
+
+                await _challanDtRepository.InsertChallansDtSP(FromStockIdSelected, ToStockIdSelected, ChallanId, ProductId, WorkOrderId, userId,DateTime.Now);
+                ChallanAddedQty = ChallanAddedQty + tempChallanAdded;
+                AllChallanProdQty = AllChallanProdQty + tempChallanAdded;
+                ResunltAvailableQty = ResunltAvailableQty - tempChallanAdded;
+                var stockProds = await _vwExistingStockProdRepository.GetAll();
+                await _jsRuntime.ToastrSuccess("Added Successfully !!");
+
+                var sum = await _vwWorkOrderProdDetailRepository.GetSumTotalQuotProd(WorkOrderId);
+                var prodCount = await _challanDtRepository.GetChallanDtProdCount(ChallanId);
+
+                var stockProdsss = await _vwExistingStockProdRepository.GetAll();
+                StockProds = stockProdsss.Where(data => data.ProductId == ProductId && data.WorkOrderId == WorkOrderId && data.ChallanId == ChallanId).ToList();
+               
+
+                this.FromStockIdSelected = 0;
+                this.ToStockIdSelected = 0;
+    
+                if(sum==prodCount)
+                {
+                    await _challanMtRepository.UpdateChallansMtStatus(ChallanId);
+                }
+            }
+            else
+            {
+                await _jsRuntime.ToastrError("Selected Quantities are more than Order Quantities");
+            }
+           
+        }
+    }
+}
+
+

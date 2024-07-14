@@ -1,0 +1,102 @@
+﻿@page "/usercontroll"
+@using Microsoft.AspNetCore.Identity
+
+@inject IAspNetUserRoleRepository _aspNetUserRoleRepository
+
+@inject UserManager<IdentityUser> _userManager
+@inject RoleManager<IdentityRole> _roleManager
+@inject IJSRuntime _jsRuntime
+
+<link rel="stylesheet" href="/css/CustomFieldSizeFontSize.css">
+<link rel="stylesheet" href="_content/Radzen.Blazor/css/standard-base.css">
+
+@attribute [Authorize(Roles = SD.Role_SuperAdmin)]
+
+
+@*<h5>User Controll</h5>*@
+
+<h5 class="row  text-primary align-items-center">User Controll </h5>
+
+<EditForm Model="@AspNetUserRole" OnValidSubmit="UpsertUser" class="needs-validation">
+    <div class="row" style="width: 100%">
+        <div class="col-12 col-lg-8 p-4 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:45%">
+            <div class="row my-1 align-items-center">
+                <div class="col-3 custom-input">User</div>
+                <div class="col-9">
+                    <InputSelect @bind-Value="AspNetUserRole.UserId" class="form-select custom-input">
+                        <option value="0" disabled="disabled" selected>--Select User--</option>
+                        @foreach (var item in Users)
+                        {
+                            <option value="@item.Id">@item.UserName</option>
+                        }
+                    </InputSelect>
+                    <ValidationMessage For="()=>AspNetUserRole.UserId"></ValidationMessage>
+                </div>
+            </div>
+
+
+
+
+            <div class="row my-1 align-items-center">
+                <div class="col-3 custom-input">Role</div>
+                <div class="col-9">
+                    <InputSelect @bind-Value="AspNetUserRole.RoleId" class="form-select custom-input">
+                        <option value="0" disabled="disabled" selected>--Select Role--</option>
+                        @foreach (var item in Roles)
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    </InputSelect>
+                    <ValidationMessage For="()=>AspNetUserRole.RoleId"></ValidationMessage>
+                </div>
+            </div>
+
+            @*style="outline: none; margin-left: 121px;" *@
+            <div class="form-group my-1 ">
+                @*<div class="row my-1">*@
+                @* <button @onclick="SaveStockDt" class="btn btn-primary">Create</button>*@
+                <button class="btn btn-primary custom-input" style="outline: none; margin-left: 133px;">Create</button>
+            </div>
+        </div>
+
+
+
+        <div class="col-12 col-lg-8 p-4 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:45%">
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    private List<IdentityUser> Users = new List<IdentityUser>();
+    private List<IdentityRole> Roles = new List<IdentityRole>();
+    private AspNetUserRoleDTO AspNetUserRole { get; set; } = new AspNetUserRoleDTO();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadUser();
+        await LoadRole();
+    }
+
+    private async Task LoadUser()
+    {
+        var users = _userManager.Users.ToList();
+        Users = users;
+    }
+
+
+
+    private async Task LoadRole()
+    {
+        var roles = _roleManager.Roles.ToList();
+        Roles = roles;
+    }
+
+    private async Task UpsertUser()
+    {
+        await _aspNetUserRoleRepository.RoleAssignToUserSP(AspNetUserRole.UserId, AspNetUserRole.RoleId);
+
+        await _jsRuntime.ToastrSuccess("Role assigned to user succeded!!");
+    }
+
+}
+

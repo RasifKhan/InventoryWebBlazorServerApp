@@ -1,0 +1,122 @@
+﻿@page "/setupdt"
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Model;
+@inject ISetupDt_DataRepository _setupDt_DataRepository;
+@inject IJSRuntime _jsRuntime
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+<_DeleteConfirmation IsParentComponentProcessing="IsLoading" ConfirmationChanged="ConfirmTask_Click"></_DeleteConfirmation>
+<div class="row mt-4">
+    <div class="col-6">
+        <h4 class="card-title text-info">List of Setup Details Data</h4>
+    </div>
+    <div class="col-4 offset-2">
+        <a href="setupdt/create" class="btn btn-primary form-control">Add New Seteup DT</a>
+    </div>
+    <div class="col-12 p-3">
+        @if (SetupDt_Datas.Any())
+        {
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th> 
+                        <th>Master Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var setupDtItem in SetupDt_Datas)
+                    {
+                        <tr>
+                            <td>
+                                @setupDtItem.SetupDT_Data
+                            </td>
+
+                            
+                             <th>
+                                @setupDtItem.SetupMt_Data.SetupMT_Data
+                            </th>
+
+                            <td>
+                                <NavLink href="@($"setupdt/edit/{setupDtItem.SetupDT_Id}")" class="btn-primary btn">Edit</NavLink>
+                               @* <NavLink href="@($"setupdt/price/{prod.Id}")" class="btn-success btn">Price</NavLink>*@
+                                <button class="btn btn-danger" @onclick="()=>HandleDelete(setupDtItem.SetupDT_Id)">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+       @* else
+        {
+            if(IsLoading)
+            {
+                //Loading gif
+                <div class="text-center">
+                    <img src="/images/Glass spheres.gif">
+                </div>
+            }
+            else 
+            {
+                //no records
+                <p>No Records Found.</p>
+            }
+        }*@
+        else
+        {
+            if (IsLoading)
+            {
+                //Loading gif
+                <div class="text-center">
+                    <img src="/images/Glass spheres.gif">
+                </div>
+            }
+            else
+            {
+                //no records
+                <p>No Records Found.</p>
+            }
+        }
+    </div>
+</div>
+@code {
+
+    private IEnumerable<SetupDt_DataDTO> SetupDt_Datas { get; set; } = new List<SetupDt_DataDTO>();
+    private bool IsLoading { get; set; } 
+    private int DeleteSetupDT_Id { get; set; } = 0;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+           
+            await LoadSetupDt_Datas();
+        }
+    }
+    private async Task LoadSetupDt_Datas()
+    {
+        IsLoading = true;
+        StateHasChanged();
+        SetupDt_Datas = await _setupDt_DataRepository.GetAll();
+        IsLoading = false;
+        StateHasChanged();
+    }
+
+    private void HandleDelete(int id)
+    {
+        DeleteSetupDT_Id = id;
+        _jsRuntime.InvokeVoidAsync("ShowDeleteConfirmationModal"); //This Function doesn't return anything thats why InvokeVoidAsync is used//
+    }
+    public async Task ConfirmTask_Click(bool isConfirmed)
+    {
+        IsLoading = true;
+        if (isConfirmed && DeleteSetupDT_Id != 0)
+        {
+            //delete
+            //await Task.Delay(5000);
+            await _setupDt_DataRepository.Delete(DeleteSetupDT_Id);
+            await LoadSetupDt_Datas();
+            await _jsRuntime.InvokeVoidAsync("HideDeleteConfirmationModal");
+        }
+        IsLoading = false;
+    }
+}

@@ -1,0 +1,20 @@
+E:\Rough\ATL_INV_WebApp\RDLCReportWinApp\bin\Debug\RDLCReportWinApp.exe.config
+E:\Rough\ATL_INV_WebApp\RDLCReportWinApp\bin\Debug\RDLCReportWinApp.exe
+E:\Rough\ATL_INV_WebApp\RDLCReportWinApp\bin\Debug\RDLCReportWinApp.pdb
+E:\Rough\ATL_INV_WebApp\RDLCReportWinApp\obj\Debug\RDLCReportWinApp.csproj.AssemblyReference.cache
+E:\Rough\ATL_INV_WebApp\RDLCReportWinApp\obj\Debug\RDLCReportWinApp.csproj.SuggestedBindingRedirects.cache
+E:\Rough\ATL_INV_WebApp\RDLCReportWinApp\obj\Debug\RDLCReportWinApp.Properties.Resources.resources
+E:\Rough\ATL_INV_WebApp\RDLCReportWinApp\obj\Debug\RDLCReportWinApp.csproj.GenerateResource.cache
+E:\Rough\ATL_INV_WebApp\RDLCReportWinApp\obj\Debug\RDLCReportWinApp.csproj.CoreCompileInputs.cache
+E:\Rough\ATL_INV_WebApp\RDLCReportWinApp\obj\Debug\RDLCReportWinApp.exe
+E:\Rough\ATL_INV_WebApp\RDLCReportWinApp\obj\Debug\RDLCReportWinApp.pdb
+E:\master Backup\rdlc\ATL_INV_WebApp\RDLCReportWinApp\bin\Debug\RDLCReportWinApp.exe.config
+E:\master Backup\rdlc\ATL_INV_WebApp\RDLCReportWinApp\bin\Debug\RDLCReportWinApp.exe
+E:\master Backup\rdlc\ATL_INV_WebApp\RDLCReportWinApp\bin\Debug\RDLCReportWinApp.pdb
+E:\master Backup\rdlc\ATL_INV_WebApp\RDLCReportWinApp\obj\Debug\RDLCReportWinApp.csproj.AssemblyReference.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\RDLCReportWinApp\obj\Debug\RDLCReportWinApp.csproj.SuggestedBindingRedirects.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\RDLCReportWinApp\obj\Debug\RDLCReportWinApp.Properties.Resources.resources
+E:\master Backup\rdlc\ATL_INV_WebApp\RDLCReportWinApp\obj\Debug\RDLCReportWinApp.csproj.GenerateResource.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\RDLCReportWinApp\obj\Debug\RDLCReportWinApp.csproj.CoreCompileInputs.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\RDLCReportWinApp\obj\Debug\RDLCReportWinApp.exe
+E:\master Backup\rdlc\ATL_INV_WebApp\RDLCReportWinApp\obj\Debug\RDLCReportWinApp.pdb

@@ -1,0 +1,137 @@
+﻿@page "/setupdt/create"
+@page "/setupdt/edit/{SetupDT_Id:int}"
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Model;
+@inject ISetupDt_DataRepository _setupDt_DataRepository;
+@inject ISetupMt_DataRepository _setupMt_DataRepository;
+@inject IJSRuntime _jsRuntime
+@inject IUserServiceRepository _userServiceRepository
+
+@inject NavigationManager _navigationManager
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+<div class="row my-2">
+    <h3 class="card-title text-primary mb-3 ml-3">@Title Setup Details Data</h3>
+    <div class="col-md-10">
+        @if(IsLoading)
+        {
+            //
+            <div class="text-center">
+                <img src="/images/Glass spheres.gif">
+            </div>
+        }
+        else{
+            <EditForm Model="SetupDt" OnValidSubmit="UpsertSetupDt">
+            <DataAnnotationsValidator/>
+            <div class="form-group">
+                <label>Name</label>
+                    <InputText @bind-Value="SetupDt.SetupDT_Data" class="form-control"></InputText>
+                    <ValidationMessage For="()=>SetupDt.SetupDT_Data"></ValidationMessage>
+            </div>
+
+                <div class="row pt-3">
+
+                    <div class="form-group col-6">
+                        <label>Mt data</label>
+                        <InputSelect @bind-Value="SetupDt.SetupMT_Id" class="form-select">
+                                <option value="0" disabled="disabled" selected>--Select mtData--</option>
+                            @foreach (var mtItems in SetupMt_Datas)
+                                {
+                                <option value="@mtItems.SetupMT_Id">@mtItems.SetupMT_Data</option>
+                                } 
+                            </InputSelect>
+                        <ValidationMessage For="()=>SetupDt.SetupMT_Id"></ValidationMessage>
+                    </div>
+
+                     @* <div class="form-group col-6">
+                        <label>Category</label>
+                        <SfDropDownList @bind-Value="Product.CategoryId" TValue="int" TItem="CategoryDTO" PopupHeight="350px" PopupWidth="350px" Placeholder="Select a category" DataSource="@Categories">
+                            <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
+                        </SfDropDownList>
+                        <ValidationMessage For="()=>Product.CategoryId"></ValidationMessage>
+                    </div>*@
+
+                    <div class="form-group pt-4 col-6">
+                        @*<InputFile OnChange="HandleImageUpload"></InputFile>*@
+                        @*<InputFile accept=".jpg, .jpeg, .png" maxfileSize="1048576" OnChange="HandleImageUpload"></InputFile>*@
+                    </div>
+                </div>
+            <div class="form-group py-2">
+                <button class="btn btn-primary">@Title</button>
+                <NavLink href="setupdt" class="btn btn-secondary" >Back To Index</NavLink>
+            </div>
+        </EditForm>
+        }
+
+    </div>
+  
+</div>
+@code {
+    [Parameter]
+    public int SetupDT_Id { get; set; }
+
+    // private SetupMt_DataDTO SetupMt { get; set; } = new SetupMt_DataDTO();
+
+    private SetupDt_DataDTO SetupDt { get; set; } = new SetupDt_DataDTO();
+
+    private IEnumerable<SetupMt_DataDTO> SetupMt_Datas { get; set; } = new List<SetupMt_DataDTO>();
+
+
+
+    private String Title { get; set; } = "Create";
+    private bool IsLoading { get; set; }
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            if (SetupDT_Id == 0)
+            {
+                //create
+                // IsLoading = false;
+                await LoadSetupDt_Datas();
+            }
+            else
+            {
+                //Update
+                Title = "Update";
+                await LoadSetupDt_Datas();
+            }
+        }
+    }
+
+
+
+    private async Task LoadSetupDt_Datas()
+    {
+        IsLoading = true;
+        StateHasChanged();
+        SetupMt_Datas = await _setupMt_DataRepository.GetAll();
+        SetupDt = await _setupDt_DataRepository.Get(SetupDT_Id);
+        IsLoading = false;
+        StateHasChanged();
+    }
+    private async Task UpsertSetupDt()
+    {
+        var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+        var userId = currentUser?.Id;
+
+        // Category.Name="Button Clicked";
+        if (SetupDt.SetupDT_Id == 0)
+        {
+            //create
+            await _setupDt_DataRepository.Create(SetupDt, userId);
+            await _jsRuntime.ToastrSuccess("Data created successfully");
+
+        }
+
+        else
+        {
+            //update
+            await _setupDt_DataRepository.Update(SetupDt, userId);
+            await _jsRuntime.ToastrSuccess("Data updated successfully");
+        }
+        _navigationManager.NavigateTo("setupDt");
+    }
+}

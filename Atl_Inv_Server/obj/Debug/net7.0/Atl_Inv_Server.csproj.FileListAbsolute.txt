@@ -1,0 +1,1763 @@
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\appsettings.Development.json
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\appsettings.json
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.staticwebassets.runtime.json
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.exe
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.deps.json
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.runtimeconfig.json
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.pdb
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AutoMapper.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Azure.Core.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Azure.Identity.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Humanizer.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Build.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Common.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.CodeDom.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Memory.Data.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\af\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ar\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\az\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\bg\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\bn-BD\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\da\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\el\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fa\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fi-FI\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr-BE\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\he\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hr\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hu\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hy\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\id\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\is\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko-KR\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ku\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\lv\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ms-MY\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\mt\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nb\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nb-NO\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nl\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ro\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sk\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sl\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sr\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sr-Latn\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sv\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\th-TH\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uk\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\vi\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Business.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Model.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Business.pdb
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Model.pdb
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.AssemblyReference.cache
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.AssemblyInfoInputs.cache
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.AssemblyInfo.cs
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.CoreCompileInputs.cache
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.MvcApplicationPartsAssemblyInfo.cs
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.MvcApplicationPartsAssemblyInfo.cache
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.RazorAssemblyInfo.cache
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.RazorAssemblyInfo.cs
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.Atl_Inv_Server.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.build.Atl_Inv_Server.props
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Atl_Inv_Server.props
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Atl_Inv_Server.props
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.pack.json
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.build.json
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.development.json
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\bundle\Atl_Inv_Server.styles.css
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\projectbundle\Atl_Inv_Server.bundle.scp.css
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.CopyComplete
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\refint\Atl_Inv_Server.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.pdb
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.genruntimeconfig.cache
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\ref\Atl_Inv_Server.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\appsettings.Development.json
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\appsettings.json
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.staticwebassets.runtime.json
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.exe
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.deps.json
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.runtimeconfig.json
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.pdb
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\AutoMapper.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Azure.Core.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Azure.Identity.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Humanizer.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Build.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Common.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.CodeDom.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.Memory.Data.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\af\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ar\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\az\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\bg\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\bn-BD\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\cs\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\da\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\de\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\el\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\es\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\fa\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\fi-FI\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\fr\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\fr-BE\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\he\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\hr\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\hu\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\hy\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\id\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\is\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\it\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ja\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ko-KR\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ku\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\lv\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ms-MY\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\mt\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\nb\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\nb-NO\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\nl\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pl\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pt\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ro\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ru\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\sk\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\sl\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\sr\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\sr-Latn\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\sv\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\th-TH\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\tr\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\uk\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\vi\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Business.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Model.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Business.pdb
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Model.pdb
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.AssemblyReference.cache
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.AssemblyInfoInputs.cache
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.AssemblyInfo.cs
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.CoreCompileInputs.cache
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.MvcApplicationPartsAssemblyInfo.cs
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.MvcApplicationPartsAssemblyInfo.cache
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.RazorAssemblyInfo.cache
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.RazorAssemblyInfo.cs
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.Atl_Inv_Server.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.build.Atl_Inv_Server.props
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Atl_Inv_Server.props
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Atl_Inv_Server.props
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.pack.json
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.build.json
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.development.json
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\bundle\Atl_Inv_Server.styles.css
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\projectbundle\Atl_Inv_Server.bundle.scp.css
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.CopyComplete
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\refint\Atl_Inv_Server.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.pdb
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.genruntimeconfig.cache
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_Server\obj\Debug\net7.0\ref\Atl_Inv_Server.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\appsettings.Development.json
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\appsettings.json
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.staticwebassets.runtime.json
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.exe
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.deps.json
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.runtimeconfig.json
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.pdb
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AutoMapper.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Azure.Core.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Azure.Identity.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Humanizer.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Build.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Common.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Buttons.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Calendars.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Core.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Data.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.DropDowns.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Grids.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Inputs.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Lists.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Navigations.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Notifications.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Popups.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Spinner.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.SplitButtons.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Themes.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.ExcelExport.Net.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Licensing.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.PdfExport.Net.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.CodeDom.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Memory.Data.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\af\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ar\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\az\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\bg\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\bn-BD\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\da\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\el\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fa\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fi-FI\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr-BE\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\he\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hr\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hu\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hy\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\id\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\is\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko-KR\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ku\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\lv\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ms-MY\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\mt\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nb\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nb-NO\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nl\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ro\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sk\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sl\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sr\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sr-Latn\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sv\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\th-TH\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uk\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\vi\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Business.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Model.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Business.pdb
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Model.pdb
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.AssemblyReference.cache
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.GeneratedMSBuildEditorConfig.editorconfig
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.AssemblyInfoInputs.cache
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.AssemblyInfo.cs
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.CoreCompileInputs.cache
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.MvcApplicationPartsAssemblyInfo.cs
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.MvcApplicationPartsAssemblyInfo.cache
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.RazorAssemblyInfo.cache
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.RazorAssemblyInfo.cs
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.Atl_Inv_Server.Microsoft.AspNetCore.StaticWebAssets.props
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.build.Atl_Inv_Server.props
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Atl_Inv_Server.props
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Atl_Inv_Server.props
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.pack.json
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.build.json
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.development.json
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\bundle\Atl_Inv_Server.styles.css
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\projectbundle\Atl_Inv_Server.bundle.scp.css
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.CopyComplete
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\refint\Atl_Inv_Server.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.pdb
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.genruntimeconfig.cache
+E:\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\ref\Atl_Inv_Server.dll
+E:\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.RichTextEditor.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\appsettings.json
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.staticwebassets.runtime.json
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.exe
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.deps.json
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.runtimeconfig.json
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.pdb
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Humanizer.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Build.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Common.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Configuration.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Frameworks.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.LibraryModel.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Packaging.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.ProjectModel.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Protocol.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Versioning.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Radzen.Blazor.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Buttons.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Calendars.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Core.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Data.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.DropDowns.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Grids.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Inputs.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Lists.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Navigations.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Notifications.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Popups.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.RichTextEditor.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Spinner.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.SplitButtons.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Themes.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.ExcelExport.Net.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Licensing.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.PdfExport.Net.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Convention.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Hosting.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Runtime.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.TypedParts.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Linq.Dynamic.Core.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\af\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ar\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\az\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\bg\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\bn-BD\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\da\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\el\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fa\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fi-FI\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr-BE\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\he\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hr\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hu\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hy\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\id\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\is\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko-KR\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ku\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\lv\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ms-MY\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\mt\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nb\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nb-NO\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nl\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ro\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sk\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sl\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sr\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sr-Latn\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sv\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\th-TH\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uk\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\vi\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Business.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Common.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_DataAccess.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Model.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Business.pdb
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Common.pdb
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_DataAccess.pdb
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Model.pdb
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.AssemblyReference.cache
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.AssemblyInfoInputs.cache
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.AssemblyInfo.cs
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.CoreCompileInputs.cache
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.RazorAssemblyInfo.cache
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.RazorAssemblyInfo.cs
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.Atl_Inv_Server.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.build.Atl_Inv_Server.props
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Atl_Inv_Server.props
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Atl_Inv_Server.props
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\bundle\Atl_Inv_Server.styles.css
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\projectbundle\Atl_Inv_Server.bundle.scp.css
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\refint\Atl_Inv_Server.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.pdb
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.genruntimeconfig.cache
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\ref\Atl_Inv_Server.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\appsettings.Development.json
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\appsettings.json
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.staticwebassets.runtime.json
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.exe
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.deps.json
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.runtimeconfig.json
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.pdb
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AspNetCore.Reporting.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AspNetCore.ReportingServices.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AutoMapper.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Azure.Core.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Azure.Identity.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Humanizer.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Build.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Common.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Radzen.Blazor.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Buttons.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Calendars.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Core.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Data.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.DropDowns.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Grids.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Inputs.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Lists.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Navigations.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Notifications.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Popups.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.RichTextEditor.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Spinner.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.SplitButtons.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Themes.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.ExcelExport.Net.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Licensing.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.PdfExport.Net.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.CodeDom.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Data.SqlClient.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Linq.Dynamic.Core.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Memory.Data.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.ServiceModel.Http.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.ServiceModel.Primitives.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.ServiceModel.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\af\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ar\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\az\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\bg\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\bn-BD\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\da\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\el\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fa\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fi-FI\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr-BE\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\he\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hr\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hu\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hy\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\id\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\is\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko-KR\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ku\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\lv\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ms-MY\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\mt\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nb\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nb-NO\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nl\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ro\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sk\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sl\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sr\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sr-Latn\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sv\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\th-TH\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uk\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\vi\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Private.ServiceModel.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Business.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Common.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Model.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Business.pdb
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Common.pdb
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Model.pdb
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.AssemblyReference.cache
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.AssemblyInfoInputs.cache
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.AssemblyInfo.cs
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.CoreCompileInputs.cache
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.MvcApplicationPartsAssemblyInfo.cs
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.MvcApplicationPartsAssemblyInfo.cache
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.RazorAssemblyInfo.cache
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.RazorAssemblyInfo.cs
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.Atl_Inv_Server.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.build.Atl_Inv_Server.props
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Atl_Inv_Server.props
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Atl_Inv_Server.props
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.pack.json
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.build.json
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.development.json
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\bundle\Atl_Inv_Server.styles.css
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\projectbundle\Atl_Inv_Server.bundle.scp.css
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.CopyComplete
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\refint\Atl_Inv_Server.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.pdb
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.genruntimeconfig.cache
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\ref\Atl_Inv_Server.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AspNetCore.Reporting.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AspNetCore.ReportingServices.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Data.SqlClient.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.ServiceModel.Http.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.ServiceModel.Primitives.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.ServiceModel.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Private.ServiceModel.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\appsettings.Development.json
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\appsettings.json
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.staticwebassets.runtime.json
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.exe
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.deps.json
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.runtimeconfig.json
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Server.pdb
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AspNetCore.Reporting.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AspNetCore.ReportingServices.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AutoMapper.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Azure.Core.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Azure.Identity.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Humanizer.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Build.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Common.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Radzen.Blazor.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Buttons.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Calendars.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Core.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Data.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.DropDowns.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Grids.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Inputs.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Lists.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Navigations.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Notifications.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Popups.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.RichTextEditor.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Spinner.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.SplitButtons.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Blazor.Themes.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.ExcelExport.Net.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.Licensing.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Syncfusion.PdfExport.Net.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.CodeDom.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Data.SqlClient.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Linq.Dynamic.Core.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Memory.Data.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.ServiceModel.Http.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.ServiceModel.Primitives.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.ServiceModel.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\af\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ar\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\az\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\bg\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\bn-BD\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\da\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\el\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fa\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fi-FI\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr-BE\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\he\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hr\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hu\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\hy\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\id\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\is\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko-KR\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ku\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\lv\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ms-MY\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\mt\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nb\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nb-NO\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\nl\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ro\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sk\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sl\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sr\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sr-Latn\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\sv\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\th-TH\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uk\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\vi\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Private.ServiceModel.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Business.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Common.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Model.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Business.pdb
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Common.pdb
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\Atl_Inv_Model.pdb
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.AssemblyReference.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.GeneratedMSBuildEditorConfig.editorconfig
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.AssemblyInfoInputs.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.AssemblyInfo.cs
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.csproj.CoreCompileInputs.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.MvcApplicationPartsAssemblyInfo.cs
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.MvcApplicationPartsAssemblyInfo.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.RazorAssemblyInfo.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.RazorAssemblyInfo.cs
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.Atl_Inv_Server.Microsoft.AspNetCore.StaticWebAssets.props
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.build.Atl_Inv_Server.props
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Atl_Inv_Server.props
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Atl_Inv_Server.props
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.pack.json
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.build.json
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\staticwebassets.development.json
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\bundle\Atl_Inv_Server.styles.css
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\scopedcss\projectbundle\Atl_Inv_Server.bundle.scp.css
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\refint\Atl_Inv_Server.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.pdb
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.genruntimeconfig.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\ref\Atl_Inv_Server.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\wwwroot\Reports\testproductrpt.rdlc
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_.9B22C043.Up2Date
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\wwwroot\Reports\testproductrpt.rdlc
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_.9B22C043.Up2Date

@@ -1,0 +1,421 @@
+﻿@page "/quotation/addproductcustomgrid2/{QuotationId:int}"
+@using Atl_Inv_Business.Repository.IRepository;
+@inject IQuotationMTRepository _quotationMTRepository;
+@inject IQuotationDtRepository _quotationDtRepository;
+@inject IProductInfoSetupRepository _productInfoSetupRepository
+@inject ISetupDt_DataRepository _setupDt_DataRepository;
+@inject NavigationManager _navigationManager
+@inject IJSRuntime _jsRuntime
+@inject IUserServiceRepository _userServiceRepository
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+<link rel="stylesheet" href="/css/customgridTwo.css">
+
+
+
+<div class="row my-1">
+    <div class="col-6">
+        <h3 class="card-title text-primary mb-3 ml-3">Quotation Details</h3>
+    </div>
+    <div class="col-6 text-right">
+        <div class="row">
+            <div class="col-12 form-group py-2 d-flex justify-content-end align-items-start">
+                <NavLink href="quotation" class="btn btn-secondary align-self-start" style="outline: none; margin-right: 5px;">List</NavLink>
+                <NavLink href="@($"quotation/edit/{Quotation.QuotationId}")" class="btn btn-secondary align-self-start">Quotation</NavLink>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@if (Isloading)
+{
+    <div class="text-center">
+        <img src="/images/Glass spheres.gif">
+    </div>
+}
+else
+{
+    <div class="row my-1">
+        <!-- Upper div containing form elements -->
+        <div class="col-md-10">
+            <div class="row  p-2 mb-4">
+                <!-- Left side -->
+                <div class="col-12">
+                    <div class="card-body">
+                        <h1 style="font-size: 1em;">Quotation No: @Quotation.QuotationNo</h1>
+                        <h1 style="font-size: 1em;">Net Total: @VarGetNetTotal</h1>
+                        <h1 style="font-size: 1em;">Grand Total: @VarGetGrandTotal</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Image div -->
+        <!--If there is no image URL then whole Image div will be hided -->
+        @if (!string.IsNullOrEmpty(ProdIndividualInfo.ImmageUrl))
+        {
+            <div class="col-md-2" style="height: 130px;">
+                <img src="@ProdIndividualInfo.ImmageUrl" class="w-100" style="width: 200px; height: 180px; border: none;">
+            </div>
+        }
+    </div>
+
+
+
+
+
+
+
+    <div class="row mt-4 p-0">
+        <div class="col-12 p-0">
+            <div class="row" style="width: 100%">
+                <EditForm Model="QuotationDtData" OnValidSubmit="UpsertQuotation" method="post">
+                    <DataAnnotationsValidator />
+                    <div class="container wider-container">
+                        <div class="table-wrapper">
+                            <div class="table-title">
+                                <div class="row">
+                                    <div class="col-sm-8"><h2>Details</h2></div>
+                                    <div class="col-sm-4">
+                                        @* <button type="button" class="btn btn-info add-new" @onclick="AddNewQuotation">
+                                    <i class="fa fa-plus"></i> Add New
+                                    </button>*@
+                                        <button type="button" class="btn btn-info add-new" @onclick="AddNewQuotation" disabled="@IsAddingNew">
+                                            <i class="fa fa-plus"></i> Add New
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <table class="table table-bordered wider-table">
+                                <thead>
+                                    <tr>
+                                        <th>ProductId</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Vat%</th>
+                                        <th>Taxt%</th>
+                                        <th>AIT%</th>
+                                        <th>Remarks</th>
+                                        <th>other%</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in QuotationDt)
+                                    {           
+                                        <tr>
+
+                                            <td>  @item.ProductId </td>
+                                            <td>  @item.UnitPrice </td>
+                                            <td>  @item.Quantity  </td>
+                                            <td>  @item.VatPercent</td>
+                                            <td>  @item.TaxPercent</td>
+                                            <td>  @item.AtiPercent</td>
+                                            <td>  @item.OtherRemarks</td>
+                                            <td>  @item.OtherPercent </td>
+                                            <td>
+
+                                                <button type="button" class="btn btn-primary" @onclick="() => EditQuotation(item.QuotationDtId)">Edit</button>
+                                            </td>
+
+                                            <!--------------------------------- Hide From UI ---------------------------->
+                                            <!--------------------------------- Hide From UI ---------------------------->
+                                            <div style="display:none;">
+                                                <!-- Hide QuotationId -->
+                                                @{
+                                                    item.QuotationId = Quotation.QuotationId;
+                                                }
+                                                <InputNumber @bind-Value="QuotationDtData.QuotationId" class="form-control"></InputNumber>
+                                                <ValidationMessage For="()=>QuotationDtData.QuotationId"></ValidationMessage>
+                                            </div>
+
+                                            <div style="display:none;">
+                                                <!-- Hide QuotationNo -->
+                                                @{
+                                                    item.QuotationNo = Quotation.QuotationNo;
+                                                }
+                                                <InputText @bind-Value="QuotationDtData.QuotationNo" class="form-control"></InputText>
+                                                <ValidationMessage For="()=>QuotationDtData.QuotationNo"></ValidationMessage>
+                                            </div>
+
+                                            <!--------------------------------- Hide From UI ---------------------------->
+                                            <!--------------------------------- Hide From UI ---------------------------->
+    <!---------------------------------     if (IsEditing && item.QuotationDtId == QuotationDtData.QuotationDtId)    ---------------------------->
+
+
+                                            @if (IsEditing )
+                                            {
+                                                <td><InputNumber @bind-Value="QuotationDtData.ProductId" class="form-control" /></td>
+                                                <td><InputNumber @bind-Value="QuotationDtData.UnitPrice" class="form-control" /></td>
+                                                <td><InputNumber @bind-Value="QuotationDtData.Quantity" class="form-control" /></td>
+                                                <td><InputNumber @bind-Value="QuotationDtData.VatPercent" class="form-control" /></td>
+                                                <td><InputNumber @bind-Value="QuotationDtData.TaxPercent" class="form-control" /></td>
+                                                <td><InputNumber @bind-Value="QuotationDtData.AtiPercent" class="form-control" /></td>
+                                                <td><InputText @bind-Value="QuotationDtData.OtherRemarks" class="form-control" /></td>
+                                                <td><InputNumber @bind-Value="QuotationDtData.OtherPercent" class="form-control" /></td>
+                                                <td>
+                                                    @*<button type="button" class="btn btn-primary" @onclick="() => EditQuotation(QuotationDtData)">
+                                                        <i class="bi bi-save" style="font-size: 0.75rem;"></i>
+                                                    </button>*@
+                                                   @* <button type="button" class="btn btn-primary" @onclick="() => CancelEdit()">
+                                                        <i class="bi bi-x" style="font-size: 0.75rem;"></i>
+                                                    </button>*@
+                                                </td>
+                                            }
+
+
+
+
+
+                                      @*    else{
+                                            <td>  @item.ProductId </td>
+                                            <td>  @item.UnitPrice </td>
+                                            <td>  @item.Quantity  </td>
+                                            <td>  @item.VatPercent</td>
+                                            <td>  @item.TaxPercent</td>
+                                            <td>  @item.AtiPercent</td>
+                                            <td>  @item.OtherRemarks</td>
+                                            <td>  @item.OtherPercent </td>
+                                            <td>
+                                             
+                                                    <button type="button" class="btn btn-primary" @onclick="() => EditQuotation(item.QuotationDtId)">Edit</button>
+                                            </td>
+
+                                            <!--------------------------------- Hide From UI ---------------------------->
+                                            <!--------------------------------- Hide From UI ---------------------------->
+                                            <div style="display:none;">
+                                                <!-- Hide QuotationId -->
+                                                @{
+                                                    item.QuotationId = Quotation.QuotationId;
+                                                }
+                                                <InputNumber @bind-Value="QuotationDtData.QuotationId" class="form-control"></InputNumber>
+                                                <ValidationMessage For="()=>QuotationDtData.QuotationId"></ValidationMessage>
+                                            </div>
+
+                                            <div style="display:none;">
+                                                <!-- Hide QuotationNo -->
+                                                @{
+                                                    item.QuotationNo = Quotation.QuotationNo;
+                                                }
+                                                <InputText @bind-Value="QuotationDtData.QuotationNo" class="form-control"></InputText>
+                                                <ValidationMessage For="()=>QuotationDtData.QuotationNo"></ValidationMessage>
+                                            </div>
+                                            <!--------------------------------- Hide From UI ---------------------------->
+                                            <!--------------------------------- Hide From UI ---------------------------->
+                                            }*@
+                                        </tr>
+                                    }
+
+
+
+
+
+
+                                    @if (IsAddingNew)
+                                    {
+                                        <tr>
+                                            @*<td><InputNumber @bind-Value="QuotationDtData.ProductId" class="form-control" /></td>*@
+                                            @*<td><InputNumber @ref="productIdInputRef" @bind-Value="QuotationDtData.ProductId" class="form-control" /></td>*@
+                                          
+                                            @*<td>
+                                              <InputNumber @ref="productIdInputRef" @bind-Value="QuotationDtData.ProductId" class="form-control" />
+                                              </td>*@
+
+                                            <td><InputNumber id="productIdInput" @bind-Value="QuotationDtData.ProductId" class="form-control" /></td>
+                                            <td><InputNumber @bind-Value="QuotationDtData.UnitPrice" class="form-control" /></td>
+                                            <td><InputNumber @bind-Value="QuotationDtData.Quantity" class="form-control" /></td>
+                                            <td><InputNumber @bind-Value="QuotationDtData.VatPercent" class="form-control" /></td>
+                                            <td><InputNumber @bind-Value="QuotationDtData.TaxPercent" class="form-control" /></td>
+                                            <td><InputNumber @bind-Value="QuotationDtData.AtiPercent" class="form-control" /></td>
+                                            <td><InputText @bind-Value="QuotationDtData.OtherRemarks" class="form-control" /></td>
+                                            <td><InputNumber @bind-Value="QuotationDtData.OtherPercent" class="form-control" /></td>
+
+                                            <!--------------------------------- Hide From UI ---------------------------->
+                                            <!--------------------------------- Hide From UI ---------------------------->
+
+                                            <div style="display:none;">
+                                                @{
+                                                    QuotationDtData.QuotationId = Quotation.QuotationId;
+                                                }
+                                                <InputNumber @bind-Value="QuotationDtData.QuotationId"></InputNumber>
+                                            </div>
+                                            <div style="display:none;">
+                                                @{
+                                                    QuotationDtData.QuotationNo = Quotation.QuotationNo;
+                                                }
+                                                <InputText @bind-Value="QuotationDtData.QuotationNo"></InputText>
+                                            </div>
+
+                                            <!--------------------------------- Hide From UI ---------------------------->
+                                            <!--------------------------------- Hide From UI ---------------------------->
+
+                                            <td>
+                                                @* <button type="button" class="btn btn-primary" @onclick="() => SaveQuotation(QuotationDtData)">Save</button>*@
+
+                                                <button type="button" class="btn btn-primary" @onclick="() => SaveQuotation(QuotationDtData)">
+                                                    <i class="bi bi-save" style="font-size: 0.75rem;"></i> <!-- Save icon with smaller size -->
+                                                </button>
+
+                                                <button type="button" class="btn btn-primary" @onclick="() => CancelQuotation(QuotationDtData)">
+                                                    <i class="bi bi-x" style="font-size: 0.75rem;"></i> <!-- Cancel icon with smaller size -->
+                                                </button>
+                                                @* <button type="button" class="btn btn-primary" @onclick="() => CancelQuotation(QuotationDtData)">Cancel</button>*@
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </EditForm>
+            </div>
+        </div>
+    </div>
+
+    @*<button type="button" class="btn btn-danger" @onclick="() => DeleteQuotation(item)">Delete</button>*@
+}
+
+
+
+
+@code
+{
+    [Parameter]
+    public int QuotationId { get; set; }
+    private QuotationMTDTO Quotation { get; set; } = new();
+    private List<QuotationDtDTO> QuotationDt { get; set; } = new List<QuotationDtDTO>();
+
+    private IEnumerable<ProductInfoSetupDTO> Products { get; set; } = new List<ProductInfoSetupDTO>();
+    private ProductInfoSetupDTO ProdIndividualInfo { get; set; } = new ProductInfoSetupDTO();
+
+    private bool Isloading { get; set; } = true;
+    decimal VarGetNetTotal { get; set; }
+    decimal VarGetGrandTotal { get; set; }
+
+    private int QuotationDtId { get; set; } = 0;
+    private QuotationDtDTO QuotationDtData { get; set; } = new();
+    private int SelectedProductId { get; set; }
+    public int selectedQuotationDtId { get; set; }
+
+
+    private bool IsAddingNew = false;
+
+    private bool IsEditing = false;
+
+    private ElementReference productIdInputRef;
+
+    private bool FocusSet = false;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            Isloading = true;
+            StateHasChanged();
+            await LoadProduct();
+            Quotation = await _quotationMTRepository.Get(QuotationId);
+            VarGetNetTotal = Quotation.NetTotal ?? 0;
+            VarGetGrandTotal = Quotation.GrandTotal ?? 0;
+
+            QuotationDt = (await _quotationDtRepository.GetAll(QuotationId)).ToList();
+            Isloading = false;
+            StateHasChanged();
+        }
+
+        if (IsAddingNew && !FocusSet)
+        {
+            await _jsRuntime.InvokeVoidAsync("setFocusToProductId");
+            FocusSet = true;
+        }
+    }
+
+
+    private async Task LoadProduct()
+    {
+        var productsData = await _productInfoSetupRepository.GetAll();
+        Products = productsData.ToList();
+    }
+
+    private async Task UpsertQuotation()
+    {
+
+    }
+
+
+    private async Task AddNewQuotation()
+    {
+        IsAddingNew = true;
+        FocusSet = false; // Reset the flag
+        StateHasChanged(); // Ensure the component re-renders to add the new input field before setting focus
+    }
+
+
+    private async Task SaveQuotation(QuotationDtDTO item)
+    {
+        var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+        var userId = currentUser?.Id;
+        await _quotationDtRepository.Create(item, userId);
+        IsAddingNew = false;
+        QuotationDt = (await _quotationDtRepository.GetAll(QuotationId)).ToList();
+        QuotationDtData = new();
+    }
+
+
+    //private async Task SaveQuotation(QuotationDtDTO item)
+    //{
+    //    var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+    //    var userId = currentUser?.Id;
+    //    await _quotationDtRepository.Create(item, userId);
+    //    IsAddingNew = false;
+    //    QuotationDt = (await _quotationDtRepository.GetAll(QuotationId)).ToList();
+    //    QuotationDtData = new();
+    //    IsEditing = false;
+    //}
+
+
+
+
+
+
+    private async Task EditQuotation( int quotaitonDtId)
+    {
+        IsEditing = true;
+        var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+        var userId = currentUser?.Id;
+        //await _quotationDtRepository.Create(item, userId);
+        //IsAddingNew = false;
+        QuotationDt = (await _quotationDtRepository.GetAll2(quotaitonDtId)).ToList();
+        StateHasChanged();
+      //  QuotationDtData = new();
+      //  IsEditing = false;
+    }
+
+
+
+
+
+    private async Task CancelQuotation(QuotationDtDTO item)
+    {
+        IsAddingNew = false;
+        QuotationDt = (await _quotationDtRepository.GetAll(QuotationId)).ToList();
+        QuotationDtData = new();
+        IsAddingNew = false;
+    }
+
+    private void DeleteQuotation(QuotationDtDTO item)
+    {
+
+    }
+}
+
+
+@*
+  //private void EditQuotation(QuotationDtDTO item)
+    //{
+    //    item.IsEditing = true;
+    //    StateHasChanged();
+    //}*@
+
+
+

@@ -1,0 +1,306 @@
+﻿@page "/workorder/create"
+@page "/workorder/edit/{WorkOrderId:int}"
+
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Model;
+@using System.ComponentModel.DataAnnotations;
+@inject IJSRuntime _jsRuntime
+@inject IWorkOrderRepository _workOrderRepository;
+@inject IQuotationMTRepository _quotationMTRepository;
+@inject ISetupDt_DataRepository _setupDt_DataRepository;
+@inject ICompInfoSetupRepository _compInfoSetupRepository;
+@inject NavigationManager _navigationManager
+@inject IUserServiceRepository _userServiceRepository
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+
+<div class="row my-2">
+    <h3 class="card-title text-primary mb-3 ml-3">@Title Work Order </h3>
+    <div class="col-10">
+        @if (IsLoading)
+        {
+            <div class="text-center">
+                <img src="/images/Glass spheres.gif">
+            </div>
+        }
+
+        else
+        {
+            <div class="row" style="width: 100%">
+                <!-- First EditForm -->
+                <div class="col-12 col-lg-8 p-4 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:45%">
+                    <EditForm Model="WorkOrder" OnValidSubmit="UpsertWorkorder" method="post">
+                        <DataAnnotationsValidator />
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Work Order No</div>
+                            <div class="col-9">
+                                <InputText @bind-Value="WorkOrder.WorkOrderNo" class="form-control" readonly="true" />
+                                <ValidationMessage For="()=>WorkOrder.WorkOrderNo"></ValidationMessage>
+                            </div>
+                        </div>
+
+                        @if (Title =="Create")
+                        {
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Quot. No</div>
+                            <div class="col-9">
+                                <InputSelect @bind-Value="WorkOrder.QuotationId" class="form-select">
+                                    <option value="0" disabled="disabled" selected>--Select Quotation No--</option>
+                                    @foreach (var quotationItems in Quotations)
+                                    {
+                                        <option value="@quotationItems.QuotationId">@quotationItems.QuotationNo</option>
+                                    }
+                                </InputSelect>
+                                <ValidationMessage For="()=>WorkOrder.QuotationId"></ValidationMessage>
+                            </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="row my-1 align-items-center">
+                                <div class="col-3">Quot. No</div>
+                                <div class="col-9">
+                                    <InputSelect @bind-Value="WorkOrder.QuotationId" class="form-select" disabled>
+                                        <option value="0" disabled="disabled" selected>--Select Quotation No--</option>
+                                        @foreach (var quotationItems in Quotations)
+                                        {
+                                            <option value="@quotationItems.QuotationId">@quotationItems.QuotationNo</option>
+                                        }
+                                    </InputSelect>
+                                    <ValidationMessage For="()=>WorkOrder.QuotationId"></ValidationMessage>
+                                </div>
+                            </div>
+                        }
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Currency</div>
+                            <div class="col-9">
+                                @{
+                                    var selectedQuotation4 = Quotations.FirstOrDefault(q => q.QuotationId == WorkOrder.QuotationId);
+                                    var selectedQuotation5 = SetupDtDatas.FirstOrDefault(q => q.SetupDT_Id == selectedQuotation4?.Currency_Stdt);
+
+                                    WorkOrder.Currency = selectedQuotation5?.SetupDT_Data?? "N/A";
+                                }
+                                <input type="text" Value="@WorkOrder.Currency" class="form-control" readonly="true" />
+                            </div>
+                        </div>
+
+
+
+
+                         <div class="row my-1 align-items-center">
+                            <div class="col-3">Net Total</div>
+                            <div class="col-9">
+                                @{
+                                    var selectedQuotation = Quotations.FirstOrDefault(q => q.QuotationId == WorkOrder.QuotationId);
+                                    WorkOrder.QuotationNetTotal = selectedQuotation?.NetTotal ?? 0.00M;
+                                }
+                                <input type="text" Value="@WorkOrder.QuotationNetTotal" class="form-control" readonly="true" />
+                            </div>
+                         </div>
+
+
+
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Grand Total</div>
+                            <div class="col-9">
+                                @{
+                                    var selectedQuotation2 = Quotations.FirstOrDefault(q => q.QuotationId == WorkOrder.QuotationId);
+                                    WorkOrder.QuotationGrandTotal = selectedQuotation2?.GrandTotal ?? 0.00M;
+                                }
+                                <input type="text" Value="@WorkOrder.QuotationGrandTotal" class="form-control" readonly="true" />
+                            </div>
+                        </div>
+
+
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">W.Order Amount</div>
+                            <div class="col-9">
+                                <InputNumber @bind-Value="WorkOrder.WorkOrderAmount" class="form-control" format="0.00"></InputNumber>
+                                <ValidationMessage For="()=>WorkOrder.WorkOrderAmount"></ValidationMessage>
+                                @if (WorkOrder.WorkOrderAmount < WorkOrder.QuotationNetTotal)
+                                {
+                                    <div class="text-danger">Work Order Amount cannot be less than Quotation NetTotal</div>
+                                }
+                            </div>
+                        </div>
+     
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Details</div>
+                            <div class="col-9">
+                                <InputText @bind-Value="WorkOrder.Details" class="form-control"></InputText>
+                               @* <ValidationMessage For="()=>WorkOrder.QuotationGrandTotal"></ValidationMessage>*@
+                            </div>
+                        </div>
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Remarks</div>
+                            <div class="col-9">
+                                <InputText @bind-Value="WorkOrder.Remarks" class="form-control"></InputText>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group py-2">
+
+                            <button class="btn btn-primary" disabled="@((WorkOrder.WorkOrderAmount < WorkOrder.QuotationNetTotal))" style="outline: none; margin-right: 5px;">@Title</button>
+                           @* <button class="btn btn-primary"  style="outline: none; margin-right: 5px;">@Title</button>*@
+                        </div>
+                    </EditForm>
+                </div>
+                <div class="col-12 col-lg-1"></div>
+
+                <!-- Second EditForm -->
+               <div class="col-12 col-lg-8 p-4 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:45%">
+                    <EditForm Model="WorkOrder" OnValidSubmit="UpsertWorkorder">
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Subject</div>
+                            <div class="col-9">
+                                @{
+                                    var selectedQuotation7 = Quotations.FirstOrDefault(q => q.QuotationId == WorkOrder.QuotationId);
+                                    //   WorkOrder.QuotationGrandTotal = selectedQuotation2?.GrandTotal ?? 0.00M;
+                                    var subject = selectedQuotation7?.Subject ?? "N/A";
+                                }
+                                <input type="text" Value="@subject" class="form-control" readonly="true" />
+                            </div>
+                        </div>
+
+
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Project Name</div>
+                            <div class="col-9">
+                                @{
+                                    var selectedQuotation6 = Quotations.FirstOrDefault(q => q.QuotationId == WorkOrder.QuotationId);
+                                 //   WorkOrder.QuotationGrandTotal = selectedQuotation2?.GrandTotal ?? 0.00M;
+                                    var project = selectedQuotation6?.ProjectName ?? "N/A";
+                                }
+                                <input type="text" Value="@project" class="form-control" readonly="true" />
+                            </div>
+                        </div>
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Project Type</div>
+                            <div class="col-9">
+                                @{
+                                    var selectedQuotation9 = Quotations.FirstOrDefault(q => q.QuotationId == WorkOrder.QuotationId);
+                                    var selectedQuotation8 = SetupDtDatas.FirstOrDefault(q => q.SetupDT_Id == selectedQuotation9?.ProjectTypeId_Stdt);
+
+                                   var projecType = selectedQuotation8?.SetupDT_Data ?? "N/A";
+                                }
+                                <input type="text" Value="@projecType" class="form-control" readonly="true" />
+                            </div>
+                        </div>
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Company</div>
+                            <div class="col-9">
+                                @{
+                                    var selectedQuotation10 = Quotations.FirstOrDefault(q => q.QuotationId == WorkOrder.QuotationId);
+                                    var selectedQuotation11 = CompanyInfos.FirstOrDefault(q => q.CompanyId == selectedQuotation10?.CompanyId);
+                                    var company = selectedQuotation11?.CompanyName ?? "N/A";
+                                }
+                                <input type="text" Value="@company" class="form-control" readonly="true" />
+                            </div>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public int WorkOrderId { get; set; }
+    private WorkOrderDTO WorkOrder { get; set; } = new WorkOrderDTO();
+    private IEnumerable<SetupDt_DataDTO> SetupDtDatas { get; set; } = new List<SetupDt_DataDTO>();
+    private IEnumerable<CompanyInfoSetupDTO> CompanyInfos { get; set; } = new List<CompanyInfoSetupDTO>();
+    // private IEnumerable<WorkOrderDTO> WorkOrders { get; set; } = new List<WorkOrderDTO>();
+    private IEnumerable<QuotationMTDTO> Quotations { get; set; } = new List<QuotationMTDTO>();
+    private String Title { get; set; } = "Create";
+    private bool IsLoading { get; set; }
+    private int CountWorkOrder { get; set; }
+    private decimal WorkOrderAmount { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (WorkOrderId == 0)
+        {
+            //create
+            IsLoading = false;
+            await LoadQuotations(); 
+
+            CountWorkOrder = await _workOrderRepository.GetCountForWorkOrderNo(WorkOrder.WorkOrderNo) + 1;
+            WorkOrder.WorkOrderNo = "WO-" + DateTime.Now.ToString("yyMMdd") + "-" + CountWorkOrder.ToString("D2");
+        }
+        else
+        {
+            // Update
+            Title = "Update";
+            await LoadQuotations();
+        }
+    }
+
+
+    private async Task LoadQuotations()
+    {
+        IsLoading = true;
+        StateHasChanged();
+        WorkOrder = await _workOrderRepository.Get(WorkOrderId);
+
+
+        var quotations = await _quotationMTRepository.GetAll();
+        if(Title=="Create")
+        {
+            Quotations = quotations.Where(data => data.QuotationStatus_Stdt == 1019).ToList();
+        }
+
+
+        else
+        {
+            Quotations = quotations.ToList();
+        }
+
+
+        var setupDtCurrencyData=await _setupDt_DataRepository.GetAll();
+        SetupDtDatas = setupDtCurrencyData.ToList();
+        var companyInfos = await _compInfoSetupRepository.GetAll();
+        CompanyInfos = companyInfos.ToList();
+        IsLoading = false;
+        StateHasChanged();
+    }
+
+   
+    private async Task UpsertWorkorder()
+    {
+        var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+        var userId = currentUser?.Id;
+
+
+
+        if (WorkOrder.WorkOrderId == 0)
+        {
+            //create
+            int quotationId = WorkOrder.QuotationId;
+            await _quotationMTRepository.UpdateQuotationStatus(quotationId);
+            await _workOrderRepository.Create(WorkOrder, userId);
+            await _jsRuntime.ToastrSuccess("WorkOrder Created Successfully");
+            WorkOrder.WorkOrderId = await _workOrderRepository.GetMaxWorkOrderId();
+        }
+
+
+        else
+        {
+            //update
+            await _workOrderRepository.Update(WorkOrder, userId);
+            await _jsRuntime.ToastrSuccess("WorkOrder Updated Successfully");
+            // _navigationManager.NavigateTo($"quotation/addproducts/{Quotation.QuotationId}");
+        }
+    }
+}
+

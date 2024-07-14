@@ -1,0 +1,39 @@
+count is working here .....
+
+-force
+project note-- 
+
+Scaffold-DbContext "Server=.;Database=InventoryWeb;Trusted_Connection=True;Encrypt = false; TrustServerCertificate = true;" Microsoft.EntityFrameworkCore.sqlServer -OutputDir Data
+
+Scaffold-DbContext "Server=.;Database=InventoryWeb;Trusted_Connection=True;Encrypt=false;TrustServerCertificate=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Data\Scaffolded -Context ApplicationDbContext -Tables SetupMT_Datas,SetupDT_Datas
+
+
+
+Scaffold-DbContext "Server=.;Database=InventoryWeb;Trusted_Connection=True;Encrypt=false;TrustServerCertificate=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Data\Scaffolded -Context ApplicationDbContext -Tables ProductInfosSetup
+
+Scaffold-DbContext "Server=.;Database=InventoryWeb;Trusted_Connection=True;Encrypt=false;TrustServerCertificate=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Data\Scaffolded -Context ApplicationDbContext -Tables WorkOrders
+
+Scaffold-DbContext "Server=.;Database=InventoryWeb;Trusted_Connection=True;Encrypt=false;TrustServerCertificate=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Data\Scaffolded -Context ApplicationDbContext -t AspNetUsers
+
+dotnet ef dbcontext scaffold "YourConnectionString" Microsoft.EntityFrameworkCore.SqlServer -o Models -t AspNetUsers
+
+Scaffold-DbContext "Server=.;Database=InventoryWeb;Trusted_Connection=True;Encrypt=false;TrustServerCertificate=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Data\Scaffolded -Context ApplicationDbContext -Tables WorkOrders
+
+Scaffold-DbContext "Server=.;Database=InventoryWeb;Trusted_Connection=True;Encrypt=false;TrustServerCertificate=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Data\Scaffolded -Context ApplicationDbContext -Tables VW_WorkOrderProdDetails
+User Log In Identity FrameWork
+------------------------------------
+
+
+"ইউজার লগ ইন পার্ট নিয়ে কাজ শুরু করেছি। ইউজার পার্টের কাজ শুরু করার জন্য এখানে আইডেন্টিটি ফ্রেমওয়ার্ক ব্যবহার করা হয়েছে। ১৫০ নম্বর ভিডিও থেকে করলেও বিস্তারিত বোঝা যাবে। মাইগ্রেশন শুরু করলে বেশ কয়েকটা টেবিল নিজে নিজে তৈরি হবে।
+ এরপর 'AspNetUsers' টেবিলে আরো দুইটা কলাম যোগ করতে হবে: Discriminator,Name
+ আমার প্রজেক্ট যেহেতু শুরু থেকে ডাটাবেস ফার্স্ট অ্যাপ্রোচে তাই মাইগ্রেশনের মাধ্যমে কলাম যোগ না করলে আগের মতো স্ক্যাফোল্ড কমান্ড চালিয়ে ম্যানুয়ালি কনফিগার করবো।
+Scaffold-DbContext "Server=.;Database=InventoryWeb;Trusted_Connection=True;Encrypt=false;TrustServerCertificate=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Data\Scaffolded -Context ApplicationDbContext -t AspNetUsers
+"
+
+
+superadmin@gmail.com
+
+Str@wberry98
+
+admin@gmail.com
+

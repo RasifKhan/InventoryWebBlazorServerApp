@@ -1,0 +1,258 @@
+﻿@page "/challan"
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Common;
+@using Atl_Inv_Model;
+
+@inject IChallanMtRepository _challanMtRepository;
+@inject IJSRuntime _jsRuntime
+@inject NavigationManager _navigationManager
+
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+
+<link rel="stylesheet" href="_content/Radzen.Blazor/css/standard-base.css">
+
+
+<_DeleteConfirmation IsParentComponentProcessing="IsLoading" ConfirmationChanged="ConfirmTask_Click"></_DeleteConfirmation>
+<div class="row mt-4">
+    <div class="col-6">
+        <h4 class="card-title text-info">List of Challan</h4>
+    </div>
+    <div class="col-4 offset-2">
+        <a href="challan/create" class="btn btn-primary form-control">Add New Challan</a>
+    </div>
+    <div class="col-12 p-3">
+        @if (Challans.Any())
+        {
+            <RadzenDataGrid AllowFiltering="true" class="custom-radzen-datagrid" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Advanced" AllowSorting="true" PageSize="05" AllowPaging="true" ShowPagingSummary="true"
+                        Data="Challans" TItem="ChallanMtDTO" ColumnWidth="300px" LogicalFilterOperator="LogicalFilterOperator.Or">
+                <Columns>
+                    <RadzenDataGridColumn TItem="ChallanMtDTO" Property="ChallanId" Filterable="false" Title="Id" Frozen="true" Width="80px" />
+                    <RadzenDataGridColumn TItem="ChallanMtDTO" Property="Status" Filterable="false" Title="Status" Frozen="true" Width="80px" />
+                    <RadzenDataGridColumn TItem="ChallanMtDTO" Property="WorkOrderId" Filterable="false" Title="WorkOrderId" Frozen="true" Width="80px" />
+                    <RadzenDataGridColumn TItem="ChallanMtDTO" Title="Details" Width="160px">
+                        <Template Context="data">
+                            <RadzenButton Click="(args=>GoEdit(data.ChallanId))" Text="Details" ButtonStyle="ButtonStyle.Success"></RadzenButton>
+                        </Template>
+                    </RadzenDataGridColumn>
+                </Columns>
+            </RadzenDataGrid>
+        }
+        else
+        {
+            if (IsLoading)
+            {
+                //Loading gif
+                <div class="text-center">
+                    <img src="/images/Glass spheres.gif">
+                </div>
+            }
+            else
+            {
+                //no records
+                <p>No Records Found.</p>
+            }
+        }
+    </div>
+</div>
+
+
+
+
+
+@code {
+    //private IEnumerable<QuotationMTDTO> Quotations { get; set; } = new List<QuotationMTDTO>();
+    private IEnumerable<ChallanMtDTO> Challans { get; set; } = new List<ChallanMtDTO>();
+
+    private bool IsLoading { get; set; }
+    private int DeleteChallanId { get; set; } = 0;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await LoadChallan();
+        }
+    }
+
+    //private async Task LoadStocks()
+    //{
+    //    IsLoading = true;
+    //    StateHasChanged();
+    //    var stockTepm = await _stockMtRepository.GetAll();
+    //    Stocks = stockTepm.Select(u => u.ProductInfoSetup);
+    //    IsLoading = false;
+    //    StateHasChanged();
+    //}
+
+    private async Task LoadChallan()
+    {
+        IsLoading = true;
+        StateHasChanged();
+        Challans = await _challanMtRepository.GetAll();
+        IsLoading = false;
+        StateHasChanged();
+    }
+
+
+    private void GoEdit(int id)
+    {
+        _navigationManager.NavigateTo("/challan/edit/" + id);
+    }
+
+
+
+    private void HandleDelete(int id)
+    {
+        DeleteChallanId = id;
+        _jsRuntime.InvokeVoidAsync("ShowDeleteConfirmationModal"); //This Function doesn't return anything thats why InvokeVoidAsync is used//
+    }
+
+    public async Task ConfirmTask_Click(bool isConfirmed)
+    {
+        IsLoading = true;
+        if (isConfirmed && DeleteChallanId != 0)
+        {
+            await LoadChallan();
+            await _jsRuntime.InvokeVoidAsync("HideDeleteConfirmationModal");
+        }
+        IsLoading = false;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*
+//This is from workOrder
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Model;
+@inject IWorkOrderRepository _workOrderRepository;
+@inject IJSRuntime _jsRuntime
+<_DeleteConfirmation IsParentComponentProcessing="IsLoading" ConfirmationChanged="ConfirmTask_Click"></_DeleteConfirmation>
+<div class="row mt-4">
+    <div class="col-6">
+        <h4 class="card-title text-info">List of Work Order</h4>
+    </div>
+    <div class="col-4 offset-2">
+        <a href="workorder/create" class="btn btn-primary form-control">Add New WorkOrder</a>
+    </div>
+    <div class="col-12 p-3">
+        @if (WorkOrders.Any())
+        {
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Work Order No</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var objWorkOrder in WorkOrders)
+                        {
+                        <tr>
+                            <td>
+                                @objWorkOrder.WorkOrderNo
+                            </td>
+                            <td>
+                                <NavLink href="@($"workorder/edit/{objWorkOrder.WorkOrderId}")" class="btn btn-primary ">Edit</NavLink>
+                                <button class="btn btn-danger" @onclick="()=>HandleDelete(objWorkOrder.WorkOrderId)">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            if (IsLoading)
+            {
+          
+                <div class="text-center">
+                    <img src="/images/Glass spheres.gif">
+                </div>
+            }
+            else
+            {
+            
+                <p>No Records Found.</p>
+            }
+        }
+    </div>
+</div>
+@code {
+ 
+    private IEnumerable<WorkOrderDTO> WorkOrders { get; set; } = new List<WorkOrderDTO>();
+
+    private bool IsLoading { get; set; }
+    private int DeleteWorkOrderId { get; set; } = 0;
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+            await LoadQuatations();
+            }
+        }
+
+    private async Task LoadQuatations()
+        {
+            IsLoading = true;
+            StateHasChanged();
+        WorkOrders = await _workOrderRepository.GetAll();
+            IsLoading = false;
+            StateHasChanged();
+        }
+       
+    private void HandleDelete(int id)
+    {
+        DeleteWorkOrderId = id;
+        _jsRuntime.InvokeVoidAsync("ShowDeleteConfirmationModal");
+    }
+    public async Task ConfirmTask_Click(bool isConfirmed)
+    {
+        IsLoading = true;
+        if (isConfirmed && DeleteWorkOrderId != 0)
+        {
+            await LoadQuatations();
+            await _jsRuntime.InvokeVoidAsync("HideDeleteConfirmationModal");
+        }
+        IsLoading = false;
+    }
+}
+
+*@
+

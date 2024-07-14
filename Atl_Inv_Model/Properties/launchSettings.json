@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Atl_Inv_Model": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:58599;http://localhost:58601"
+    }
+  }
+}

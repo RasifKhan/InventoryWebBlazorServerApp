@@ -1,0 +1,291 @@
+﻿@page "/stockprodSLdetails/edit/{ProductId:int}/{StockId:int}"
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Common;
+@using Atl_Inv_Model;
+@inject IUserServiceRepository _userServiceRepository
+@inject IStockMtRepository _stockMtRepository;
+@inject IStockDtRepository _stockDtRepository
+@inject NavigationManager _navigationManager
+@inject IJSRuntime _jsRuntime
+<link rel="stylesheet" href="_content/Radzen.Blazor/css/standard-base.css">
+
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+<div class="row mt-4">
+    <div class="col-6">
+        <h4 class="card-title text-info">Product Serial Info</h4>
+    </div>
+    <div class="col-12 p-3">
+        @if (StocksDt.Any())
+        {
+            <RadzenDataGrid AllowFiltering="true" class="custom-radzen-datagrid" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Advanced" AllowSorting="true" PageSize="05" AllowPaging="true" ShowPagingSummary="true"
+                        Data="StocksDt" TItem="StockDtDTO" ColumnWidth="300px" LogicalFilterOperator="LogicalFilterOperator.Or">
+                <Columns>
+                    <RadzenDataGridColumn TItem="StockDtDTO" Property="ProductInfoSetup.ProductName" Filterable="false" Title="ProductName" Frozen="true" Width="100px" />
+                    <RadzenDataGridColumn TItem="StockDtDTO" Property="SerialNo" Filterable="false" Title="SerialNo" Frozen="true" Width="100px" />
+                    <RadzenDataGridColumn TItem="StockDtDTO" Property="Status" Filterable="false" Title="Status" Frozen="true" Width="100px" />
+                    <RadzenDataGridColumn TItem="StockDtDTO" Title="Action" Width="100px">
+                        <Template Context="data">
+                            <RadzenButton Click="(args=>GoEditModal(data.StockdtId))" Text="Edit" ButtonStyle="ButtonStyle.Success"></RadzenButton>
+                        </Template>
+                    </RadzenDataGridColumn>
+                </Columns>
+            </RadzenDataGrid>
+        }
+        else
+        {
+            if (IsLoading)
+            {
+                //Loading gif
+                <div class="text-center">
+                    <img src="/images/Glass spheres.gif">
+                </div>
+            }
+            else
+            {
+                //no records
+                <p>No Records Found.</p>
+            }
+        }
+    </div>
+</div>
+<!-- Edit Model Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="addModelModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <EditForm Model="StockDt" OnValidSubmit="EditStockDt">
+                <DataAnnotationsValidator />
+                <div class="modal-header" style="background-color: #f0f0f0;">
+                    <h4 class="modal-title">Update Product Serial</h4>
+                </div>
+
+
+
+
+                <div class="row my-1 align-items-center">
+                    <div class="col-3" style="margin-left: 15px;">Serial No</div>
+                    <div class="col-8">
+                        <InputText @bind-Value="StockDt.SerialNo" class="form-control"></InputText>
+                        <ValidationMessage For="()=>StockDt.SerialNo"></ValidationMessage>
+                    </div>
+                </div>
+
+
+
+
+                <div class="modal-footer">
+                   @* <input type="submit" class="btn btn-success" value="Update">*@
+                    <button type="button" class="btn btn-success" @onclick="EditStockDt">Update</button>
+                  
+                </div>
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public int ProductId { get; set; }
+    [Parameter]
+    public int StockId { get; set; }
+   
+    private IEnumerable<StockDtDTO> StocksDt { get; set; } = new List<StockDtDTO>();
+    private StockDtDTO StockDt { get; set; } = new();
+    private bool IsLoading { get; set; }
+    public int selectedStockDtId { get; set; }
+   
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {   
+            await LoadStocksdt();
+
+            //IsLoading = true;
+            //StateHasChanged();
+            //await LoadStocksdt();
+
+            //IsLoading = false;
+            //StateHasChanged();
+        }
+    }
+
+    private async Task LoadStocksdt()
+    {
+        IsLoading = true;
+        StateHasChanged();
+        var stocksDt = await _stockDtRepository.GetAll();
+        StocksDt = stocksDt.Where(data => data.ProductId == ProductId && data.StockId == StockId).ToList();
+        //StockDt = await _stockDtRepository.Get(StockId,ProductId);
+        IsLoading = false;
+        StateHasChanged();
+
+
+        //var vwStocks = await _vwStockMrProdDetailRepository.GetAll();
+        //VwStocks = vwStocks.Where(data => data.StockId == StockId).ToList();
+    }
+    private async Task GoEditModal(int id)
+    {
+        selectedStockDtId = id;
+        StockDt = StocksDt.FirstOrDefault(q => q.StockdtId == id); 
+        await _jsRuntime.InvokeVoidAsync("bootstrapEditModalShow", "editModal");
+        //_navigationManager.NavigateTo("/stock/edit/" + id);
+    }
+    private async Task HideEditModal()
+    {
+        
+        await _jsRuntime.InvokeVoidAsync("bootstrapEditModalHide", "editModal");
+    }
+
+
+
+    private async Task EditStockDt()
+    {
+        var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+        var userId = currentUser?.Id;
+
+
+        await _stockDtRepository.Update(StockDt,userId); 
+        await _jsRuntime.ToastrSuccess("Updated Successfully");
+        await HideEditModal();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*
+//This is from workOrder
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Model;
+@inject IWorkOrderRepository _workOrderRepository;
+@inject IJSRuntime _jsRuntime
+<_DeleteConfirmation IsParentComponentProcessing="IsLoading" ConfirmationChanged="ConfirmTask_Click"></_DeleteConfirmation>
+<div class="row mt-4">
+    <div class="col-6">
+        <h4 class="card-title text-info">List of Work Order</h4>
+    </div>
+    <div class="col-4 offset-2">
+        <a href="workorder/create" class="btn btn-primary form-control">Add New WorkOrder</a>
+    </div>
+    <div class="col-12 p-3">
+        @if (WorkOrders.Any())
+        {
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Work Order No</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var objWorkOrder in WorkOrders)
+                        {
+                        <tr>
+                            <td>
+                                @objWorkOrder.WorkOrderNo
+                            </td>
+                            <td>
+                                <NavLink href="@($"workorder/edit/{objWorkOrder.WorkOrderId}")" class="btn btn-primary ">Edit</NavLink>
+                                <button class="btn btn-danger" @onclick="()=>HandleDelete(objWorkOrder.WorkOrderId)">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            if (IsLoading)
+            {
+          
+                <div class="text-center">
+                    <img src="/images/Glass spheres.gif">
+                </div>
+            }
+            else
+            {
+            
+                <p>No Records Found.</p>
+            }
+        }
+    </div>
+</div>
+@code {
+ 
+    private IEnumerable<WorkOrderDTO> WorkOrders { get; set; } = new List<WorkOrderDTO>();
+
+    private bool IsLoading { get; set; }
+    private int DeleteWorkOrderId { get; set; } = 0;
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+            await LoadQuatations();
+            }
+        }
+
+    private async Task LoadQuatations()
+        {
+            IsLoading = true;
+            StateHasChanged();
+        WorkOrders = await _workOrderRepository.GetAll();
+            IsLoading = false;
+            StateHasChanged();
+        }
+       
+    private void HandleDelete(int id)
+    {
+        DeleteWorkOrderId = id;
+        _jsRuntime.InvokeVoidAsync("ShowDeleteConfirmationModal");
+    }
+    public async Task ConfirmTask_Click(bool isConfirmed)
+    {
+        IsLoading = true;
+        if (isConfirmed && DeleteWorkOrderId != 0)
+        {
+            await LoadQuatations();
+            await _jsRuntime.InvokeVoidAsync("HideDeleteConfirmationModal");
+        }
+        IsLoading = false;
+    }
+}
+
+*@
+

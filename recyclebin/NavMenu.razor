@@ -1,0 +1,149 @@
+﻿
+
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Inventory Server</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+
+
+        @* 
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            </NavLink>
+        </div>
+        *@
+
+
+        @* 
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="fetchdata">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            </NavLink>
+        </div>
+        *@
+
+      
+
+        <AuthorizeView Roles="@($"{roleSuperAdmin},{roleAdmin}")">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/zone">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Zone   
+            </NavLink>
+        </div>
+        </AuthorizeView>
+
+         <AuthorizeView Roles="@($"{roleSuperAdmin},{roleAdmin}")">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/setupmt">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> setupmt   
+            </NavLink>
+        </div>
+        </AuthorizeView>
+
+
+         <AuthorizeView Roles="@($"{roleSuperAdmin},{roleAdmin}")">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/setupdt">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> setup dt
+            </NavLink>
+        </div>
+        </AuthorizeView>
+
+         <AuthorizeView Roles="@($"{roleSuperAdmin},{roleAdmin}")">
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="/quotation">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Quotation
+                </NavLink>
+            </div>
+          </AuthorizeView>
+       
+
+
+
+
+        <AuthorizeView Roles="@($"{roleSuperAdmin},{roleAdmin}")">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/workorder">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> WorkOrder
+            </NavLink>
+        </div>
+        </AuthorizeView>
+
+
+         <AuthorizeView Roles="@($"{roleSuperAdmin},{roleAdmin}")">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/product">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Product
+            </NavLink>
+        </div>
+        </AuthorizeView>
+
+         <AuthorizeView Roles="@($"{roleSuperAdmin},{roleAdmin}")">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/stock">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Stock
+            </NavLink>
+        </div>
+         </AuthorizeView>
+
+
+         <AuthorizeView Roles="@($"{roleSuperAdmin},{roleAdmin}")">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/challan">
+                <span class="oi oi-list-rich" aria-hidden="true"></span>Challan
+            </NavLink>
+        </div>
+        </AuthorizeView>
+
+        <AuthorizeView Roles="@roleSuperAdmin">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/usercontroll">
+                <span class="oi oi-list-rich" aria-hidden="true"></span>User
+            </NavLink>
+        </div>
+        </AuthorizeView>
+
+
+    </nav>
+</div>
+
+
+
+@code {
+
+
+    private string roleSuperAdmin = SD.Role_SuperAdmin;
+    private string roleAdmin = SD.Role_Admin;
+    private string roleInventoryUser = SD.Role_InventoryUser;
+    private string roleQuotationUser = SD.Role_QuotationUser;
+
+
+
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
+
+
+
+

@@ -1,0 +1,141 @@
+﻿@*<h3>ZoneLIst</h3>
+@code {
+}*@
+
+@page "/zone"
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Common;
+@using Atl_Inv_Model;
+@inject  IZoneRepository _zoneRepository;
+@inject IJSRuntime _jsRuntime
+@inject NavigationManager _navigationManager
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+
+
+<_DeleteConfirmation IsParentComponentProcessing="IsLoading" ConfirmationChanged="ConfirmTask_Click"></_DeleteConfirmation>
+
+<div class="row mt-4">
+    <div class="col-6">
+        <h4 class="card-title text-info">List of Zone</h4>
+    </div>
+    <div class="col-4 offset-2">
+        <a href="zone/create" class="btn btn-primary form-control">Add New Zone</a>
+    </div>
+    <div class="col-12 p-3">
+        @if (Zones.Any())
+        {
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var objZone in Zones)
+                    {
+                        <tr>
+                            <td>
+                                @objZone.ZoneName
+                            </td>
+                            <td>
+                                <NavLink href="@($"zone/edit/{objZone.ZoneId}")" class="btn-primary btn">Edit</NavLink>
+                                <button class="btn btn-danger" @onclick="()=>HandleDelete(objZone.ZoneId)">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            if (IsLoading)
+            {
+                //Loading gif
+                <div class="text-center">
+                    <img src="/images/Glass spheres.gif">
+                </div>
+            }
+            else
+            {
+                //no records
+                <p>No Records Found.</p>
+            }
+        }
+    </div>
+</div>
+@code {
+    private IEnumerable<ZoneDTO> Zones { get; set; } = new List<ZoneDTO>();
+    private bool IsLoading { get; set; }
+    private int DeleteZoneId { get; set; } = 0;
+
+    //[CascadingParameter]
+    //public Task<AuthenticationState> AuthenticationState { get; set; }
+
+    //protected override async Task OnInitializedAsync()
+    //{
+    //    var authState = await AuthenticationState;
+    //    if (!authState.User.Identity.IsAuthenticated)
+
+    //    {
+    //        var uri = new Uri(_navigationManager.Uri);
+    //        _navigationManager.NavigateTo($"/identity/account/login?returnUrl={uri.LocalPath}", forceLoad: true);
+    //    }
+
+
+    //    else
+    //    {
+    //        if (!authState.User.IsInRole(SD.Role_Admin))
+    //        {
+    //            _navigationManager.NavigateTo("/ErrorPage");
+    //        }
+    //    }
+    //}
+
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+            await LoadZones();
+            }
+        }
+        private async Task LoadZones()
+        {
+            IsLoading = true;
+            StateHasChanged();
+            Zones = await _zoneRepository.GetAll();
+            IsLoading = false;
+            StateHasChanged();
+        }
+        //private void HandleDelete(int id)
+        //{
+        //    DeleteCategoryId = id;
+        //}
+
+
+    private void HandleDelete(int id)
+    {
+        DeleteZoneId = id;
+        _jsRuntime.InvokeVoidAsync("ShowDeleteConfirmationModal"); //This Function doesn't return anything thats why InvokeVoidAsync is used//
+    }
+
+
+
+
+    public async Task ConfirmTask_Click(bool isConfirmed)
+    {
+        IsLoading = true;
+        if (isConfirmed && DeleteZoneId != 0)
+        {
+            //delete
+            //await Task.Delay(5000);
+            await _zoneRepository.Delete(DeleteZoneId);
+            await LoadZones();
+            await _jsRuntime.InvokeVoidAsync("HideDeleteConfirmationModal");
+        }
+        IsLoading = false;
+    }
+}
+

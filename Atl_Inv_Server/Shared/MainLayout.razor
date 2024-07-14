@@ -1,0 +1,65 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>Atl_Inv_Server</PageTitle>
+
+<div class="page @sidebarClass">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4">
+            <!-- Toggle button for the sidebar -->
+            <button class="sidebar-toggle" @onclick="ToggleSidebar">⋮</button>
+
+        
+            <LoginDisplay> </LoginDisplay>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+    private bool isSidebarCollapsed = false;
+
+    private string sidebarClass => isSidebarCollapsed ? "collapsed" : "";
+
+    private void ToggleSidebar()
+    {
+        isSidebarCollapsed = !isSidebarCollapsed;
+    }
+}
+
+
+
+
+
+
+@*@inherits LayoutComponentBase
+
+<PageTitle>Atl_Inv_Server</PageTitle>
+
+<div class="page">
+    <div class="sidebar" >
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4">
+
+            <LoginDisplay> </LoginDisplay>
+            
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+*@
+
+
+

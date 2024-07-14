@@ -1,0 +1,416 @@
+﻿@page "/product/create"
+@page "/product/edit/{ProductId:int}"
+
+@inject IProductInfoSetupRepository _productInfoSetupRepository
+@inject NavigationManager _navigationManager
+@inject IFileUpload _fileUpload
+@inject IJSRuntime _jsRuntime
+@inject IUserServiceRepository _userServiceRepository
+
+@*@attribute [Authorize]*@
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+
+<div class="row my-2">
+    <h3 class="card-title text-primary mb-3 ml-3">@Title Product</h3>
+    <div class="col-md-10">
+        @if(IsLoading)
+        {
+            //
+            <div class="text-center">
+                <img src="/images/Glass spheres.gif">
+            </div>
+        }
+
+        else{
+            <EditForm Model="Product" OnValidSubmit="UpsertProduct">
+            <DataAnnotationsValidator/>
+            <div class="form-group">
+                <label>Name</label>
+                <InputText @bind-Value="Product.ProductName" class="form-control"></InputText>
+                <ValidationMessage For="()=>Product.ProductName"></ValidationMessage>
+            </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <SfRichTextEditor @bind-Value="Product.Description"></SfRichTextEditor>
+                    <ValidationMessage For="()=>Product.Description"></ValidationMessage>
+                </div>
+
+                <div class="row pt-3">
+                    
+               
+                    <div class="form-group pt-4 col-6">
+                        @*<InputFile OnChange="HandleImageUpload"></InputFile>*@
+                        <InputFile accept=".jpg, .jpeg, .png" maxfileSize="1048576" OnChange="HandleImageUpload"></InputFile>
+                    </div>
+                </div>
+            <div class="form-group py-2">
+                <button class="btn btn-primary">@Title</button>
+                <NavLink href="product" class="btn btn-secondary" >Back To Index</NavLink>
+            </div>
+        </EditForm>
+        }
+
+    </div>
+
+    <div class="col-md-2">
+        <img src="@Product.ImmageUrl" class="w-100">
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int ProductId { get; set; }
+
+    private ProductInfoSetupDTO Product { get; set; } = new()
+        {
+            ImmageUrl = "/images/Default_image.png"
+        };
+
+   // private IEnumerable<CategoryDTO> Categories { get; set; } = new List<CategoryDTO>();
+
+
+
+    private String Title { get; set; } = "Create";
+    private bool IsLoading { get; set; }
+
+    public string oldImageUrl { get; set;}
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await LoadProduct();
+        }
+    }
+
+
+    private async Task LoadProduct()
+    {
+        IsLoading = true;
+        StateHasChanged();
+
+       // Categories =await _categoryRepository.GetAll();
+        if (ProductId != 0)
+        {
+            //Update
+            Title = "Update";
+            Product = await _productInfoSetupRepository.Get(ProductId);
+            oldImageUrl = Product.ImmageUrl;
+        }
+        IsLoading = false;
+        StateHasChanged();
+    }
+
+
+
+    private async Task UpsertProduct()
+    {
+
+        var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+        var userId = currentUser?.Id;
+
+        if (Product.ProductId == 0)
+        {
+            //create
+            await _productInfoSetupRepository.Create(Product, userId);
+            await _jsRuntime.ToastrSuccess("Product Created Successfully");
+        }
+        else
+        {
+            if(oldImageUrl != Product.ImmageUrl)
+            {
+                _fileUpload.DeleteFile(oldImageUrl);
+            }
+            //update
+            await _productInfoSetupRepository.Update(Product, userId);
+            await _jsRuntime.ToastrSuccess("Product Updated Successfully");
+        }
+        _navigationManager.NavigateTo("product");
+    }
+
+    private async Task HandleImageUpload(InputFileChangeEventArgs e)
+    {
+        IsLoading = true;
+        try
+        {
+            if (e.GetMultipleFiles().Count > 0)
+            {
+                foreach (var file in e.GetMultipleFiles())
+                {
+                    System.IO.FileInfo fileInfo = new System.IO.FileInfo(file.Name);
+                    if (fileInfo.Extension.ToLower() == ".jpg" ||
+                        fileInfo.Extension.ToLower() == ".png" ||
+                         fileInfo.Extension.ToLower() == ".jpeg"
+                        )
+                    {
+                        Product.ImmageUrl = await _fileUpload.UploadFile(file);
+                    }
+                    else
+                    {
+                        await _jsRuntime.ToastrError("Please select .jpg/.jpeg/.png file only");
+                        return;
+                    }
+                }
+            }
+            IsLoading = false;
+        }
+        catch(Exception ex)
+        {
+            await _jsRuntime.ToastrError(ex.Message);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+@*@code {
+    [Parameter]
+    public int ProductId { get; set; }
+
+    private ProductInfoSetupDTO Product { get; set; } = new()
+        {
+            ImmageUrl = "/images/Default_image.png"
+        };
+
+    // private IEnumerable<CategoryDTO> Categories { get; set; } = new List<CategoryDTO>();
+
+
+
+    private String Title { get; set; } = "Create";
+    private bool IsLoading { get; set; }
+
+    public string oldImageUrl { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await LoadProduct();
+        }
+    }
+    private async Task LoadProduct()
+    {
+        IsLoading = true;
+        StateHasChanged();
+
+        // Categories =await _categoryRepository.GetAll();
+        if (ProductId != 0)
+        {
+            //Update
+            Title = "Update";
+            Product = await _productInfoSetupRepository.Get(ProductId);
+            oldImageUrl = Product.ImmageUrl;
+        }
+        IsLoading = false;
+        StateHasChanged();
+    }
+
+    //private async Task UpsertProduct()
+    //{
+    //    // Move the image upload logic here, so it only happens when the button is clicked
+    //    if (Product.ProductId == 0)
+    //    {
+    //        // create
+    //        if (!string.IsNullOrEmpty(Product.ImmageUrl))
+    //        {
+    //            Product.ImmageUrl = await _fileUpload.UploadFile(Product.ImmageUrl);
+
+    //            //Product.ImmageUrl = await _fileUpload.UploadFile(file);
+    //        }
+    //        await _productInfoSetupRepository.Create(Product);
+    //        await _jsRuntime.ToastrSuccess("Product Created Successfully");
+    //    }
+    //    else
+    //    {
+    //        if (oldImageUrl != Product.ImmageUrl)
+    //        {
+    //            _fileUpload.DeleteFile(oldImageUrl);
+    //        }
+    //        // update
+    //        await _productInfoSetupRepository.Update(Product);
+    //        await _jsRuntime.ToastrSuccess("Product Updated Successfully");
+    //    }
+    //    _navigationManager.NavigateTo("product");
+    //}
+
+
+    private async Task UpsertProduct()
+    {
+        if (Product.ProductId == 0)
+        {
+            // create
+            if (!string.IsNullOrEmpty(Product.ImmageUrl))
+            {
+                // Assuming UploadFile method now accepts IBrowserFile
+                Product.ImmageUrl = await _fileUpload.UploadFile(Product.ImmageUrl);
+            }
+            await _productInfoSetupRepository.Create(Product);
+            await _jsRuntime.ToastrSuccess("Product Created Successfully");
+        }
+        else
+        {
+            if (oldImageUrl != Product.ImmageUrl)
+            {
+                _fileUpload.DeleteFile(oldImageUrl);
+            }
+            // update
+            await _productInfoSetupRepository.Update(Product);
+            await _jsRuntime.ToastrSuccess("Product Updated Successfully");
+        }
+        _navigationManager.NavigateTo("product");
+    }
+
+    private async Task HandleImageUpload(InputFileChangeEventArgs e)
+    {
+        IsLoading = true;
+        try
+        {
+            if (e.GetMultipleFiles().Count > 0)
+            {
+                foreach (var file in e.GetMultipleFiles())
+                {
+                    System.IO.FileInfo fileInfo = new System.IO.FileInfo(file.Name);
+                    if (fileInfo.Extension.ToLower() == ".jpg" ||
+                        fileInfo.Extension.ToLower() == ".png" ||
+                        fileInfo.Extension.ToLower() == ".jpeg")
+                    {
+                        // Store the file name and upload later when the button is clicked
+                        Product.ImmageUrl = file.Name;
+                    }
+                    else
+                    {
+                        await _jsRuntime.ToastrError("Please select .jpg/.jpeg/.png file only");
+                        return;
+                    }
+                }
+            }
+            IsLoading = false;
+        }
+        catch (Exception ex)
+        {
+            await _jsRuntime.ToastrError(ex.Message);
+        }
+    }
+}
+
+
+
+
+
+   
+}*@
+
+
+
+
+
+
+
+
+
+@*@code {
+    [Parameter]
+    public int ProductId { get; set; }
+
+    private ProductInfoSetupDTO Product { get; set; } = new()
+        {
+            ImmageUrl = "/images/Default_image.png" 
+        };
+
+   // private IEnumerable<CategoryDTO> Categories { get; set; } = new List<CategoryDTO>();
+
+
+
+    private String Title { get; set; } = "Create";
+    private bool IsLoading { get; set; }
+
+    public string oldImageUrl { get; set;}
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await LoadProduct();
+        }
+    }
+    private async Task LoadProduct()
+    {
+        IsLoading = true;
+        StateHasChanged();
+
+       // Categories =await _categoryRepository.GetAll(); 
+        if (ProductId != 0)
+        {
+            //Update
+            Title = "Update";
+            Product = await _productInfoSetupRepository.Get(ProductId);
+            oldImageUrl = Product.ImmageUrl; 
+        }
+        IsLoading = false;
+        StateHasChanged();
+    }
+
+    private async Task UpsertProduct()  
+    {
+        if (Product.ProductId == 0)
+        {
+            //create
+            await _productInfoSetupRepository.Create(Product);
+            await _jsRuntime.ToastrSuccess("Product Created Successfully");
+        }
+        else
+        {
+            if(oldImageUrl != Product.ImmageUrl)
+            {
+                _fileUpload.DeleteFile(oldImageUrl);
+            }
+            //update
+            await _productInfoSetupRepository.Update(Product);
+            await _jsRuntime.ToastrSuccess("Product Updated Successfully");
+        }
+        _navigationManager.NavigateTo("product");
+    }
+
+    private async Task HandleImageUpload(InputFileChangeEventArgs e)
+    {
+        IsLoading = true;
+        try
+        {
+            if (e.GetMultipleFiles().Count > 0)
+            {
+                foreach (var file in e.GetMultipleFiles())
+                {
+                    System.IO.FileInfo fileInfo = new System.IO.FileInfo(file.Name);
+                    if (fileInfo.Extension.ToLower() == ".jpg" ||
+                        fileInfo.Extension.ToLower() == ".png" ||
+                         fileInfo.Extension.ToLower() == ".jpeg"
+                        )
+                    {
+                        Product.ImmageUrl = await _fileUpload.UploadFile(file);
+                    }
+                    else
+                    {
+                        await _jsRuntime.ToastrError("Please select .jpg/.jpeg/.png file only");
+                        return;
+                    }
+                }
+            }
+            IsLoading = false;
+        }
+        catch(Exception ex)
+        {
+            await _jsRuntime.ToastrError(ex.Message);
+        }
+    }
+}
+*@
+
+

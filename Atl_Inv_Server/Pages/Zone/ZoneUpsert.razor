@@ -1,0 +1,180 @@
+﻿@page "/zone/create"
+@page "/zone/edit/{ZoneId:int}"
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Model;
+@inject IJSRuntime _jsRuntime
+@inject IZoneRepository _zoneRepository;
+@inject ISetupDt_DataRepository _setupDt_DataRepository;
+@inject NavigationManager _navigationManager
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+
+@attribute [Authorize]
+
+
+<div class="row my-2">
+    <h3 class="card-title text-primary mb-3 ml-3">@Title Zone </h3>
+    <div class="col-10">
+        @if (IsLoading)
+        {
+            <div class="text-center">
+                <img src="/images/Glass spheres.gif">
+            </div>
+        }
+        else
+        {
+            <EditForm Model="Zone" OnValidSubmit="UpsertZone">
+                <DataAnnotationsValidator />
+               
+                <div class="form-group">
+                    <label>Track Zone</label>
+                    <InputText @bind-Value="Zone.TrackZoneId" class="form-control" readonly="true"></InputText>
+                </div>
+
+               @* old code*@
+               @* <div class="form-group">    
+                    <label>Track Zone</label>
+                    <InputText @bind-Value="Zone.TrackZoneId" class="form-control" readonly="true"></InputText>
+                </div>*@
+
+            @*    <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="zoneName" class="form-label">Name</label>
+                            <InputText id="zoneName" @bind-Value="Zone.ZoneName" class="form-control"></InputText>
+                            <ValidationMessage For="()=>Zone.ZoneName"></ValidationMessage>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="territory" class="form-label">Territory</label>
+                            <InputSelect id="territory" @bind-Value="Zone.TerritorySetupDT_Id" class="form-select">
+                                <option value="0" disabled="disabled" selected>--Select Territory--</option>
+                                @foreach (var dtItems in SetupDt_Datas)
+                                {
+                                    <option value="@dtItems.SetupDT_Id">@dtItems.SetupDT_Data</option>
+                                }
+                            </InputSelect>
+                            <ValidationMessage For="()=>Zone.TerritorySetupDT_Id"></ValidationMessage>
+                        </div>
+                    </div>
+                </div>*@
+
+               @* <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <InputText @bind-Value="Zone.ZoneName" class="form-control"></InputText>
+                            <ValidationMessage For="()=>Zone.ZoneName"></ValidationMessage>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Territory</label>
+                            <InputSelect @bind-Value="Zone.TerritorySetupDT_Id" class="form-select">
+                                <option value="0" disabled="disabled" selected>--Select Territory--</option>
+                                @foreach (var dtItems in SetupDt_Datas)
+                                {
+                                    <option value="@dtItems.SetupDT_Id">@dtItems.SetupDT_Data</option>
+                                }
+                            </InputSelect>
+                            <ValidationMessage For="()=>Zone.TerritorySetupDT_Id"></ValidationMessage>
+                        </div>
+                    </div>
+                </div>*@
+
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <InputText @bind-Value="Zone.ZoneName" class="form-control"></InputText>
+                    <ValidationMessage For="()=>Zone.ZoneName"></ValidationMessage>
+                </div>
+
+
+
+
+
+                <div class="form-group col-6">
+                    <label>Territory</label>
+                    <InputSelect @bind-Value="Zone.TerritorySetupDT_Id" class="form-select">
+                        <option value="0" disabled="disabled" selected>--Select Territory--</option>
+                        @foreach (var dtItems in SetupDt_Datas)
+                        {
+                            <option value="@dtItems.SetupDT_Id">@dtItems.SetupDT_Data</option>
+                        }
+                    </InputSelect>
+                    <ValidationMessage For="()=>Zone.TerritorySetupDT_Id"></ValidationMessage>
+                </div>
+      
+                <div class="form-group py-2">
+                    <button class="btn btn-primary">@Title</button>
+                    <NavLink href="zone" class="btn btn-secondary">Back To Index</NavLink>
+                </div>
+
+            </EditForm>
+        }
+    </div>
+</div>
+@code {
+    [Parameter]
+    public int ZoneId { get; set; }
+    private ZoneDTO Zone { get; set; } = new ZoneDTO();
+
+    private IEnumerable<SetupDt_DataDTO> SetupDt_Datas { get; set; } = new List<SetupDt_DataDTO>();
+    private String Title { get; set; } = "Create";
+    private bool IsLoading { get; set; }
+    private int ZoneTrackCount { get; set; }
+    protected override async Task OnInitializedAsync()
+  
+    {
+        if (ZoneId == 0)
+        {
+            //create
+            IsLoading = false;
+            await LoadZones();
+
+            ZoneTrackCount = await _zoneRepository.GetCountForZoneTrack(Zone.TrackZoneId) + 1;
+            Zone.TrackZoneId = "ZO-" + DateTime.Now.ToString("yyMMdd") + "-" + ZoneTrackCount.ToString("D2");
+        }
+        else
+        {
+            // Update
+            Title = "Update";
+            await LoadZones();
+        }
+    }
+
+
+
+    private async Task LoadZones()
+    {
+        IsLoading = true;
+        StateHasChanged();
+        Zone = await _zoneRepository.Get(ZoneId);
+        // Fetch only the data where SetupMT_Id equals 1003
+        var setupDtData = await _setupDt_DataRepository.GetAll();
+        SetupDt_Datas = setupDtData.Where(data => data.SetupMT_Id == 1003).ToList();
+        IsLoading = false;
+        StateHasChanged();
+    }
+    private async Task UpsertZone()
+    {
+        if (Zone.ZoneId == 0)
+        {
+            //create
+            await _zoneRepository.Create(Zone);
+            await _jsRuntime.ToastrSuccess("Zone Created Successfully");
+        }
+        else
+        {
+            //update
+            await _zoneRepository.Update(Zone);
+            await _jsRuntime.ToastrSuccess("Zone Updated Successfully");
+        }
+        _navigationManager.NavigateTo("zone");
+    }
+}

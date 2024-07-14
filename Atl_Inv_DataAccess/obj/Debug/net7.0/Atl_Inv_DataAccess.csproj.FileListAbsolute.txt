@@ -1,0 +1,84 @@
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.deps.json
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.runtimeconfig.json
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.csproj.AssemblyReference.cache
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.AssemblyInfoInputs.cache
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.AssemblyInfo.cs
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.csproj.CoreCompileInputs.cache
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\refint\Atl_Inv_DataAccess.dll
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.genruntimeconfig.cache
+E:\Rough\BackUp\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\ref\Atl_Inv_DataAccess.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.deps.json
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.runtimeconfig.json
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.csproj.AssemblyReference.cache
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.AssemblyInfoInputs.cache
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.AssemblyInfo.cs
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.csproj.CoreCompileInputs.cache
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_DataAccess\obj\Debug\net7.0\refint\Atl_Inv_DataAccess.dll
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.genruntimeconfig.cache
+E:\Rough\ATL_INV_WebApp - Copy\Atl_Inv_DataAccess\obj\Debug\net7.0\ref\Atl_Inv_DataAccess.dll
+E:\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.deps.json
+E:\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.runtimeconfig.json
+E:\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.csproj.AssemblyReference.cache
+E:\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.AssemblyInfoInputs.cache
+E:\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.AssemblyInfo.cs
+E:\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.csproj.CoreCompileInputs.cache
+E:\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\refint\Atl_Inv_DataAccess.dll
+E:\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.genruntimeconfig.cache
+E:\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\ref\Atl_Inv_DataAccess.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.deps.json
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.runtimeconfig.json
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.pdb
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.csproj.AssemblyReference.cache
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.AssemblyInfoInputs.cache
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.AssemblyInfo.cs
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\refint\Atl_Inv_DataAccess.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.pdb
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.genruntimeconfig.cache
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\ref\Atl_Inv_DataAccess.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.deps.json
+E:\Rough\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.runtimeconfig.json
+E:\Rough\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\Rough\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.csproj.AssemblyReference.cache
+E:\Rough\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rough\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.AssemblyInfoInputs.cache
+E:\Rough\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.AssemblyInfo.cs
+E:\Rough\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.csproj.CoreCompileInputs.cache
+E:\Rough\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\refint\Atl_Inv_DataAccess.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\Rough\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.genruntimeconfig.cache
+E:\Rough\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\ref\Atl_Inv_DataAccess.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.deps.json
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.runtimeconfig.json
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\bin\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.csproj.AssemblyReference.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.AssemblyInfoInputs.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.AssemblyInfo.cs
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.csproj.CoreCompileInputs.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\refint\Atl_Inv_DataAccess.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.pdb
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.genruntimeconfig.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\ref\Atl_Inv_DataAccess.dll

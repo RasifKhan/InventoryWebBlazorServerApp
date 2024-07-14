@@ -1,0 +1,104 @@
+﻿
+@page "/workorder"
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Model;
+@inject IWorkOrderRepository _workOrderRepository;
+@inject IJSRuntime _jsRuntime
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+
+<_DeleteConfirmation IsParentComponentProcessing="IsLoading" ConfirmationChanged="ConfirmTask_Click"></_DeleteConfirmation>
+
+<div class="row mt-4">
+    <div class="col-6">
+        <h4 class="card-title text-info">List of Work Order</h4>
+    </div>
+    <div class="col-4 offset-2">
+        <a href="workorder/create" class="btn btn-primary form-control">Add New WorkOrder</a>
+    </div>
+    <div class="col-12 p-3">
+        @if (WorkOrders.Any())
+        {
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Work Order No</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var objWorkOrder in WorkOrders)
+                        {
+                        <tr>
+                            <td>
+                                @objWorkOrder.WorkOrderNo
+                            </td>
+                            <td>
+                                <NavLink href="@($"workorder/edit/{objWorkOrder.WorkOrderId}")" class="btn btn-primary ">Edit</NavLink>
+                                @*<NavLink href="@($"workorder/addproducts/{objWorkOrder.WorkOrederId}")" class="btn-primary btn">Items</NavLink>*@
+                                <button class="btn btn-danger" @onclick="()=>HandleDelete(objWorkOrder.WorkOrderId)">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            if (IsLoading)
+            {
+                //Loading gif
+                <div class="text-center">
+                    <img src="/images/Glass spheres.gif">
+                </div>
+            }
+            else
+            {
+                //no records
+                <p>No Records Found.</p>
+            }
+        }
+    </div>
+</div>
+@code {
+    //private IEnumerable<QuotationMTDTO> Quotations { get; set; } = new List<QuotationMTDTO>();
+    private IEnumerable<WorkOrderDTO> WorkOrders { get; set; } = new List<WorkOrderDTO>();
+
+    private bool IsLoading { get; set; }
+    private int DeleteWorkOrderId { get; set; } = 0;
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+            await LoadQuatations();
+            }
+        }
+
+    private async Task LoadQuatations()
+        {
+            IsLoading = true;
+            StateHasChanged();
+        WorkOrders = await _workOrderRepository.GetAll();
+            IsLoading = false;
+            StateHasChanged();
+        }
+       
+    private void HandleDelete(int id)
+    {
+        DeleteWorkOrderId = id;
+        _jsRuntime.InvokeVoidAsync("ShowDeleteConfirmationModal"); //This Function doesn't return anything thats why InvokeVoidAsync is used//
+    }
+    public async Task ConfirmTask_Click(bool isConfirmed)
+    {
+        IsLoading = true;
+        if (isConfirmed && DeleteWorkOrderId != 0)
+        {
+            await LoadQuatations();
+            await _jsRuntime.InvokeVoidAsync("HideDeleteConfirmationModal");
+        }
+        IsLoading = false;
+    }
+}
+
+
+

@@ -1,0 +1,239 @@
+﻿
+@page "/quotation/addproducts/{QuotationId:int}"
+@using Atl_Inv_Business.Repository.IRepository;
+@using Syncfusion.Blazor.DropDowns
+@using Syncfusion.Blazor.Grids;
+@inject IQuotationMTRepository _quotationMTRepository;
+@inject IQuotationDtRepository _quotationDtRepository;
+@inject IProductInfoSetupRepository _productInfoSetupRepository
+@inject ISetupDt_DataRepository _setupDt_DataRepository;
+@inject IUserServiceRepository _userServiceRepository
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+<div class="row my-1">
+    <div class="col-6">
+        <h3 class="card-title text-primary mb-3 ml-3">Quotation Details</h3>
+    </div>
+    <div class="col-6 text-right">
+        <div class="row">
+            <div class="col-12 form-group py-2 d-flex justify-content-end align-items-start">
+                <NavLink href="quotation" class="btn btn-secondary align-self-start" style="outline: none; margin-right: 5px;">List</NavLink>
+                <NavLink href="@($"quotation/edit/{Quotation.QuotationId}")" class="btn btn-secondary align-self-start">Quotation</NavLink>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@if (Isloading)
+{
+    <div class="text-center">
+        <img src="/images/Glass spheres.gif">
+    </div>
+}
+
+else
+{
+    <div class="row my-1">
+        <!-- Upper div containing form elements -->
+        <div class="col-md-10">
+            <div class="row  p-2 mb-4">
+                <!-- Left side -->
+                <div class="col-12">
+                    <div class="card-body">
+                        <h1 style="font-size: 1em;">Quotation No: @Quotation.QuotationNo</h1>
+                        <h1 style="font-size: 1em;">Net Total: @VarGetNetTotal</h1>
+                        <h1 style="font-size: 1em;">Grand Total: @VarGetGrandTotal</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--If there is no image URL then whole Image div will be hided -->
+        @if (!string.IsNullOrEmpty(ProdIndividualInfo.ImmageUrl))
+        {
+            <div class="col-md-2" style="height: 130px;">
+                <img src="@ProdIndividualInfo.ImmageUrl" class="w-100" style="width: 200px; height: 180px; border: none;">
+            </div>
+        }
+
+       @* <!-- Image div -->
+        <div class="col-md-2">
+            <img src="@ProdIndividualInfo.ImmageUrl" class="w-100">
+            <h1 style="font-size: 1em;">@((MarkupString)ProdIndividualInfo.Description)</h1>
+        </div>*@
+    </div>
+
+
+
+
+    <div class="form-group py-5">
+    <SfGrid @ref="quotationDtGrid" DataSource="@QuotationDt" AllowSelection="true"  SelectionSettings="@selectionSettings" EnableInfiniteScrolling="true"  AllowPaging="true" AllowFiltering="true" 
+        Width="1250"  AllowSorting="true"
+        Toolbar="@(new List<string>{"Add","Edit","Update","Delete","Cancel"})">
+
+        <GridEditSettings AllowAdding="true" AllowEditing="true" ShowDeleteConfirmDialog="true" AllowDeleting="true"></GridEditSettings>
+        <GridEvents OnActionBegin="ActionHandler" TValue="QuotationDtDTO"  
+                RowSelected="OnRowSelected" RowDeselected="OnRowDeselected"></GridEvents>
+
+        <GridPageSettings PageSize="5" PageCount="5" PageSizes="true"></GridPageSettings>
+        <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Menu"></GridFilterSettings>
+        <GridSortSettings AllowUnsort="false"></GridSortSettings>
+        <GridColumns>
+            <GridColumn HeaderText="SL" Width="90">
+                <Template>
+                    @((quotationDtGrid.CurrentViewData.ToList().IndexOf(context as QuotationDtDTO) + 1).ToString())
+                </Template>
+            </GridColumn>
+
+            <GridColumn IsPrimaryKey="true" AllowAdding="false" Field=@nameof(QuotationDtDTO.QuotationDtId) HeaderText="Id" Width="150"></GridColumn>
+            <GridColumn Field=@nameof(QuotationDtDTO.ProductName) HeaderText="Product" Width="250">
+                <Template>
+                    <div title="@((context as QuotationDtDTO).ProductName)">
+                        @((context as QuotationDtDTO).ProductName)
+                    </div>
+                </Template>
+                <EditTemplate>
+                    <Syncfusion.Blazor.DropDowns.SfDropDownList DataSource="Products"
+                                                            @bind-Value="((context as QuotationDtDTO).ProductId)"
+                                                            Placeholder="--Select--">
+                        <DropDownListFieldSettings Text="ProductName" Value="ProductId"></DropDownListFieldSettings>
+                    </Syncfusion.Blazor.DropDowns.SfDropDownList>
+                    <ValidationMessage For="@(() => (context as QuotationDtDTO).ProductId)" />
+                </EditTemplate>
+            </GridColumn>
+
+
+
+
+
+            <GridColumn Field=@nameof(QuotationDtDTO.UnitPrice) HeaderText="Price" Format="৳0.00" Width="150">
+                <EditTemplate>
+                    <Syncfusion.Blazor.Inputs.SfNumericTextBox @bind-Value="((context as QuotationDtDTO).UnitPrice)">
+                    </Syncfusion.Blazor.Inputs.SfNumericTextBox>
+                </EditTemplate>
+            </GridColumn>
+
+            <GridColumn Field=@nameof(QuotationDtDTO.Quantity) HeaderText="Qty" Width="150"></GridColumn>
+            <GridColumn Field=@nameof(QuotationDtDTO.TotalPrice) IsPrimaryKey="true" HeaderText="Sub-Total" AllowEditing="false" AllowAdding="false" Width="150" Format="৳0.00"></GridColumn>
+
+            <GridColumn Field=@nameof(QuotationDtDTO.VatPercent) HeaderText="Vat%" Format="0.00" Width="150"></GridColumn>
+            <GridColumn Field=@nameof(QuotationDtDTO.TaxPercent) HeaderText="Tax%" Format="0.00" Width="150"></GridColumn>
+            <GridColumn Field=@nameof(QuotationDtDTO.AtiPercent) HeaderText="AIT%" Format="0.00" Width="150"></GridColumn>
+            <GridColumn Field=@nameof(QuotationDtDTO.OtherRemarks) HeaderText="Remarks" Width="150"></GridColumn>
+
+            <GridColumn Field=@nameof(QuotationDtDTO.OtherPercent) HeaderText="Other%" Format="0.00" Width="150"></GridColumn>
+
+
+            <GridColumn Field=@nameof(QuotationDtDTO.VatAmount) HeaderText="Vat-Amount" IsPrimaryKey="true" AllowEditing="false" AllowAdding="false" Width="150" Format="৳0.00"></GridColumn>
+            <GridColumn Field=@nameof(QuotationDtDTO.TaxAmount) HeaderText="Tax-Amount" IsPrimaryKey="true" AllowEditing="false" AllowAdding="false" Width="150" Format="৳0.00"></GridColumn>
+            <GridColumn Field=@nameof(QuotationDtDTO.AtiAmount) HeaderText="AIT-Amount" IsPrimaryKey="true" AllowEditing="false" AllowAdding="false" Width="150" Format="৳0.00"></GridColumn>
+            <GridColumn Field=@nameof(QuotationDtDTO.OtherAmount) HeaderText="Other-Amount" IsPrimaryKey="true" AllowEditing="false" AllowAdding="false" Width="150" Format="৳0.00"></GridColumn>
+            <GridColumn HeaderText="Manage Records" Width="150">
+
+                <GridCommandColumns>
+                    <GridCommandColumn Type="CommandButtonType.Edit" ButtonOption="@(new CommandButtonOptions() { IconCss = "e-icons e-edit", CssClass = "e-flat" })"></GridCommandColumn>
+                    <GridCommandColumn Type="CommandButtonType.Delete" ButtonOption="@(new CommandButtonOptions() { IconCss = "e-icons e-delete", CssClass = "e-flat" })"></GridCommandColumn>
+                    <GridCommandColumn Type="CommandButtonType.Save" ButtonOption="@(new CommandButtonOptions() { IconCss = "e-icons e-update", CssClass = "e-flat" })"></GridCommandColumn>
+                    <GridCommandColumn Type="CommandButtonType.Cancel" ButtonOption="@(new CommandButtonOptions() { IconCss = "e-icons e-cancel-icon", CssClass = "e-flat" })"></GridCommandColumn>
+                </GridCommandColumns>
+            </GridColumn>
+        </GridColumns>
+    </SfGrid>
+    </div>
+}
+@code {
+    [Parameter]
+    public int QuotationId { get; set; }
+    private QuotationMTDTO Quotation { get; set; } = new();
+    private IEnumerable<QuotationDtDTO> QuotationDt { get; set; } = new List<QuotationDtDTO>();
+    private IEnumerable<ProductInfoSetupDTO> Products { get; set; } = new List<ProductInfoSetupDTO>();
+    private ProductInfoSetupDTO ProdIndividualInfo { get; set; } = new ProductInfoSetupDTO();
+    private bool Isloading { get; set; } = true;
+    decimal VarGetNetTotal { get; set; }
+    decimal VarGetGrandTotal { get; set; }
+
+    private GridSelectionSettings selectionSettings = new GridSelectionSettings(){ Type = Syncfusion.Blazor.Grids.SelectionType.Single };
+    public SfGrid<QuotationDtDTO> quotationDtGrid { get; set; }
+    private int SelectedProductId { get; set; }
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            Isloading = true;
+            StateHasChanged();
+            await LoadProduct();
+            Quotation = await _quotationMTRepository.Get(QuotationId);
+            VarGetNetTotal = Quotation.NetTotal ?? 0;
+            VarGetGrandTotal = Quotation.GrandTotal ?? 0;
+            QuotationDt = await _quotationDtRepository.GetAll(QuotationId);
+            Isloading = false;
+            StateHasChanged();
+        }
+    }
+
+
+    private async Task OnRowSelected(RowSelectEventArgs<QuotationDtDTO> args)
+    {
+        var selectedRowData = args.Data;
+        if (selectedRowData != null)
+        {
+            SelectedProductId = selectedRowData.ProductId;
+            ProdIndividualInfo = await _productInfoSetupRepository.Get(SelectedProductId);
+        }
+    }
+
+
+    private void OnRowDeselected(RowDeselectEventArgs<QuotationDtDTO> args)
+    {
+        SelectedProductId = 0;                        // Reset to 0 when row is deselected
+        ProdIndividualInfo=new ProductInfoSetupDTO(); // and reset as empty
+    }
+
+    private async Task LoadProduct()
+    {
+        var productsData = await _productInfoSetupRepository.GetAll();
+        Products = productsData.ToList();
+    }   
+
+
+
+    public async void ActionHandler(ActionEventArgs<QuotationDtDTO> args)
+    {
+        if (args.RequestType.Equals(Syncfusion.Blazor.Grids.Action.Save))
+        {
+            args.Data.QuotationId = QuotationId;
+            args.Data.QuotationNo = Quotation.QuotationNo;
+
+            var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+            var userId = currentUser?.Id;
+            
+            if (args.Action == "Add")
+            {
+                await _quotationDtRepository.Create(args.Data,userId);
+                decimal getNetTotalSum = await _quotationDtRepository.GetNetTotalSum(QuotationId);
+                decimal getGrandTotalSum = await _quotationDtRepository.GetGrandTotalSum(QuotationId);
+                await _quotationMTRepository.UpdateNetGrandTotal(QuotationId, getNetTotalSum, getGrandTotalSum);
+
+                QuotationDt = await _quotationDtRepository.GetAll(QuotationId);
+                VarGetNetTotal = getNetTotalSum;
+                VarGetGrandTotal = getGrandTotalSum;
+                await quotationDtGrid.Refresh();
+            }
+            if (args.Action == "Edit")
+            {
+                await _quotationDtRepository.Update(args.Data, userId);
+                QuotationDt = await _quotationDtRepository.GetAll(QuotationId);
+              await  quotationDtGrid.Refresh();
+            }
+        }
+        if (args.RequestType.Equals(Syncfusion.Blazor.Grids.Action.Delete))
+        {
+            await _quotationDtRepository.Delete(args.Data.QuotationDtId);
+           await quotationDtGrid.Refresh();
+        }
+    }
+}

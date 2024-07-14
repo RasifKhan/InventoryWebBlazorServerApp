@@ -1,0 +1,103 @@
+﻿
+
+@page "/quotation"
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Model;
+@inject  IQuotationMTRepository _quotationMTRepository;
+@inject IJSRuntime _jsRuntime
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+
+<_DeleteConfirmation IsParentComponentProcessing="IsLoading" ConfirmationChanged="ConfirmTask_Click"></_DeleteConfirmation>
+
+<div class="row mt-4">
+    <div class="col-6">
+        <h4 class="card-title text-info">List of Quotation</h4>
+    </div>
+    <div class="col-4 offset-2">
+        <a href="quotation/create" class="btn btn-primary form-control">Add New Quotation</a>
+    </div>
+    <div class="col-12 p-3">
+        @if (Quotations.Any())
+        {
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Quotation No</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var objQuotation in Quotations)
+                        {
+                        <tr>
+                            <td>
+                                @objQuotation.QuotationNo
+                            </td>
+                            <td>
+                                <NavLink href="@($"quotation/edit/{objQuotation.QuotationId}")" class="btn-primary btn">Edit</NavLink>
+                                <NavLink href="@($"quotation/addproducts/{objQuotation.QuotationId}")" class="btn-primary btn">Items</NavLink>
+                                <button class="btn btn-danger" @onclick="()=>HandleDelete(objQuotation.QuotationId)">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            if (IsLoading)
+            {
+                //Loading gif
+                <div class="text-center">
+                    <img src="/images/Glass spheres.gif">
+                </div>
+            }
+            else
+            {
+                //no records
+                <p>No Records Found.</p>
+            }
+        }
+    </div>
+</div>
+@code {
+    private IEnumerable<QuotationMTDTO> Quotations { get; set; } = new List<QuotationMTDTO>();
+    private bool IsLoading { get; set; }
+    private int DeleteQuotationId { get; set; } = 0;
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+            await LoadQuatations();
+            }
+        }
+
+    private async Task LoadQuatations()
+        {
+            IsLoading = true;
+            StateHasChanged();
+            Quotations = await _quotationMTRepository.GetAll();
+            IsLoading = false;
+            StateHasChanged();
+        }
+       
+    private void HandleDelete(int id)
+    {
+        DeleteQuotationId = id;
+        _jsRuntime.InvokeVoidAsync("ShowDeleteConfirmationModal"); //This Function doesn't return anything thats why InvokeVoidAsync is used//
+    }
+    public async Task ConfirmTask_Click(bool isConfirmed)
+    {
+        IsLoading = true;
+        if (isConfirmed && DeleteQuotationId != 0)
+        {
+            await LoadQuatations();
+            await _jsRuntime.InvokeVoidAsync("HideDeleteConfirmationModal");
+        }
+        IsLoading = false;
+    }
+}
+
+
+

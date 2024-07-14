@@ -1,0 +1,454 @@
+﻿@page "/stock/create"
+@page "/stock/edit/{StockId:int}"
+
+
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Model;
+@using System.ComponentModel.DataAnnotations;
+@inject IJSRuntime _jsRuntime
+@inject IWorkOrderRepository _workOrderRepository;
+@inject IStockMtRepository _stockMtRepository;
+
+
+@inject IVwStockMrProdDetailRepository _vwStockMrProdDetailRepository;
+@inject IStockDtRepository _stockDtRepository
+@inject IProductInfoSetupRepository _productInfoSetupRepository;
+
+
+@inject IQuotationMTRepository _quotationMTRepository;
+@inject ISetupDt_DataRepository _setupDt_DataRepository;
+@inject ICompInfoSetupRepository _compInfoSetupRepository;
+@inject NavigationManager _navigationManager
+@inject IUserServiceRepository _userServiceRepository
+
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+
+<link rel="stylesheet" href="_content/Radzen.Blazor/css/standard-base.css">
+
+<link rel="stylesheet" href="/css/CustomFieldSizeFontSize.css">
+
+
+
+<div class="row my-1">
+    <h5 class="row  text-primary align-items-center">@Title Stock MR Note</h5>
+    <div class="col-10">
+        @if (IsLoading)
+        {
+            <div class="text-center">
+                <img src="/images/Glass spheres.gif">
+            </div>
+        }
+        else
+        {
+            <div class="row" style="width: 100%">
+                <!-- Left Div -->
+                <div class="col-12 col-lg-8 p-0 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:45%">
+                   <EditForm Model="Stock" OnValidSubmit="UpsertStockMt" method="post">
+                    <DataAnnotationsValidator />
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3 custom-input">MR Note</div>
+                            <div class="col-9">
+                                <InputText @bind-Value="Stock.MaterialReceiptNote" class="form-control custom-input" readonly="true" />
+                                <ValidationMessage For="()=>Stock.MaterialReceiptNote"></ValidationMessage>
+                            </div>
+                        </div>
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3 custom-input">Bill No</div>
+                            <div class="col-9">
+                                <InputText @bind-Value="Stock.BillNo" class="form-control custom-input"></InputText>
+                            </div>
+                        </div>
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3 custom-input">Bill Date</div>
+                            <div class="col-9">
+                                <InputDate @bind-Value="Stock.BillDate" class="form-control custom-input"></InputDate>
+                            </div>
+                        </div>
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3 custom-input">Challan No</div>
+                            <div class="col-9">
+                                <InputText @bind-Value="Stock.MrnchallanNo" class="form-control custom-input" readonly="true" />
+                                <ValidationMessage For="()=>Stock.MrnchallanNo"></ValidationMessage>
+                            </div>
+                        </div>
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3 custom-input">Challan Date</div>
+                            <div class="col-9">
+                                <InputDate @bind-Value="Stock.MrnchallanDate" class="form-control custom-input"></InputDate>
+                            </div>
+                        </div>
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3 custom-input">Rcv Date</div>
+                            <div class="col-9">
+                                <InputDate @bind-Value="Stock.RcvDate" class="form-control custom-input"></InputDate>
+                            </div>
+                        </div>
+
+                            <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">Store Id</div>
+                                <div class="col-9">
+                                    <InputNumber @bind-Value="Stock.StoreId" class="form-control custom-input"></InputNumber>
+                                </div>
+                            </div>
+
+                            <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">Vendor Id</div>
+                                <div class="col-9">
+                                    <InputNumber @bind-Value="Stock.VendorId" class="form-control custom-input"></InputNumber>
+                                </div>
+                            </div>
+
+                            <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">Po No</div>
+                                <div class="col-9">
+                                    <InputText @bind-Value="Stock.PoNo" class="form-control custom-input"></InputText>
+                                </div>
+                            </div>
+
+                            <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">Po Date</div>
+                                <div class="col-9">
+                                    <InputDate @bind-Value="Stock.PoDate" class="form-control custom-input"></InputDate>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group my-1 ">
+                           @* <div class="form-group py-2">*@
+                               @* <button class="btn btn-primary" style="outline: none; margin-right: 5px;">@Title</button>*@
+                                <button class="btn btn-primary custom-input" style="outline: none; margin-left: 123px;">@Title</button>
+                                @if (Title == "Update")
+                                {
+                                    <NavLink href="@($"stockdt/addprodserial/{Stock.StockId}")" class="btn btn-secondary custom-input" style="margin-left: 5px;">Go to Add Product</NavLink>
+                                }
+                            </div>
+
+                     </EditForm>
+                </div>
+                <div class="col-12 col-lg-1"></div>
+
+                <!-- Right Div -->
+                @if (Title == "Create")
+                {
+                    @*<div class="col-12 col-lg-8 p-0 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:45%" disabled>
+                        <EditForm Model="Stock" OnValidSubmit="UpsertStockMt" method="post" disabled>
+                            <DataAnnotationsValidator />
+
+                            <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">Po Date</div>
+                                <div class="col-9">
+                                    <InputDate @bind-Value="Stock.PoDate" class="form-control custom-input" disabled></InputDate>
+                                </div>
+                            </div>
+                        </EditForm>
+                    </div>*@
+                        <div class="col-12 col-lg-8 p-0 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:45%; display:none;">
+                            <EditForm Model="Stock" OnValidSubmit="UpsertStockMt" method="post">
+                                <DataAnnotationsValidator />
+
+                                <div class="row my-1 align-items-center">
+                                    <div class="col-3 custom-input">Po Date</div>
+                                    <div class="col-9">
+                                        <InputDate @bind-Value="Stock.PoDate" class="form-control custom-input"></InputDate>
+                                    </div>
+                                </div>
+                            </EditForm>
+                        </div>
+                }
+                else
+                {
+                    <div class="col-12 col-lg-8 p-0 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:45%">
+                        <EditForm Model="Stockdt" OnValidSubmit="SaveStockDt" method="post">
+                            <DataAnnotationsValidator />
+
+
+
+                            @*<div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">Po Date</div>
+                                <div class="col-9">
+                                    <InputDate @bind-Value="Stock.PoDate" class="form-control custom-input"></InputDate>
+                                </div>
+                            </div>*@
+
+
+
+
+
+                            <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">Product</div>
+                                <div class="col-9">
+                                    <InputSelect @bind-Value="Stockdt.ProductId" class="form-select custom-input">
+                                        <option value="0" disabled="disabled" selected> --Select Product--</option>
+                                        @foreach (var items in Products)
+                                        {
+                                            <option value="@items.ProductId">@items.ProductName</option>
+                                        }
+                                    </InputSelect>
+                                    <ValidationMessage For="()=>Stockdt.ProductId"></ValidationMessage>
+                                </div>
+                            </div>
+
+
+
+                            <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">From</div>
+                                <div class="col-9">
+                                    <!-- Non-binding input field -->
+                                    <input class="form-control custom-input" type="number" @bind="from" />
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">To</div>
+                                <div class="col-9">
+                                    <!-- Non-binding input field -->
+                                    <input class="form-control custom-input" type="number" @bind="to" />
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">Prefix</div>
+                                <div class="col-9">
+                                    <!-- Non-binding input field -->
+
+                                    <input id="prefixInput" class="form-control custom-input" type="text" @bind="prefix" />
+                                </div>
+                            </div>
+
+
+                            <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">Postfix</div>
+                                <div class="col-9">
+                                    <!-- Non-binding input field -->
+                                    <input class="form-control custom-input" type="text" @bind="postfix" />
+                                </div>
+                            </div>
+
+
+                            <div class="form-group my-1 ">
+                                @*<div class="row my-1">*@
+                                @* <button @onclick="SaveStockDt" class="btn btn-primary">Create</button>*@
+                                <button class="btn btn-primary custom-input" style="outline: none; margin-left: 121px;">Create</button>
+                            </div>
+
+                        </EditForm>
+                    </div>
+                }
+               @* @if (Title != "Updated")
+                {
+                    <div class="col-12 col-lg-8 p-0 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:45%">
+                        <EditForm Model="Stock" OnValidSubmit="UpsertStockMt" method="post">
+                        <DataAnnotationsValidator />
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3 custom-input">Po Date</div>
+                            <div class="col-9">
+                                <InputDate @bind-Value="Stock.PoDate" class="form-control custom-input"></InputDate>
+                            </div>
+                        </div>
+                    </EditForm>
+                </div>
+                }*@
+            </div>
+        }
+    </div>
+</div>
+
+
+
+<div class="row mt-4 p-0">
+    <div class="col-12 p-0">
+        @if (VwStocks.Any())
+        {
+            <RadzenDataGrid AllowFiltering="true" class="custom-radzen-datagrid" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Advanced" AllowSorting="true" PageSize="05" AllowPaging="true" ShowPagingSummary="true"
+                            Data="VwStocks" TItem="VwStockMrProdDetailDTO" ColumnWidth="300px" LogicalFilterOperator="LogicalFilterOperator.Or" >
+                <Columns>
+                    <RadzenDataGridColumn TItem="VwStockMrProdDetailDTO" Property="StockId" Filterable="false" Title="StockId" Frozen="true" Width="140px" />
+                    <RadzenDataGridColumn TItem="VwStockMrProdDetailDTO" Property="MaterialReceiptNote" Title="Mr Note" Width="140px" />
+                    <RadzenDataGridColumn TItem="VwStockMrProdDetailDTO" Property="MRNChallanNo" Title="Mr Note" Width="140px" />
+                    <RadzenDataGridColumn TItem="VwStockMrProdDetailDTO" Property="ProductName" Title="Product Name" Width="140px" />
+                    <RadzenDataGridColumn TItem="VwStockMrProdDetailDTO" Property="Quantiy" Title="Quantiy" Width="140px" />
+                    <RadzenDataGridColumn TItem="VwStockMrProdDetailDTO" Property="Remarks" Title="Remarks" Width="140px" />
+                    
+
+                    <RadzenDataGridColumn TItem="VwStockMrProdDetailDTO" Title="Details" Width="160px">
+                        <Template Context="data">
+                            <RadzenButton Click="(args=>GoDetails(data.ProductId,data.StockId))" Text="Prod SL Details" ButtonStyle="ButtonStyle.Success"></RadzenButton>
+                        </Template>
+                    </RadzenDataGridColumn>
+                </Columns>
+            </RadzenDataGrid>
+           
+
+
+            @* 
+               <RadzenDataGrid AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Advanced" AllowSorting="true" PageSize="10" AllowPaging="true" ShowPagingSummary="true"
+                        Data="OrderHeaders" TItem="OrderHeaderDTO" ColumnWidth="300px" LogicalFilterOperator="LogicalFilterOperator.Or">
+                <Columns>
+                    <RadzenDataGridColumn TItem="OrderHeaderDTO" Property="Id" Filterable="false" Title="Id" Frozen="true" Width="80px" />
+                    <RadzenDataGridColumn TItem="OrderHeaderDTO" Property="Name" Title="Name" Frozen="true" Width="160px" />
+                    <RadzenDataGridColumn TItem="OrderHeaderDTO" Property="PhoneNumber" Title="Phone Number" Width="160px" />
+                    <RadzenDataGridColumn TItem="OrderHeaderDTO" Property="Email" Title="Email" Width="160px" />
+                    <RadzenDataGridColumn TItem="OrderHeaderDTO" Property="OrderTotal" Title="Order Total" Width="160px" />
+                    <RadzenDataGridColumn TItem="OrderHeaderDTO" Property="OrderDate" Title="Order Date" FormatString="{0:d}" Width="160px" />
+                    <RadzenDataGridColumn TItem="OrderHeaderDTO" Property="Status" Title="Status" Width="160px" />
+                    <RadzenDataGridColumn TItem="OrderHeaderDTO" Title="Details" Width="160px">
+                        <Template Context="data">
+                            <RadzenButton Click="(args=>OrderDetails(data.Id))" Text="Details" ButtonStyle="ButtonStyle.Success"></RadzenButton>
+                        </Template>
+                    </RadzenDataGridColumn>
+                </Columns>
+            </RadzenDataGrid>
+            *@
+
+
+        }
+        else
+        {
+            if (IsLoading)
+            {
+                //Loading gif
+             @*   <div class="text-center">
+                    <img src="/images/Glass spheres.gif">
+                </div>*@
+            }
+            else
+            {
+                //no records
+                <p>No Records Found.</p>
+            }
+        }
+    </div>
+</div>
+
+
+
+@code {
+    [Parameter]
+    public int StockId { get; set; }
+
+    //private WorkOrderDTO WorkOrder { get; set; } = new WorkOrderDTO();
+    private StockMtDTO Stock { get; set; } = new StockMtDTO();
+    private StockDtDTO Stockdt { get; set; } = new();
+    private IEnumerable<StockDtDTO> StocksDt { get; set; } = new List<StockDtDTO>();
+
+    private IEnumerable<VwStockMrProdDetailDTO> VwStocks { get; set; } = new List<VwStockMrProdDetailDTO>();
+
+    private IEnumerable<ProductInfoSetupDTO> Products { get; set; } = new List<ProductInfoSetupDTO>();
+
+    //  private IEnumerable<CompanyInfoSetupDTO> CompanyInfos { get; set; } = new List<CompanyInfoSetupDTO>();
+    // private IEnumerable<WorkOrderDTO> WorkOrders { get; set; } = new List<WorkOrderDTO>();
+
+    private String Title { get; set; } = "Create";
+    private bool IsLoading { get; set; }
+    private int CountMaterialReceiptNote { get; set; }
+    private int CountMRNChallanNo { get; set; }
+    private decimal WorkOrderAmount { get; set; }
+
+    private int from { get; set; } = 0;
+    private int to { get; set; } = 0;
+    private string? prefix { get; set; } = null;
+    private string? postfix { get; set; } = null;
+    protected override async Task OnInitializedAsync()
+    {
+        if (StockId == 0)
+        {
+            //create
+            IsLoading = false;
+            await LoadStock();
+
+            CountMaterialReceiptNote = await _stockMtRepository.GetCountMaterialReceiptNote(Stock.MaterialReceiptNote) + 1;
+            Stock.MaterialReceiptNote = "MRN-" + DateTime.Now.ToString("yyMMdd") + "-" + CountMaterialReceiptNote.ToString("D2");
+            CountMRNChallanNo = await _stockMtRepository.GetCountMRNChallanNo(Stock.MrnchallanNo) + 1;
+            Stock.MrnchallanNo = "MRCHLN-" + DateTime.Now.ToString("yyMMdd") + "-" + CountMRNChallanNo.ToString("D2");
+        }
+        else
+        {
+            // Update
+            Title = "Update";
+            await LoadStock();
+        }
+    }
+
+    private async Task LoadStock()
+    {
+        IsLoading = true;
+        StateHasChanged();
+        Stock = await _stockMtRepository.Get(StockId);
+        var products = await _productInfoSetupRepository.GetAll();
+        Products = products.ToList();
+
+        var vwStocks = await _vwStockMrProdDetailRepository.GetAll();
+        VwStocks = vwStocks.Where(data => data.StockId == StockId).ToList();
+
+        IsLoading = false;
+        StateHasChanged();
+    }
+
+
+
+    private async Task UpsertStockMt()
+    {
+
+        var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+        var userId = currentUser?.Id;
+
+
+        if (Stock.StockId == 0)
+        {
+            //create
+            await _stockMtRepository.Create(Stock, userId);
+            await _jsRuntime.ToastrSuccess("Created Successfully");
+            Stock.StockId = await _stockMtRepository.GetMaxStockId();
+            Title = "Update";
+            _navigationManager.NavigateTo($"stock/edit/{Stock.StockId}");
+        }
+
+        else
+        {
+            //update
+            await _stockMtRepository.Update(Stock, userId);
+            await _jsRuntime.ToastrSuccess("Updated Successfully");
+            // _navigationManager.NavigateTo($"quotation/addproducts/{Quotation.QuotationId}");
+        }
+    }
+
+
+
+    //DateTime truncatedDateTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, DateTime.Now.Minute, 0);
+
+
+    private async Task SaveStockDt()
+    {
+        var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+        var userId = currentUser?.Id;
+       // var currentDateTime = DateTime.Now;
+        await _stockDtRepository.InsertStockdtSP(from, to, prefix, postfix, Stock.StockId, Stockdt.ProductId, userId, DateTime.Now);
+        StocksDt = await _stockDtRepository.GetAll();
+        var vwStocks = await _vwStockMrProdDetailRepository.GetAll();
+        VwStocks = vwStocks.Where(data => data.StockId == StockId).ToList();
+    } 
+
+
+
+
+    private void GoDetails(int ProductId,int StockId)
+    {
+        //_navigationManager.NavigateTo("/stockprodSLdetails/edit/" + ProductId );
+        _navigationManager.NavigateTo($"/stockprodSLdetails/edit/{ProductId}/{StockId}");
+       
+    }
+}
+
+
+
+

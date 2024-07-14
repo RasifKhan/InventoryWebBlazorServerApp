@@ -1,0 +1,280 @@
+  select b.CategoryId,b.Name as categoryName,c.CompanyId,c.Name as companyName,a.itemid,a.name as itemName,
+ sum(d.StockInQuantity) as totalStockIn,0 totalStockOut
+ from item a,category b,Company c,stockin d
+ where 1=1
+ and a.CategoryId=b.CategoryId
+ and c.CompanyId=a.CompanyId
+ and d.ItemId=a.ItemId
+ and b.CategoryId=1002
+ group by
+ b.CategoryId,b.Name,c.CompanyId,c.Name,a.itemid,a.name
+ union
+ select b.CategoryId,b.Name as categoryName,c.CompanyId,c.Name as companyName,a.itemid,a.name as itemName,0 totalStockIn,
+ sum(d.StockoutQuantity) as totalStockOut
+ from item a,category b,Company c,stockout d
+ where 1=1
+ and a.CategoryId=b.CategoryId
+ and c.CompanyId=a.CompanyId
+ and d.ItemId=a.ItemId
+ and b.CategoryId=1002
+ group by
+ b.CategoryId,b.Name,c.CompanyId,c.Name,a.itemid,a.name
+
+
+
+
+-----------------------------------------------------------------
+
+
+ select b.CategoryId,b.Name as categoryName,c.CompanyId,c.Name as companyName,a.itemid,a.name as itemName,
+( sum(d.StockInQuantity)-(select sum(f.StockoutQuantity) from stockout f where f.itemid=a.ItemId group by f.ItemId)) as totalStockIn,0 totalStockOut
+ from item a,category b,Company c,stockin d
+ where 1=1
+ and a.CategoryId=b.CategoryId
+ and c.CompanyId=a.CompanyId
+ and d.ItemId=a.ItemId
+ and b.CategoryId=1002
+ group by
+ b.CategoryId,b.Name,c.CompanyId,c.Name,a.itemid,a.name
+
+
+
+
+
+ select
+ b.CategoryId,
+ b.Name as categoryName,
+ c.CompanyId,
+ c.Name as companyName,
+ a.itemid,
+ a.name as itemName,
+ isnull((sum(d.StockInQuantity)-(select sum(f.StockoutQuantity)from stockout f where f.itemid=a.ItemId group by f.ItemId)),sum(d.StockInQuantity)) as AvailabelQty
+ from item a,category b,Company c,stockin d
+ where 1=1
+ and a.CategoryId=b.CategoryId
+ and c.CompanyId=a.CompanyId
+ and d.ItemId=a.ItemId
+ and b.CategoryId=1002
+ group by
+ b.CategoryId,b.Name,c.CompanyId,c.Name,a.itemid,a.name
+
+
+
+---------------------------------
+
+
+
+ select
+ b.CategoryId,
+ b.Name as categoryName,
+ c.CompanyId,
+ c.Name as companyName,
+ a.itemid,
+ a.name as itemName,
+ isnull((sum(d.StockInQuantity)-(select sum(f.StockoutQuantity)from stockout f where f.itemid=a.ItemId group by f.ItemId)),sum(d.StockInQuantity)) as AvailableQuantity,
+ a.ReorderLavel,
+ (select w.outdate from StockOut w where w.ItemId=a.ItemId group by w.OutDate) as outdate
+ from item a,category b,Company c,stockin d
+ where 1=1
+ and a.CategoryId=b.CategoryId
+ and c.CompanyId=a.CompanyId
+ and d.ItemId=a.ItemId
+ AND A.CategoryId=1002
+ group by
+ b.CategoryId,b.Name,c.CompanyId,c.Name,a.itemid,a.name, a.ReorderLavel
+
+
+
+-------------------------------------------
+
+"Server=.;Database=BlazorDb;Trusted_Connection=True;Encrypt = false; TrustServerCertificate = true"
+
+
+
+
+Scaffold-DbContext "Server=.;Database=DbFirstApproachDemo;Trusted_Connection=True;Encrypt = false; TrustServerCertificate = true;"
+Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force
+
+
+:::    "Server=.;Database=BlazorDb;Trusted_Connection=True;Encrypt = false; TrustServerCertificate = true"
+
+
+Scaffold-DbContext "Server=LAPTOP-G3\SQLEXPRESS;Database=DemoDb;Trusted_Connection=True;"
+
+Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force
+
+
+
+
+from chatGPt Correction 
+
+Scaffold-DbContext "Server=.;Database=DbFirstApproachDemo;Trusted_Connection=True;" 
+Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+
+
+Scaffold-DbContext "Server=.;Database=DbFirstApproachDemo;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+
+--  ChattGPT
+
+Scaffold-DbContext "Server=.;Database=DbFirstApproachDemo;Trusted_Connection=True;" 
+Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+
+
+
+
+------------------------- It worked ------------------------------
+for First time------------
+
+Scaffold-DbContext "Server=.;Database=DbFirstApproachDemo;Trusted_Connection=True;Encrypt = false; TrustServerCertificate = true;" Microsoft.EntityFrameworkCore.sqlServer -OutputDir Models
+
+
+if Changed anything in database --------
+
+Scaffold-DbContext "Server=.;Database=BlazorUniversityManagementDb;Trusted_Connection=True;Encrypt = false; TrustServerCertificate = true;" Microsoft.EntityFrameworkCore.sqlServer -OutputDir Models -force
+
+for specific project :
+
+Scaffold-DbContext "Server=.;Database=DbFirstApproachDemo;Trusted_Connection=True;Encrypt=false;TrustServerCertificate=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Project DataAccess
+
+
+Scaffold-DbContext "Server=.;Database=DbFirstApproachDemo;Trusted_Connection=True;Encrypt=false;TrustServerCertificate=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -StartupProject DataAccess																																																															
+---------------------------------------------------------------
+--------------------------------------------------
+Microsoft.EntityFrameworkCore.sqlServer
+
+
+--------------------------------------------------------------------------
+https://youtu.be/gHL962D9JQQ
+---------------------------------------------------------------------------
+
+
+using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+
+namespace Demo.DataModels;
+
+public partial class DbFirstApproachDemoContext : DbContext
+{
+    public DbFirstApproachDemoContext()
+    {
+    }
+
+    public DbFirstApproachDemoContext(DbContextOptions<DbFirstApproachDemoContext> options)
+        : base(options)
+    {
+    }
+
+    public virtual DbSet<Product> Products { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Server=.;Database=DbFirstApproachDemo;Trusted_Connection=True;Encrypt = false; TrustServerCertificate = true;");
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Product>(entity =>
+        {
+            entity.ToTable("Product");
+
+            entity.Property(e => e.Id).ValueGeneratedNever();
+            entity.Property(e => e.ProductName)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+        });
+
+        OnModelCreatingPartial(modelBuilder);
+    }
+
+    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+}
+
+--------------------------------------
+--------------------------------------
+
+using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+
+namespace Demo.DataModels.Models;
+
+public partial class DbFirstApproachDemoContext : DbContext
+{
+    public DbFirstApproachDemoContext()
+    {
+    }
+
+    public DbFirstApproachDemoContext(DbContextOptions<DbFirstApproachDemoContext> options)
+        : base(options)
+    {
+    }
+
+    public virtual DbSet<Category> Categories { get; set; }
+
+    public virtual DbSet<Product> Products { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Server=.;Database=DbFirstApproachDemo;Trusted_Connection=True;Encrypt = false; TrustServerCertificate = true;");
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Category>(entity =>
+        {
+            entity.ToTable("Category");
+
+            entity.Property(e => e.CategoryName)
+                .HasMaxLength(10)
+                .IsFixedLength();
+        });
+
+        modelBuilder.Entity<Product>(entity =>
+        {
+            entity.ToTable("Product");
+
+            entity.Property(e => e.ProductName)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+        });
+
+        OnModelCreatingPartial(modelBuilder);
+    }
+
+    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,322 @@
+﻿@page "/challan/create"
+@page "/challan/edit/{ChallanId:int}"
+
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Model;
+@inject IJSRuntime _jsRuntime
+@inject IChallanMtRepository _challanMtRepository;
+@inject IWorkOrderRepository _workOrderRepository;
+@inject IQuotationMTRepository _quotationMTRepository;
+@inject IVwWorkOrderProdDetailRepository _VwWorkOrderProdDetailRepository;
+@inject NavigationManager _navigationManager
+<link rel="stylesheet" href="/css/CustomFieldSizeFontSize.css">
+<link rel="stylesheet" href="_content/Radzen.Blazor/css/standard-base.css">
+<div class="row my-1">
+   <h5 class="row  text-primary align-items-center">@Title Challan </h5>
+    <div class="col-10">
+        @if (IsLoading)
+        {
+            <div class="text-center">
+                <img src="/images/Glass spheres.gif">
+            </div>
+        }
+        else
+        {
+            <div class="row" style="width: 100%">
+                <EditForm Model="Challan" OnValidSubmit="UpsertChallan" method="post">
+                    
+                    <DataAnnotationsValidator />
+                    <div class="row" style="width: 100%">
+                <!-- Left Div -->
+                    <div class="col-12 col-lg-8 p-0 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:100%">
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3 custom-input">Challan No</div>
+                            <div class="col-9 ">
+                                <InputText @bind-Value="Challan.ChallanNo" class="form-control custom-input" readonly="true" />
+                                    <ValidationMessage For="()=>Challan.ChallanNo"></ValidationMessage>
+                                </div>
+                            </div>
+
+                           @* <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">WorkOrder No</div>
+                                <div class="col-9">
+                                    <InputSelect @bind-Value="Challan.WorkOrderId" class="form-select custom-input" onchange="(Action<ChangeEventArgs>)(args => OnWorkOrderSelected(Convert.ToInt32(args.Value)))">
+                                        <option value="0" disabled="disabled" selected>--Select WorkOrder No--</option>
+                                        @foreach (var item in WorkOrders)
+                                        {
+                                            <option value="@item.WorkOrderId">@item.WorkOrderNo</option>
+                                        }
+                                    </InputSelect>
+                                    <ValidationMessage For="()=>Challan.WorkOrderId"></ValidationMessage>
+                                </div>
+                            </div>*@
+
+
+                           @* <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">WorkOrder No</div>
+                                <div class="col-9">
+                                    <InputSelect @bind-Value="Challan.WorkOrderId" class="form-select custom-input" @onchange="OnWorkOrderSelected">
+                                        <option value="0" disabled="disabled" selected>--Select WorkOrder No--</option>
+                                        @foreach (var item in WorkOrders)
+                                        {
+                                            <option value="@item.WorkOrderId">@item.WorkOrderNo</option>
+                                        }
+                                    </InputSelect>
+                                    <ValidationMessage For="()=>Challan.WorkOrderId"></ValidationMessage>
+                                </div>
+                            </div>*@
+
+
+
+                            @* @onchange="OnWorkOrderSelected"*@
+                            <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">WorkOrder No</div>
+                                <div class="col-9">
+                                    <InputSelect @bind-Value="Challan.WorkOrderId" @onchange="OnWorkOrderSelected" class="form-select custom-input">
+                                      
+                                        <option value="0" disabled="disabled" selected>--Select WorkOrder No--</option>
+                                        @foreach (var item in WorkOrders)
+                                        {
+                                            <option value="@item.WorkOrderId">@item.WorkOrderNo</option>
+                                        }
+                                    </InputSelect>
+                                    <ValidationMessage For="()=>Challan.WorkOrderId"></ValidationMessage>
+                                </div>
+                            </div>
+
+
+
+
+                           
+                                <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">WorkOrderId </div>
+                                <div class="col-9">
+                                    @{
+                                        var selectedQuotation9 = WorkOrders.FirstOrDefault(q => q.WorkOrderId == Challan.WorkOrderId);
+                                       // var selectedQuotation8 = SetupDtDatas.FirstOrDefault(q => q.SetupDT_Id == selectedQuotation9?.ProjectTypeId_Stdt);
+
+                                        var workOrderId = selectedQuotation9?.WorkOrderId ?? 0;
+
+                                       @* var vwWorkOrderProdDetails =  _VwWorkOrderProdDetailRepository.GetAll();
+                                        VwWorkOrderProdDetails = vwWorkOrderProdDetails.Where(data => data.WorkOrderId == workOrderId).ToList();*@
+                                    }
+                                    <input type="text" Value="@workOrderId" class="form-control custom-input" readonly="true" />
+                                </div>
+                                </div>
+
+
+
+                          @*  <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">WorkOrderId</div>
+                                <div class="col-9">
+                                    @{
+                                        var selectedQuotation = WorkOrders.FirstOrDefault(q => q.WorkOrderId == Challan.WorkOrderId);
+                                        var workOrderId = selectedQuotation?.WorkOrderId ?? 0;
+
+                                        // Await the task to get the enumerable result
+                                        var vwWorkOrderProdDetailsTask = _VwWorkOrderProdDetailRepository.GetAll();
+                                        var vwWorkOrderProdDetails = await vwWorkOrderProdDetailsTask;
+
+                                        // Now you can apply the Where method
+                                        var filteredVwWorkOrderProdDetails = vwWorkOrderProdDetails.Where(data => data.WorkOrderId == workOrderId).ToList();
+                                    }
+                                    <input type="text" value="@workOrderId" class="form-control custom-input" readonly="true" />
+                                </div>
+                            </div>
+                            *@
+
+
+
+
+
+
+
+
+
+                            <div class="row my-1 align-items-center">
+                                <div class="col-3 custom-input">Quot. No</div>
+                                <div class="col-9">
+                                    @{
+                                        var selectedWorkOrders = WorkOrders.FirstOrDefault(q => q.WorkOrderId == Challan.WorkOrderId);
+                                        var selectedQuotations = QuotationsMt.FirstOrDefault(q => q.QuotationId == selectedWorkOrders?.QuotationId);
+                                        Challan.QuotationId = selectedQuotations?.QuotationId ?? 0;
+                                        var QuotationNO = selectedQuotations?.QuotationNo ?? "N/A";
+
+
+
+                                    }
+                                    <input type="text" Value="@QuotationNO" class="form-control custom-input" readonly="true" />
+                                </div>
+                            </div>
+                        </div>
+
+                    @*    <div class="form-group py-2">
+                            <button class="btn btn-primary "  style="outline: none; margin-right: 5px;">@Title</button>
+                        </div>*@
+
+
+
+
+                        <div class="row mt-4 p-0">
+                            <div class="col-12 p-0">
+                                @if (VwWorkOrderProdDetails.Any())
+                                {
+                                    <RadzenDataGrid AllowFiltering="true" class="custom-radzen-datagrid" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Advanced" AllowSorting="true" PageSize="05" AllowPaging="true" ShowPagingSummary="true"
+                                            Data="VwWorkOrderProdDetails" TItem="VwWorkOrderProdDetailDTO" ColumnWidth="300px" LogicalFilterOperator="LogicalFilterOperator.Or">
+                                        <Columns>
+                                            <RadzenDataGridColumn TItem="VwWorkOrderProdDetailDTO" Property="WorkOrderId" Filterable="false" Title="WorkOrder Id" Frozen="true" Width="140px" />
+                                            <RadzenDataGridColumn TItem="VwWorkOrderProdDetailDTO" Property="WorkOrderNo" Title="W.Order No" Width="140px" />
+                                            <RadzenDataGridColumn TItem="VwWorkOrderProdDetailDTO" Property="ProductName" Title="Product Name" Width="140px" />
+                                            <RadzenDataGridColumn TItem="VwWorkOrderProdDetailDTO" Property="QuotationQty" Title="Quot. Qty" Width="140px" />
+                                            <RadzenDataGridColumn TItem="VwWorkOrderProdDetailDTO" Property="AvailableQty" Title="Avail. Qty" Width="140px" />
+                                            <RadzenDataGridColumn TItem="VwWorkOrderProdDetailDTO" Property="ShortQty" Title="Short Qty" Width="140px" />
+                                        </Columns>
+                                    </RadzenDataGrid>
+                                }
+                                else
+                                {
+                                    if (IsLoading)
+                                    {
+
+                                    }
+                                    else
+                                    {
+                                        <p>No Records Found.</p>
+                                    }
+                                }
+                            </div>
+                        </div>
+
+
+                       @* <div class="col-12 col-lg-1"></div>
+                        <!--Right Div-->
+                        <div class="col-12 col-lg-8 p-4 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:45%">     
+                        </div>*@
+
+
+
+                    </div>
+                </EditForm>
+            </div>
+        }
+    </div>
+</div>
+
+@*<div class="row mt-4 p-0">
+    <div class="col-12 p-0">
+        @if (VwWorkOrderProdDetails.Any())
+        {
+            <RadzenDataGrid AllowFiltering="true" class="custom-radzen-datagrid" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Advanced" AllowSorting="true" PageSize="05" AllowPaging="true" ShowPagingSummary="true"
+                        Data="VwWorkOrderProdDetails" TItem="VwWorkOrderProdDetailDTO" ColumnWidth="300px" LogicalFilterOperator="LogicalFilterOperator.Or">
+                <Columns>
+                    <RadzenDataGridColumn TItem="VwWorkOrderProdDetailDTO" Property="WorkOrderId" Filterable="false" Title="WorkOrder Id" Frozen="true" Width="140px" />
+                    <RadzenDataGridColumn TItem="VwWorkOrderProdDetailDTO" Property="WorkOrderNo" Title="W.Order No" Width="140px" />
+                    <RadzenDataGridColumn TItem="VwWorkOrderProdDetailDTO" Property="ProductName" Title="Product Name" Width="140px" />
+                    <RadzenDataGridColumn TItem="VwWorkOrderProdDetailDTO" Property="QuotationQty" Title="Quot. Qty" Width="140px" />
+                    <RadzenDataGridColumn TItem="VwWorkOrderProdDetailDTO" Property="AvailableQty" Title="Avail. Qty" Width="140px" />
+                    <RadzenDataGridColumn TItem="VwWorkOrderProdDetailDTO" Property="ShortQty" Title="Short Qty" Width="140px" />
+                </Columns>
+            </RadzenDataGrid>
+        }
+        else
+        {
+            if (IsLoading)
+            {
+             
+            }
+            else
+            {
+                <p>No Records Found.</p>
+            }
+        }
+    </div>
+</div>*@
+
+
+@code {
+    [Parameter]
+    public int ChallanId { get; set; }
+    private ChallanMtDTO Challan { get; set; } = new ChallanMtDTO();
+    private IEnumerable<WorkOrderDTO> WorkOrders { get; set; } = new List<WorkOrderDTO>();
+    private IEnumerable<QuotationMTDTO> QuotationsMt { get; set; } = new List<QuotationMTDTO>();
+    private IEnumerable<VwWorkOrderProdDetailDTO> VwWorkOrderProdDetails { get; set; } = new List<VwWorkOrderProdDetailDTO>();
+    private String Title { get; set; } = "Create";
+    private bool IsLoading { get; set; }
+    private int CountChallan { get; set; }
+    private int testVar { get; set; } = 0;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (ChallanId == 0)
+        {   
+            //create
+            IsLoading = false;
+            await LoadChallan();
+            CountChallan = await _challanMtRepository.GetCountChallan(Challan.ChallanNo) + 1;
+            Challan.ChallanNo = "CHLN-" + DateTime.Now.ToString("yyMMdd") + "-" + CountChallan.ToString("D2");
+        }
+        else
+        {
+            // Update
+            Title = "Update";
+            await LoadChallan();
+        }
+    }
+
+
+
+    private async Task LoadChallan()
+    {
+        IsLoading = true;
+        StateHasChanged();
+        Challan = await _challanMtRepository.Get(ChallanId);
+        WorkOrders = await _workOrderRepository.GetAll();
+        var quotationsMt = await _quotationMTRepository.GetAll();
+        QuotationsMt = quotationsMt.ToList();
+        //VwWorkOrderProdDetails = await _VwWorkOrderProdDetailRepository.GetAll();
+        var vwWorkOrderProdDetails = await _VwWorkOrderProdDetailRepository.GetAll();
+        VwWorkOrderProdDetails = vwWorkOrderProdDetails.Where(data => data.WorkOrderId == Challan.WorkOrderId).ToList();
+        IsLoading = false;
+        StateHasChanged();
+    }
+
+
+
+
+    private async Task OnWorkOrderSelected(Microsoft.AspNetCore.Components.ChangeEventArgs args)
+    {
+        int selectedWorkOrderId = Convert.ToInt32(args.Value);
+        VwWorkOrderProdDetails = (await _VwWorkOrderProdDetailRepository.GetAll())
+            .Where(data => data.WorkOrderId == selectedWorkOrderId)
+            .ToList();
+        // Ensure to call StateHasChanged to update the UI
+        StateHasChanged();
+    }
+
+    private async Task UpsertChallan()
+    {
+        if (Challan.ChallanId == 0)
+        {
+            //create
+            await _challanMtRepository.Create(Challan);
+            await _jsRuntime.ToastrSuccess("Created Successfully");
+            Title = "Update";
+        }
+        else
+        {
+            //update 
+            await _jsRuntime.ToastrSuccess("Updated Successfully");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

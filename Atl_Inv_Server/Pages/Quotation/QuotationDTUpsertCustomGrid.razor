@@ -1,0 +1,500 @@
+﻿@page "/quotation/addproductcustomgrid/{QuotationId:int}"
+@using Atl_Inv_Business.Repository.IRepository;
+@inject IQuotationMTRepository _quotationMTRepository;
+@inject IQuotationDtRepository _quotationDtRepository;
+@inject IProductInfoSetupRepository _productInfoSetupRepository
+@inject ISetupDt_DataRepository _setupDt_DataRepository;
+@inject NavigationManager _navigationManager
+@inject IJSRuntime _jsRuntime
+@inject IUserServiceRepository _userServiceRepository
+
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+@*<link rel="stylesheet" href="/css/customgrid.css">*@
+
+<div class="row my-1">
+    <div class="col-6">
+        <h3 class="card-title text-primary mb-3 ml-3">Quotation Details</h3>
+    </div>
+    <div class="col-6 text-right">
+        <div class="row">
+            <div class="col-12 form-group py-2 d-flex justify-content-end align-items-start">
+                <NavLink href="quotation" class="btn btn-secondary align-self-start" style="outline: none; margin-right: 5px;">List</NavLink>
+                <NavLink href="@($"quotation/edit/{Quotation.QuotationId}")" class="btn btn-secondary align-self-start">Quotation</NavLink>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (Isloading)
+{
+    <div class="text-center">
+        <img src="/images/Glass spheres.gif">
+    </div>
+}
+
+else
+{
+    <div class="row my-1">
+        <!-- Upper div containing form elements -->
+        <div class="col-md-10">
+            <div class="row  p-2 mb-4">
+                <!-- Left side -->
+                <div class="col-12">
+                    <div class="card-body">
+                        <h1 style="font-size: 1em;">Quotation No: @Quotation.QuotationNo</h1>
+                        <h1 style="font-size: 1em;">Net Total: @VarGetNetTotal</h1>
+                        <h1 style="font-size: 1em;">Grand Total: @VarGetGrandTotal</h1>
+                       @* <h1 style="font-size: 1em;">Id: @selectedQuotationDtId</h1>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Image div -->
+        <!--If there is no image URL then whole Image div will be hided -->
+        @if (!string.IsNullOrEmpty(ProdIndividualInfo.ImmageUrl))
+        {
+            <div class="col-md-2" style="height: 130px;">
+                <img src="@ProdIndividualInfo.ImmageUrl" class="w-100" style="width: 200px; height: 180px; border: none;">
+            </div>
+        }
+    </div>
+
+
+      <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Model</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn btn-success" @onclick="ShowAddModelModal"><i class="material-icons"></i> <span>Add New</span></button>                  
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>UnitPrice</th>
+                        <th>Quantity</th>
+                        <th>QuotationDtId</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+                    @foreach (var items in QuotationDt)
+                    {
+                        <tr @onclick="() => RowClicked(items.QuotationDtId)">
+                            <td>@items.UnitPrice</td>
+                            <td>@items.Quantity</td>
+                            <td>@items.QuotationDtId</td>
+                            <td>
+                                <button class="btn btn-success" @onclick="() => EditQuotationDtModal(items.QuotationDtId)"><i class="material-icons"></i> <span>Edit</span></button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+     </div>
+
+     <!-- Add Model Modal -->
+    <div class="modal fade" id="addModelModal" tabindex="-1" role="dialog" aria-labelledby="addModelModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+
+                <EditForm Model="QuotationDtData" OnValidSubmit="SaveQuotationDt">
+                    <DataAnnotationsValidator />
+
+                    <div class="modal-header" style="background-color: #f0f0f0;">
+                        <h4 class="modal-title">Add Product</h4>
+                    </div>
+
+
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">Product</div>
+                        <div class="col-8">
+                            <InputSelect @bind-Value="QuotationDtData.ProductId" class="form-select">
+                                <option value="0" disabled="disabled" selected> --Select Product--</option>
+                                @foreach (var items in Products)
+                                {
+                                    <option value="@items.ProductId">@items.ProductName</option>
+                                }
+
+                            </InputSelect>
+                            <ValidationMessage For="()=>QuotationDtData.ProductId"></ValidationMessage>
+                        </div>
+                    </div>
+
+
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">Unit Price</div> <!-- Adjust padding -->
+                        <div class="col-8">
+                            <InputNumber @bind-Value="QuotationDtData.UnitPrice" class="form-control"></InputNumber>
+                            <ValidationMessage For="()=>QuotationDtData.UnitPrice"></ValidationMessage>
+                        </div>
+                    </div>
+
+
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">Quantity</div>
+                        <div class="col-8">
+                            <InputNumber @bind-Value="QuotationDtData.Quantity" class="form-control"></InputNumber>
+                            <ValidationMessage For="()=>QuotationDtData.Quantity"></ValidationMessage>
+                        </div>
+                    </div>
+
+
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">Vat%</div>
+                        <div class="col-8">
+                            <InputNumber @bind-Value="QuotationDtData.VatPercent" class="form-control"></InputNumber>
+                            <ValidationMessage For="()=>QuotationDtData.VatPercent"></ValidationMessage>
+                        </div>
+                    </div>
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">Tax%</div>
+                        <div class="col-8">
+                            <InputNumber @bind-Value="QuotationDtData.TaxPercent" class="form-control"></InputNumber>
+                            <ValidationMessage For="()=>QuotationDtData.TaxPercent"></ValidationMessage>
+                        </div>
+                    </div>
+
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">AIT%</div>
+                        <div class="col-8">
+                            <InputNumber @bind-Value="QuotationDtData.AtiPercent" class="form-control"></InputNumber>
+                            <ValidationMessage For="()=>QuotationDtData.AtiPercent"></ValidationMessage>
+                        </div>
+                    </div>
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">Remarks</div>
+                        <div class="col-8">
+                            <InputText @bind-Value="QuotationDtData.OtherRemarks" class="form-control"></InputText>
+                            <ValidationMessage For="()=>QuotationDtData.OtherRemarks"></ValidationMessage>
+                        </div>
+                    </div>
+
+
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">Other%</div>
+                        <div class="col-8">
+                            <InputNumber @bind-Value="QuotationDtData.OtherPercent" class="form-control"></InputNumber>
+                            <ValidationMessage For="()=>QuotationDtData.OtherPercent"></ValidationMessage>
+                        </div>
+                    </div>
+                    <div style="display:none;">
+                        <!-- Hide QuotationId -->
+                        @{
+                            QuotationDtData.QuotationId = Quotation.QuotationId;
+                        }
+                        <InputNumber @bind-Value="QuotationDtData.QuotationId" class="form-control"></InputNumber>
+                        <ValidationMessage For="()=>QuotationDtData.QuotationId"></ValidationMessage>
+                    </div>
+                    <div style="display:none;">
+                        <!-- Hide QuotationNo -->
+                        @{
+                            QuotationDtData.QuotationNo = Quotation.QuotationNo;
+                        }
+                        <InputText @bind-Value="QuotationDtData.QuotationNo" class="form-control"></InputText>
+                        <ValidationMessage For="()=>QuotationDtData.QuotationNo"></ValidationMessage>
+                    </div>
+
+
+                   @* 
+                    <div class="form-group py-2">
+                        <button class="btn btn-primary">Save</button>
+                    </div>
+                    *@
+
+
+                    <div class="modal-footer">
+                        
+                        <input type="submit" class="btn btn-success" value="Add">
+                    </div>
+                </EditForm>
+                </div>
+            </div>
+        </div>
+
+    <!-- Edit Model Modal -->
+   
+    <div class="modal fade" id="editModelModal" tabindex="-1" role="dialog" aria-labelledby="addModelModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <EditForm Model="QuotationDtData" OnValidSubmit="SaveQuotationDt" >
+                    <DataAnnotationsValidator />
+
+                    <div class="modal-header" style="background-color: #f0f0f0;">
+                        <h4 class="modal-title">Update Product</h4>
+                    </div>
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">Product</div>
+                        <div class="col-8">
+                            <InputSelect @bind-Value="QuotationDtData.ProductId" class="form-select">
+                                <option value="0" disabled="disabled" selected> --Select Product--</option>
+                                @foreach (var items in Products)
+                                {
+                                    <option value="@items.ProductId">@items.ProductName</option>
+                                }
+                               
+                            </InputSelect>
+                            <ValidationMessage For="()=>QuotationDtData.ProductId"></ValidationMessage>
+                        </div>
+                    </div>
+
+
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">Unit Price</div>
+                        <div class="col-8">
+                            <InputNumber @bind-Value="QuotationDtData.UnitPrice" class="form-control"></InputNumber>
+                            <ValidationMessage For="()=>QuotationDtData.UnitPrice"></ValidationMessage>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">Quantity</div>
+                        <div class="col-8">
+                            <InputNumber @bind-Value="QuotationDtData.Quantity" class="form-control"></InputNumber>
+                            <ValidationMessage For="()=>QuotationDtData.Quantity"></ValidationMessage>
+                        </div>
+                    </div>
+                    
+
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">Vat%</div>
+                        <div class="col-8">
+                            <InputNumber @bind-Value="QuotationDtData.VatPercent" class="form-control"></InputNumber>
+                            <ValidationMessage For="()=>QuotationDtData.VatPercent"></ValidationMessage>
+                        </div>
+                    </div>
+
+
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">Tax%</div>
+                        <div class="col-8">
+                            <InputNumber @bind-Value="QuotationDtData.TaxPercent" class="form-control"></InputNumber>
+                            <ValidationMessage For="()=>QuotationDtData.TaxPercent"></ValidationMessage>
+                        </div>
+                    </div>
+
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">AIT%</div>
+                        <div class="col-8">
+                            <InputNumber @bind-Value="QuotationDtData.AtiPercent" class="form-control"></InputNumber>
+                            <ValidationMessage For="()=>QuotationDtData.AtiPercent"></ValidationMessage>
+                        </div>
+                    </div>
+
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">Remarks</div>
+                        <div class="col-8">
+                            <InputText @bind-Value="QuotationDtData.OtherRemarks" class="form-control"></InputText>
+                            <ValidationMessage For="()=>QuotationDtData.OtherRemarks"></ValidationMessage>
+                        </div>
+                    </div>
+
+                    <div class="row my-1 align-items-center">
+                        <div class="col-3" style="margin-left: 15px;">Other%</div>
+                        <div class="col-8">
+                            <InputNumber @bind-Value="QuotationDtData.OtherPercent" class="form-control"></InputNumber>
+                            <ValidationMessage For="()=>QuotationDtData.OtherPercent"></ValidationMessage>
+                        </div>
+                    </div>
+
+
+
+                    <div style="display:none;">
+                        <!-- Hide QuotationId -->
+                        @{
+                            QuotationDtData.QuotationId = Quotation.QuotationId;
+                        }
+                        <InputNumber @bind-Value="QuotationDtData.QuotationId" class="form-control"></InputNumber>
+                        <ValidationMessage For="()=>QuotationDtData.QuotationId"></ValidationMessage>
+                    </div>
+
+
+                  @*  <div class="row my-1 align-items-center">
+                        <div class="col-3">QuotationDtId</div>
+                        <div class="col-9">
+                            @{
+                                QuotationDtData.QuotationDtId = selectedQuotationDtId;
+                            }
+                            <InputNumber @bind-Value="QuotationDtData.QuotationDtId" class="form-control"></InputNumber>
+                            <ValidationMessage For="()=>QuotationDtData.QuotationDtId"></ValidationMessage>
+                        </div>
+                    </div>
+                 *@
+
+
+                    <div style="display:none;">
+                        <!-- Hide QuotationNo -->
+                        @{
+                            QuotationDtData.QuotationNo = Quotation.QuotationNo;
+                        }
+                        <InputText @bind-Value="QuotationDtData.QuotationNo" class="form-control"></InputText>
+                        <ValidationMessage For="()=>QuotationDtData.QuotationNo"></ValidationMessage>
+                    </div>
+
+
+                  @*  <div class="form-group py-2">
+                        <button class="btn btn-primary">Update</button>
+                      
+                    </div>*@
+
+                    <div class="modal-footer">
+
+                        <input type="submit" class="btn btn-success" value="Update">
+                    </div>
+
+
+                </EditForm>
+            </div>
+        </div>
+    </div>
+
+
+    @code {
+    [Parameter]
+    public int QuotationId { get; set; }
+    private QuotationMTDTO Quotation { get; set; } = new();
+    private IEnumerable<QuotationDtDTO> QuotationDt { get; set; } = new List<QuotationDtDTO>();
+    private IEnumerable<ProductInfoSetupDTO> Products { get; set; } = new List<ProductInfoSetupDTO>();
+    private ProductInfoSetupDTO ProdIndividualInfo { get; set; } = new ProductInfoSetupDTO();
+    private bool Isloading { get; set; } = true;
+    decimal VarGetNetTotal { get; set; }
+    decimal VarGetGrandTotal { get; set; }
+
+    private int QuotationDtId { get; set; } = 0;
+    private QuotationDtDTO QuotationDtData { get; set; } = new();
+    //private QuotationDtDTO QuotationDtData { get; set; } = new();
+
+    private int SelectedProductId { get; set; }
+
+    public int selectedQuotationDtId { get; set; }
+
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            Isloading = true;
+            StateHasChanged();
+            await LoadProduct();
+            Quotation = await _quotationMTRepository.Get(QuotationId);
+            VarGetNetTotal = Quotation.NetTotal ?? 0;
+            VarGetGrandTotal = Quotation.GrandTotal ?? 0;
+            QuotationDt = await _quotationDtRepository.GetAll(QuotationId);
+            Isloading = false;
+            StateHasChanged();
+        }
+    }
+    private async Task ShowAddModelModal()
+    {
+        QuotationDtData = new();
+        selectedQuotationDtId = 0;
+        //await JSRuntime.InvokeVoidAsync("$('#addModelModal').modal", "show");
+        await _jsRuntime.InvokeVoidAsync("bootstrapModalShow", "addModelModal");
+    }
+
+    private async Task HideAddModelModal()
+    {
+        await _jsRuntime.InvokeVoidAsync("bootstrapModalHide", "addModelModal");
+    }
+
+    private async Task EditQuotationDtModal(int id)
+    {
+        selectedQuotationDtId = id;
+        QuotationDtData =  QuotationDt.FirstOrDefault(q => q.QuotationDtId == id);
+        await _jsRuntime.InvokeVoidAsync("bootstrapEditModalShow", "editModelModal");
+    }
+
+
+
+    private async Task HideEditQuotationDtModal()
+    {
+        await _jsRuntime.InvokeVoidAsync("bootstrapEditModalHide", "editModelModal");
+    }
+
+    private async Task SaveQuotationDt()
+    {
+
+        var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+        var userId = currentUser?.Id;
+
+        if (QuotationDtData.QuotationDtId == 0)
+        {
+            //create
+            await _quotationDtRepository.Create(QuotationDtData, userId);
+            await _jsRuntime.ToastrSuccess("Item Created Successfully");
+            decimal getNetTotalSum = await _quotationDtRepository.GetNetTotalSum(QuotationId);
+            decimal getGrandTotalSum = await _quotationDtRepository.GetGrandTotalSum(QuotationId);
+            await _quotationMTRepository.UpdateNetGrandTotal(QuotationId, getNetTotalSum, getGrandTotalSum);
+            QuotationDt = await _quotationDtRepository.GetAll(QuotationId);
+            VarGetNetTotal = getNetTotalSum;
+            VarGetGrandTotal = getGrandTotalSum;
+            await HideAddModelModal();
+            _navigationManager.NavigateTo($"quotation/addproductcustomgrid/{Quotation.QuotationId}");
+        }
+        else
+        {
+            //Update
+            await _quotationDtRepository.Update(QuotationDtData, userId);
+            await _jsRuntime.ToastrSuccess("Item Updated Successfully");
+            decimal getNetTotalSum = await _quotationDtRepository.GetNetTotalSum(QuotationId);
+            decimal getGrandTotalSum = await _quotationDtRepository.GetGrandTotalSum(QuotationId);
+            await _quotationMTRepository.UpdateNetGrandTotal(QuotationId, getNetTotalSum, getGrandTotalSum);
+            QuotationDt = await _quotationDtRepository.GetAll(QuotationId);
+            VarGetNetTotal = getNetTotalSum;
+            VarGetGrandTotal = getGrandTotalSum;
+            await HideEditQuotationDtModal();
+            _navigationManager.NavigateTo($"quotation/addproductcustomgrid/{Quotation.QuotationId}");
+            selectedQuotationDtId = 0;
+            QuotationDtData = new();
+        } 
+    }
+
+
+    private async Task LoadProduct()
+    {
+        var productsData = await _productInfoSetupRepository.GetAll();
+        Products = productsData.ToList();
+    }
+
+
+    private async Task RowClicked(int quotationDtId)
+    {
+        if (selectedQuotationDtId == quotationDtId)
+        {
+            // If the same row is clicked again, deselect it
+            selectedQuotationDtId = 0;
+            ProdIndividualInfo = new ProductInfoSetupDTO();
+        }
+        else
+        {
+            selectedQuotationDtId = quotationDtId;
+            var selectedQuotationDt = QuotationDt.FirstOrDefault(q => q.QuotationDtId == selectedQuotationDtId);
+            var prodId = selectedQuotationDt?.ProductId ?? 0;
+            ProdIndividualInfo = await _productInfoSetupRepository.Get(prodId);
+            // Select the clicked row
+            //selectedQuotationDtId = quotationDtId;
+            //ProdIndividualInfo = await _productInfoSetupRepository.Get(selectedQuotationDtId);
+            //var selectedQuotation4 = Quotations.FirstOrDefault(q => q.QuotationId == WorkOrder.QuotationId);
+            //var selectedQuotation5 = SetupDtDatas.FirstOrDefault(q => q.SetupDT_Id == selectedQuotation4?.Currency_Stdt);
+            //WorkOrder.Currency = selectedQuotation5?.SetupDT_Data ?? "N/A";
+        }
+    }
+    }
+}
+
+
+

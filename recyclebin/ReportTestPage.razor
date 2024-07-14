@@ -1,0 +1,35 @@
+﻿@page "/reportPage"
+@inject IJSRuntime js
+@inject NavigationManager _navigation
+
+<h1>Rdlc Report</h1>
+<input type="text" @bind="productName" placeholder="Enter Product Name" />
+<button id="btnGenerate" class="btn btn-primary" @onclick="OpenReport1">PDF1</button>
+
+@code {
+    private string? productName;
+    private DateTime? fromDate;
+    private DateTime? toDate;
+
+  //  E:\Rough\ATL_INV_WebApp\Atl_Inv_Server\Controller\ReportsController.cs
+
+   // string url = $"http://localhost:49352/api/ReportOrderInfor/GetNewReport?reportType=1";
+
+
+    private async void OpenReport1()    //44351   //   server:  44351   //   api:   5100  
+    {
+        //string url = $"Reports/GetProductReport";                     ///10476               string url = $"http://localhost:44351/api/Report/GetProductReport?reportType=1";
+        //string baseUrl = _navigation.BaseUri;
+        // string baseUrl = "https://localhost:44351/";
+
+        string url = $"http://localhost:44351/api/Reportss/GetProductReport?reportType=1";       //5100
+        if (!string.IsNullOrEmpty(productName))
+        {
+            url += $"&productName={productName}";
+        }
+        await js.InvokeVoidAsync("open", url);
+    }
+}
+
+
+

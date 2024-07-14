@@ -1,0 +1,16 @@
+To Configure RDLC in Blazor Server Project.
+
+Take a .net Windows project with version -.net  framework :4.7.2 
+
+4.7.2 version has built in 'Settings.settings' file in properties. the file 'Settings.settings' will need while configuring.
+
+then go to 'App.config' and set connection string. after setting connection string ,it automatically configures 'Settings.settings' or configure manually.
+
+make RDLC Report .rdlc
+and make dataset .xsd
+
+in rdlc report mention the dataset as source.
+
+copypaste report.rdlc and dataset.xsd file to the server project report folder.
+
+then copypaste 'Settings.settings' file in server project ->properties.

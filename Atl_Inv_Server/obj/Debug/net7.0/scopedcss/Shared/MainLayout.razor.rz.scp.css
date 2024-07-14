@@ -1,0 +1,343 @@
+/* Basic layout styles */
+.page[b-drpk01sbpd] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out; /* Smooth transition for the layout changes */
+}
+
+
+main[b-drpk01sbpd] {
+    flex: 1;
+}
+
+.sidebar[b-drpk01sbpd] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    transition: width 0.3s ease-in-out;
+    width: 250px;
+    overflow: hidden;
+}
+
+.page.collapsed .sidebar[b-drpk01sbpd] {
+    width: 0;
+}
+
+.page.collapsed main[b-drpk01sbpd] {
+    margin-left: 0;
+}
+
+
+
+.top-row[b-drpk01sbpd] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Sidebar toggle button styles */
+/*.sidebar-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: auto;  Push the toggle button to the left 
+}*/
+
+/*.sidebar-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;  Adjust the size to ensure it's visible 
+    cursor: pointer;
+    color: gray;  Set the initial color to gray 
+    margin-right: auto;  Push the toggle button to the left 
+    padding: 0.5rem;  Add some padding for better click area 
+}*/
+
+
+
+
+/*.sidebar-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;*/ /* Adjust the size to ensure it's visible */
+    /*cursor: pointer;
+    color: #cccccc;*/ /* Set to light gray */
+    /*margin-right: auto;*/ /* Push the toggle button to the left */
+    /*padding: 0.5rem;*/ /* Add some padding for better click area */
+/*}*/
+
+
+/*.sidebar-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;*/ /* Size of the three dots */
+    /*font-weight: 1000;*/ /* Maximum font weight to make the three dots as bold as possible */
+    /*cursor: pointer;
+    color: #cccccc;*/ /* Light gray color for the icon */
+    /*margin-right: auto;*/ /* Push the toggle button to the left */
+    /*padding: 0.5rem;*/ /* Add some padding for better click area */
+/*}*/
+
+
+
+.sidebar-toggle[b-drpk01sbpd] {
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Size of the three dots */
+    font-weight: 1000; /* Maximum font weight to make the three dots as bold as possible */
+   /* cursor: pointer;*/
+    color: #cccccc; /* Light gray color for the icon */
+    margin-right: auto; /* Push the toggle button to the left */
+    padding: 0.5rem; /* Add some padding for better click area */
+    transition: transform 0.2s ease; /* Smooth transition for the size change */
+}
+
+    .sidebar-toggle:hover[b-drpk01sbpd] {
+        color: #b3b3b3; /* Slightly darker light gray on hover */
+        transform: scale(1.2); /* Increase the size by 20% on hover */
+    }
+
+
+
+    /*.sidebar-toggle:hover {
+        color: darkgray;*/ /* Change the color on hover for visual feedback */
+    /*}*/
+
+
+
+.top-row[b-drpk01sbpd]  a, .top-row .btn-link[b-drpk01sbpd] {
+    white-space: nowrap;
+    margin-left: 1.5rem;
+}
+
+.top-row a:first-child[b-drpk01sbpd] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-drpk01sbpd] {
+        display: none;
+    }
+
+    .top-row.auth[b-drpk01sbpd] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-drpk01sbpd], .top-row .btn-link[b-drpk01sbpd] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-drpk01sbpd] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-drpk01sbpd] {
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-drpk01sbpd] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-drpk01sbpd], article[b-drpk01sbpd] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Basic layout styles */
+/*.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.sidebar {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    transition: width 0.3s;
+}
+
+    .sidebar.collapsed {
+        width: 0;
+        overflow: hidden;
+    }
+
+.top-row {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}*/
+
+/* Sidebar toggle button styles */
+/*.sidebar-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: auto;*/ /* Push the toggle button to the left */
+/*}
+
+.top-row ::deep a, .top-row .btn-link {
+    white-space: nowrap;
+    margin-left: 1.5rem;
+}
+
+.top-row a:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth) {
+        display: none;
+    }
+
+    .top-row.auth {
+        justify-content: space-between;
+    }
+
+    .top-row a, .top-row .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row, article {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }*/
+
+    /* Adjust main content based on sidebar state */
+    /*.page.collapsed .sidebar {
+        width: 0;
+    }
+
+    .page.collapsed main {
+        margin-left: 0;
+    }
+}*/
+
+
+
+
+
+
+
+
+
+/*.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.sidebar {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row ::deep a, .top-row .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth) {
+        display: none;
+    }
+
+    .top-row.auth {
+        justify-content: space-between;
+    }
+
+    .top-row a, .top-row .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row, article {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+*/

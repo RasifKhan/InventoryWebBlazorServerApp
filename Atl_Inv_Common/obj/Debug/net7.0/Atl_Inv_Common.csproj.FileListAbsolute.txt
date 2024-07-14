@@ -1,0 +1,34 @@
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Common\bin\Debug\net7.0\Atl_Inv_Common.deps.json
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Common\bin\Debug\net7.0\Atl_Inv_Common.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Common\bin\Debug\net7.0\Atl_Inv_Common.pdb
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.AssemblyInfoInputs.cache
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.AssemblyInfo.cs
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.csproj.CoreCompileInputs.cache
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\refint\Atl_Inv_Common.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.pdb
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\ref\Atl_Inv_Common.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Common\bin\Debug\net7.0\Atl_Inv_Common.deps.json
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Common\bin\Debug\net7.0\Atl_Inv_Common.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Common\bin\Debug\net7.0\Atl_Inv_Common.pdb
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.csproj.AssemblyReference.cache
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.AssemblyInfoInputs.cache
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.AssemblyInfo.cs
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.csproj.CoreCompileInputs.cache
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\refint\Atl_Inv_Common.dll
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.pdb
+E:\Rough\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\ref\Atl_Inv_Common.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\bin\Debug\net7.0\Atl_Inv_Common.deps.json
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\bin\Debug\net7.0\Atl_Inv_Common.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\bin\Debug\net7.0\Atl_Inv_Common.pdb
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.AssemblyInfoInputs.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.AssemblyInfo.cs
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.csproj.CoreCompileInputs.cache
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\refint\Atl_Inv_Common.dll
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.pdb
+E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\ref\Atl_Inv_Common.dll

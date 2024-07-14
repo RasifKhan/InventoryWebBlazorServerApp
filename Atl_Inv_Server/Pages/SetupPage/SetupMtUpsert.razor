@@ -1,0 +1,92 @@
+﻿@page "/setupmt/create"
+@page "/setupmt/edit/{SetupMT_Id:int}"
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Model;
+@using Microsoft.AspNetCore.Identity;
+@inject UserManager<IdentityUser> UserManager
+@inject IUserServiceRepository _userServiceRepository
+@inject IJSRuntime _jsRuntime
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+@inject ISetupMt_DataRepository _setupMt_DataRepository;
+@inject NavigationManager _navigationManager
+<div class="row my-2">
+    <h3 class="card-title text-primary mb-3 ml-3">@Title Setup Master Data </h3>
+    <div class="col-10">
+        @if (IsLoading)
+        {
+            <div class="text-center">
+                <img src="/images/Glass spheres.gif">
+            </div>
+        }
+        else
+        {
+            <EditForm Model="SetupMt" OnValidSubmit="UpsertSetupMt">
+                <DataAnnotationsValidator />
+                <div class="form-group">
+                    <label>Name</label>
+                    <InputText @bind-Value="SetupMt.SetupMT_Data" class="form-control"></InputText>
+                    <ValidationMessage For="()=>SetupMt.SetupMT_Data"></ValidationMessage>
+                </div>
+                <div class="form-group py-2">
+                    <button class="btn btn-primary">@Title</button>
+                    <NavLink href="setupmt" class="btn btn-secondary">Back To Index</NavLink>
+                </div>
+            </EditForm>
+        }
+    </div>
+</div>
+@code {
+    [Parameter]
+    public int SetupMT_Id { get; set; }
+
+    private SetupMt_DataDTO SetupMt { get; set; } = new SetupMt_DataDTO();
+    private String Title { get; set; } = "Create";
+    private bool IsLoading { get; set; }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            if (SetupMT_Id == 0)
+            {
+                //create
+                IsLoading = false;
+            }
+            else
+            {
+                //Update
+                Title = "Update";
+                await LoadSetupMt_Datas();
+            }
+        }
+    }
+    private async Task LoadSetupMt_Datas()
+    {
+        IsLoading = true;
+        StateHasChanged();
+        SetupMt = await _setupMt_DataRepository.Get(SetupMT_Id);
+        IsLoading = false;
+        StateHasChanged();
+    }
+    private async Task UpsertSetupMt()
+    {
+       
+        var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+        var userId = currentUser?.Id;
+
+        // Category.Name="Button Clicked";
+        if (SetupMt.SetupMT_Id == 0)
+        {
+            await _setupMt_DataRepository.Create(SetupMt, userId);
+            await _jsRuntime.ToastrSuccess("Data created successfully");
+        }
+
+        else
+        {
+            //update
+            await _setupMt_DataRepository.Update(SetupMt,userId);
+            await _jsRuntime.ToastrSuccess("Data updated successfully");
+        }
+        _navigationManager.NavigateTo("setupmt");
+    }
+}

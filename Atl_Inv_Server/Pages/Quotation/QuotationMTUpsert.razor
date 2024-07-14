@@ -1,0 +1,328 @@
+﻿@page "/quotation/create"
+@page "/quotation/edit/{QuotationId:int}"
+@using Atl_Inv_Business.Repository.IRepository;
+@using Atl_Inv_Model;
+@inject IJSRuntime _jsRuntime
+@inject IQuotationMTRepository _quotationMTRepository;
+@inject IContactPersonInfoSetupRepository _contactPersonInfoSetupRepository;
+@inject ISetupDt_DataRepository _setupDt_DataRepository;
+@inject ICompInfoSetupRepository _compInfoSetupRepository;
+@inject IEmployeeInfoSetupRepository _employeeInfoSetupRepository;
+@inject NavigationManager _navigationManager
+@inject IUserServiceRepository _userServiceRepository
+
+@attribute [Authorize(Roles = $"{SD.Role_SuperAdmin},{SD.Role_Admin}")]
+
+
+<div class="row my-2">
+    <h3 class="card-title text-primary mb-3 ml-3">@Title Quotation </h3>
+    <div class="col-10">
+        @if (IsLoading)
+        {
+            <div class="text-center">
+                <img src="/images/Glass spheres.gif">
+            </div>
+        }
+
+        else
+        {
+            <div class="row" style="width: 100%">
+                <EditForm Model="Quotation" OnValidSubmit="UpsertQuotation" method="post">
+                    <DataAnnotationsValidator />
+                     <div class="row" style="width: 100%">
+                <!-- Left Div-->
+                <div class="col-12 col-lg-8 p-4 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:45%">
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Quotation No</div>
+                            <div class="col-9">
+                                <InputText @bind-Value="Quotation.QuotationNo" class="form-control" readonly="true" />
+                                <ValidationMessage For="()=>Quotation.QuotationNo"></ValidationMessage>
+                            </div>
+                        </div>
+
+
+                            <div class="row my-1 align-items-center">
+                                <div class="col-3">Project Type</div>
+                                <div class="col-9">
+                                    <InputSelect @bind-Value="Quotation.ProjectTypeId_Stdt" class="form-select">
+                                        <option value="0" disabled="disabled" selected>--Select Project--</option>
+                                        @foreach (var dtItems in SetupDt_DatasProjecType)
+                                        {
+                                            <option value="@dtItems.SetupDT_Id">@dtItems.SetupDT_Data</option>
+                                        }
+                                    </InputSelect>
+                                    <ValidationMessage For="()=>Quotation.ProjectTypeId_Stdt"></ValidationMessage>
+                                </div>
+                            </div>
+
+
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Subject</div>
+                            <div class="col-9">
+                                <InputText @bind-Value="Quotation.Subject" class="form-control"></InputText>
+                                <ValidationMessage For="()=>Quotation.Subject"></ValidationMessage>
+                            </div>
+                        </div>
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Project</div>
+                            <div class="col-9">
+                                <InputText @bind-Value="Quotation.ProjectName" class="form-control"></InputText>
+                                <ValidationMessage For="()=>Quotation.ProjectName"></ValidationMessage>
+                            </div>
+                        </div>
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Company</div>
+                            <div class="col-9">
+                                <InputSelect @bind-Value="Quotation.CompanyId" class="form-select">
+                                    <option value="0" disabled="disabled" selected>--Select Company--</option>
+                                    @foreach (var compItems in CompanyInfos)
+                                    {
+                                        <option value="@compItems.CompanyId">@compItems.CompanyName</option>
+                                    }
+                                </InputSelect>
+                                <ValidationMessage For="()=>Quotation.CompanyId"></ValidationMessage>
+                            </div>
+                        </div>
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Cont. Person</div>
+                            <div class="col-9">
+                                <InputSelect @bind-Value="Quotation.ContactPersonId" class="form-select">
+                                    <option value="0" disabled="disabled" selected>--Select Contact Person--</option>
+                                    @foreach (var conPersonItems in ContactPersonInfos)
+                                    {
+                                        <option value="@conPersonItems.ContactPersonId">@conPersonItems.ContPersonName</option>
+                                    }
+                                </InputSelect>
+                                <ValidationMessage For="()=>Quotation.ContactPersonId"></ValidationMessage>
+                            </div>
+                        </div>
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Currency</div>
+                            <div class="col-9">
+                                <InputSelect @bind-Value="Quotation.Currency_Stdt" class="form-select">
+                                    <option value="0" disabled="disabled" selected>--Select Currency--</option>
+                                    @foreach (var currencyItems in Currency)
+                                    {
+                                        <option value="@currencyItems.SetupDT_Id">@currencyItems.SetupDT_Data</option>
+                                    }
+                                </InputSelect>
+                                <ValidationMessage For="()=>Quotation.Currency_Stdt"></ValidationMessage>
+                            </div>
+                        </div>
+
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">To Client</div>
+                            <div class="col-9">
+                                <InputSelect @bind-Value="Quotation.ToClientDesigId_Stdt" class="form-select">
+                                    <option value="0" disabled="disabled" selected>--Select Client Desig.--</option>
+                                    @foreach (var toClientDesigItems in ToClientDesigIdDt)
+                                    {
+                                        <option value="@toClientDesigItems.SetupDT_Id">@toClientDesigItems.SetupDT_Data</option>
+                                    }
+                                </InputSelect>
+                                <ValidationMessage For="()=>Quotation.ToClientDesigId_Stdt"></ValidationMessage>
+                            </div>
+                        </div>
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Quotation Status</div>
+                            <div class="col-9">
+                                <InputSelect @bind-Value="Quotation.QuotationStatus_Stdt" class="form-select">
+                                    <option value="0" disabled="disabled" selected>--Select Status--</option>
+                                    @foreach (var quotStatusItems in QuotationStatus)
+                                    {
+                                        <option value="@quotStatusItems.SetupDT_Id">@quotStatusItems.SetupDT_Data</option>
+                                    }
+                                </InputSelect>
+                                <ValidationMessage For="()=>Quotation.QuotationStatus_Stdt"></ValidationMessage>
+                            </div>
+                        </div>
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-3">Signed By</div>
+                            <div class="col-9">
+                                <InputSelect @bind-Value="Quotation.SignedById" class="form-select">
+                                    <option value="0" disabled="disabled" selected> --Select Emp Name--</option>
+                                    @foreach (var employeeItems in EmployeeInfos)
+                                    {
+                                        <option value="@employeeItems.EmpId">@employeeItems.EmpName</option>
+                                    }
+                                </InputSelect>
+                                <ValidationMessage For="()=>Quotation.SignedById"></ValidationMessage>
+                            </div>
+                        </div>
+                     
+                        <div class="form-group py-2">
+                            <button class="btn btn-primary" style="outline: none; margin-right: 5px;">@Title</button>
+                            @if (Title == "Update")
+                            {
+                                <NavLink href="@($"quotation/addproducts/{Quotation.QuotationId}")" class="btn btn-secondary" style="margin-right: 5px;">Go to Items[M1]</NavLink>
+                            }
+                        </div>
+                        <div class="form-group ">
+                            <NavLink href="quotation" class="btn btn-secondary" style="margin-right: 5px;">Back to Quotation List</NavLink>
+                        </div>
+                </div>
+                <div class="col-12 col-lg-1"></div>
+                <!--Right Div-->
+                <div class="col-12 col-lg-8 p-4 ml-4 ml-md-0 mt-4 mt-md-0 " style="width:45%">
+
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-4">Net Total:</div>
+                            <div class="col-6">
+                                <h1 style="font-size: 1.5em; color: green; margin: 0;">@Quotation.NetTotal</h1>
+                            </div>
+                        </div>
+
+                        <div class="row my-1 align-items-center">
+                            <div class="col-4 text-right">Grand Total:</div>
+                            <div class="col-8">
+                                <h1 style="font-size: 1.5em; color: green; margin: 0;">@Quotation.GrandTotal</h1>
+                            </div>
+                        </div>
+                        <div class="form-group py-2">
+                            @if (Title == "Update")
+                            {
+                                <NavLink href="@($"quotation/addproductcustomgrid/{Quotation.QuotationId}")" class="btn btn-secondary" style="margin-right: 5px;">Go to Items[M2]</NavLink>
+                            }
+                         </div>
+
+
+                            <div class="form-group py-2">
+                                @if (Title == "Update")
+                                {
+                                    <NavLink href="@($"quotation/addproductcustomgrid2/{Quotation.QuotationId}")" class="btn btn-secondary" style="margin-right: 5px;">Go to Items[M3]</NavLink>
+                                }
+                            </div>
+
+                         </div>
+                    </div>
+                </EditForm>
+            </div>
+        }
+    </div>
+</div>
+
+
+@code {
+    [Parameter]
+    public int QuotationId { get; set; }
+
+    private QuotationMTDTO Quotation { get; set; } = new QuotationMTDTO();
+    private IEnumerable<CompanyInfoSetupDTO> CompanyInfos { get; set; } = new List<CompanyInfoSetupDTO>();
+    private IEnumerable<EmployeeInfoSetupDTO> EmployeeInfos { get; set; } = new List<EmployeeInfoSetupDTO>();
+    private IEnumerable<ContactPersonInfoSetupDTO> ContactPersonInfos { get; set; } = new List<ContactPersonInfoSetupDTO>();
+
+    private IEnumerable<SetupDt_DataDTO> SetupDt_DatasProjecType { get; set; } = new List<SetupDt_DataDTO>();
+    private IEnumerable<SetupDt_DataDTO> ToClientDesigIdDt { get; set; } = new List<SetupDt_DataDTO>();
+    private IEnumerable<SetupDt_DataDTO> QuotationStatus { get; set; } = new List<SetupDt_DataDTO>();
+    private IEnumerable<SetupDt_DataDTO> Currency { get; set; } = new List<SetupDt_DataDTO>();
+
+    private String Title { get; set; } = "Create";
+    private bool IsLoading { get; set; }
+    private int CountQuotation { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (QuotationId == 0)
+        {
+            //create
+            IsLoading = false;
+            await LoadQuotations(); //GetCountForQuotationNo
+
+            CountQuotation = await _quotationMTRepository.GetCountForQuotationNo(Quotation.QuotationNo) + 1;
+            Quotation.QuotationNo = "QT-" + DateTime.Now.ToString("yyMMdd") + "-" + CountQuotation.ToString("D2");
+            //Here, ToString("D2") is used to ensure that the ZoneTrackCount is formatted with at least two digits,
+            //adding leading zeros if necessary.
+            //Zone.TrackZoneId = "ZO-" + DateTime.Now.ToString("yyMMdd") + "-" + ZoneTrackCount.ToString();
+        }
+        else
+        {
+            // Update
+            Title = "Update";
+            await LoadQuotations();
+        }
+    }
+
+
+    private async Task LoadQuotations()
+    {
+
+        IsLoading = true;
+        StateHasChanged();
+        Quotation = await _quotationMTRepository.Get(QuotationId);
+
+        var setupDtProjecType = await _setupDt_DataRepository.GetAll();
+        SetupDt_DatasProjecType = setupDtProjecType.Where(data => data.SetupMT_Id == 1007).ToList();
+
+
+        var CompanyData = await _compInfoSetupRepository.GetAll();
+        CompanyInfos = CompanyData.ToList();
+
+
+        var contPersonData = await _contactPersonInfoSetupRepository.GetAll();
+        ContactPersonInfos = contPersonData.ToList();
+
+
+
+        var employeeInfosData = await _employeeInfoSetupRepository.GetAll();
+        EmployeeInfos = employeeInfosData.ToList();
+
+
+
+        var toClientDesigData = await _setupDt_DataRepository.GetAll();
+        ToClientDesigIdDt = toClientDesigData.Where(data => data.SetupMT_Id == 1009).ToList();
+
+        var quotationStatusData = await _setupDt_DataRepository.GetAll();
+        QuotationStatus = quotationStatusData.Where(data => data.SetupMT_Id == 1010).ToList();
+
+
+        var currencyData = await _setupDt_DataRepository.GetAll();
+        Currency = currencyData.Where(data => data.SetupMT_Id == 1008).ToList();
+        IsLoading = false;
+        StateHasChanged();
+    }
+
+
+
+    private async Task UpsertQuotation()
+    {
+        var currentUser = await _userServiceRepository.GetCurrentUserAsync();
+        var userId = currentUser?.Id;
+
+        if (Quotation.QuotationId == 0)
+        {
+            //create
+            await _quotationMTRepository.Create(Quotation, userId);
+            await _jsRuntime.ToastrSuccess("Quotation Created Successfully");
+            Quotation.QuotationId = await _quotationMTRepository.GetMaxQuotationId();
+            Title = "Update";
+            _navigationManager.NavigateTo($"quotation/edit/{Quotation.QuotationId}");
+             //<NavLink href="@($"quotation/edit/{Quotation.QuotationId}")" class="btn-primary btn">@Title</NavLink>
+        }
+        else
+        {
+            //update
+            await _quotationMTRepository.Update(Quotation, userId);
+            await _jsRuntime.ToastrSuccess("Quotation Updated Successfully");
+           // _navigationManager.NavigateTo($"quotation/addproducts/{Quotation.QuotationId}");
+        }
+        // _navigationManager.NavigateTo("quotation");
+       // _navigationManager.NavigateTo($"quotation/addproducts/{Quotation.QuotationId}");
+       //  _navigationManager.NavigateTo($"quotation/addproductsss/{Quotation.QuotationId}");
+
+    }
+}
+
+
+
+
+
+

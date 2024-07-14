@@ -1,0 +1,145 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Atl_Inv_Server.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Atl_Inv_Server.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\CustomFieldSizeFontSize.css",
+      "PackagePath": "staticwebassets\\css\\CustomFieldSizeFontSize.css"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\customgrid.css",
+      "PackagePath": "staticwebassets\\css\\customgrid.css"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\customgridTwo.css",
+      "PackagePath": "staticwebassets\\css\\customgridTwo.css"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\navmenuclollaps.css",
+      "PackagePath": "staticwebassets\\css\\navmenuclollaps.css"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\images\\Default_image.png",
+      "PackagePath": "staticwebassets\\images\\Default_image.png"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\images\\Glass spheres.gif",
+      "PackagePath": "staticwebassets\\images\\Glass spheres.gif"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\images\\product\\2641bb05-57e8-4e65-b261-d7437ad80f01.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\2641bb05-57e8-4e65-b261-d7437ad80f01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\images\\product\\40e8e084-3110-4814-a068-9f82d650b369.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\40e8e084-3110-4814-a068-9f82d650b369.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\images\\product\\875acc9f-f576-4e7f-b6b6-2baa1d9d9d6e.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\875acc9f-f576-4e7f-b6b6-2baa1d9d9d6e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\images\\product\\8c82d9cd-5cc4-43df-99f1-9705b1307758.png",
+      "PackagePath": "staticwebassets\\images\\product\\8c82d9cd-5cc4-43df-99f1-9705b1307758.png"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\images\\product\\93b1d58b-8978-4069-beee-ab3c2d3f4ec2.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\93b1d58b-8978-4069-beee-ab3c2d3f4ec2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\images\\product\\a6fe7453-992c-4046-89ad-7f222f18b556.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\a6fe7453-992c-4046-89ad-7f222f18b556.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\images\\product\\b813d969-2137-4544-ad5d-9c42b47bf400.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\b813d969-2137-4544-ad5d-9c42b47bf400.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\images\\product\\cc1496b2-d2d8-4e93-ba20-504ea20a075f.png",
+      "PackagePath": "staticwebassets\\images\\product\\cc1496b2-d2d8-4e93-ba20-504ea20a075f.png"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\images\\product\\d6b2dfc9-88c3-4a87-a337-3aad5c55cc4e.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\d6b2dfc9-88c3-4a87-a337-3aad5c55cc4e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\js\\common.js",
+      "PackagePath": "staticwebassets\\js\\common.js"
+    },
+    {
+      "Id": "C:\\Users\\HASNAT\\Desktop\\ATL_INV_WebApp\\Atl_Inv_Server\\wwwroot\\js\\grid.js",
+      "PackagePath": "staticwebassets\\js\\grid.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Atl_Inv_Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Atl_Inv_Server.props",
+      "PackagePath": "build\\Atl_Inv_Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Atl_Inv_Server.props",
+      "PackagePath": "buildMultiTargeting\\Atl_Inv_Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Atl_Inv_Server.props",
+      "PackagePath": "buildTransitive\\Atl_Inv_Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
