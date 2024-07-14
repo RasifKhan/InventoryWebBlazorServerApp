@@ -32,3 +32,4 @@ E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Com
 E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\refint\Atl_Inv_Common.dll
 E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.pdb
 E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\ref\Atl_Inv_Common.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Common\obj\Debug\net7.0\Atl_Inv_Common.sourcelink.json

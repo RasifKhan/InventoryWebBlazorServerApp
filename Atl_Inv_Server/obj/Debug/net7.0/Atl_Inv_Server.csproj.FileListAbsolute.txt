@@ -1761,3 +1761,4 @@ E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\runtimes\wi
 E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_.9B22C043.Up2Date
 C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\bin\Debug\net7.0\wwwroot\Reports\testproductrpt.rdlc
 C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_.9B22C043.Up2Date
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Server\obj\Debug\net7.0\Atl_Inv_Server.sourcelink.json

@@ -88,3 +88,4 @@ E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Model\obj\Debug\net7.0\Atl_Inv_Mode
 E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Model\obj\Debug\net7.0\ref\Atl_Inv_Model.dll
 E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_Model\obj\Debug\net7.0\Atl_Inv_.B108358A.Up2Date
 C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Model\obj\Debug\net7.0\Atl_Inv_.B108358A.Up2Date
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_Model\obj\Debug\net7.0\Atl_Inv_Model.sourcelink.json

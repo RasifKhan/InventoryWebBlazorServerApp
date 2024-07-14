@@ -82,3 +82,4 @@ E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\refint\
 E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.pdb
 E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.genruntimeconfig.cache
 E:\master Backup\rdlc\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\ref\Atl_Inv_DataAccess.dll
+C:\Users\HASNAT\Desktop\ATL_INV_WebApp\Atl_Inv_DataAccess\obj\Debug\net7.0\Atl_Inv_DataAccess.sourcelink.json
